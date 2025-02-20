@@ -1,0 +1,17 @@
+
+build-all-emulators: build-colossus-test build-diesel-test build-jaguar-test
+
+
+CONNECTOR_DEVICE_TYPE      = $(BUILD_DIR)/apollo-test
+COLOSSUS-VERSION ?= latest
+DIESEL-VERSION ?= latest
+JAGUAR-VERSION ?= latest
+
+build-colossus-test:
+	cd device-connector-emulators/colossus-test/build && ./buildColossusTest.py --version $(COLOSSUS-VERSION)
+
+build-diesel-test:
+	cd device-connector-emulators/diesel-test && ./buildDiesel.py --version $(DIESEL-VERSION)
+
+build-jaguar-test:
+	cd device-connector-emulators/jaguar-test/build && ./buildJaguarTest.py --version $(JAGUAR-VERSION)

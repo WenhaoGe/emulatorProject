@@ -1,0 +1,28 @@
+# Makefile defines the variables required for signing of device connector images
+# Signing is done using the swims client
+
+# The product of the swims key
+# REQUIRED
+PRODUCT=
+
+# The pid of the swims key
+# REQUIRED
+PID=
+
+# The signed image name
+# REQUIRED
+SIGNED_IMAGE=$(CONNECTOR_DEVICE_TYPE)-connector.$(SW_VERSION_STRING).bin
+
+# The path to the release ticket on the releng build server
+# Contact the releng team to add your ticket to this server
+# REQUIRED
+REL_TICKET=none
+
+# The development ticket name. Ticket is expected to reside in artifactory dc-signing repository
+# REQUIRED
+DEV_TICKET=none
+
+
+# Stub to avoid creating image for example project.
+sign-image:
+

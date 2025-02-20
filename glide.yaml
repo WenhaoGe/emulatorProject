@@ -1,0 +1,48 @@
+package: bitbucket-eng-sjc1.cisco.com/an/apollo-test
+import:
+- package: bitbucket-eng-sjc1.cisco.com/an/barcelona
+  version: BRANCH_MARKER
+  repo: git@bitbucket-eng-sjc1.cisco.com:/an/barcelona.git
+- package: github.com/gorilla/websocket
+  version: ^1.1.0
+- package: github.com/kr/pty
+  version: ^1.0.0
+- package: github.com/mattn/go-shellwords
+  version: ^1.0.2
+- package: github.com/pkg/sftp
+  version: ^1.0.0
+- package: github.com/miekg/dns
+  version: a5852667e3c36e2e0b0a69ab43869e00e95aacdf
+- package: github.com/google/goexpect
+  version: master
+- package: github.com/google/goterm
+  version: master
+- package: github.com/Knetic/govaluate
+  version: master
+  repo: https://github.com/CiscoM31/govaluate
+- package: gopkg.in/yaml.v2
+  version: v2
+- package: github.com/dchest/siphash
+  version: master
+# Interactive CLI command shell
+- package: github.com/abiosoft/ishell
+  version: v2
+# Dependency for CLI command shell
+- package: github.com/abiosoft/readline
+  version: master
+# Dependency for CLI command shell
+- package: github.com/fatih/color
+  version: master
+# Dependency for CLI command shell
+- package: github.com/flynn-archive/go-shlex
+  version: master
+- package: github.com/clbanning/mxj
+  version: master
+testImport:
+- package: bitbucket-eng-sjc1.cisco.com/an/barcelona
+  version: BRANCH_MARKER
+  repo: git@bitbucket-eng-sjc1.cisco.com:/an/barcelona.git
+  subpackages:
+  - adtest
+- package: gopkg.in/check.v1
+  repo: https://github.com/CiscoM31/check
