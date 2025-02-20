@@ -1,0 +1,24 @@
+<faults>
+    <fault type="Threshold">
+        <configConfMo cookie="ignore-cookie" inHierarchical="true" dn="sys/rack-unit-1/board/cpu-1/env-stats" attr_name="temperature" max_value="55">
+            <inConfig><processorEnvStats dn="sys/rack-unit-1/board/cpu-1/env-stats" id="1" description="P1_TEMP_SENS" temperature="61" timeCollected="2017-09-20T07:23:34"/></inConfig>
+        </configConfMo>
+        <configConfMo cookie="ignore-cookie" inHierarchical="true" dn="sys/rack-unit-1/board/cpu-1/env-stats" attr_name="temperature" max_value="55">
+            <inConfig><processorEnvStats dn="sys/rack-unit-1/board/cpu-2/env-stats" id="2" description="P2_TEMP_SENS" temperature="30.5" timeCollected="2017-09-20T07:23:34"/></inConfig>
+        </configConfMo>
+
+    </fault>
+    <!-- delay time is in seconds
+        apitype is of type either ConfigResolveDn, ConfigConfMo, ConfigResolveClass
+        -->
+    <cimc-behaviour type="Delay" delay_time="0" dn="sys/rack-unit-1" apitype="ConfigResolveDn"><!-- This is seconds -->
+    </cimc-behaviour>
+    <cimc-behaviour type="Delay" delay_time="0" dn="sys" apitype="ConfigResolveDn"><!-- This is seconds -->
+    </cimc-behaviour>
+    <cimc-behaviour type="Delay" delay_time="0" classId="sys/rack-unit-1" apitype="ConfigResolveClass"><!-- This is seconds -->
+    </cimc-behaviour>
+
+    <!--<fault type="Missing-dn" dn="sys/rack-unit-1/board/memarray-1/mem-1">
+    </fault>-->
+
+</faults>

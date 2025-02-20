@@ -1,0 +1,598 @@
+<outConfigs>
+   <topSystem dn="sys" address="10.105.219.101" currentTime="Wed Sep 20 07:23:28 2017 " localTime="Wed Sep 20 07:23:28 2017 UTC +0000" timeZone="UTC" mode="stand-alone" name="C240-WZP20420GS5">
+      <systemBoardUnit rn="sys-board-unit" sasExpander="Not Present" hddBackplane="12-LFF_drive_back_plane" riser1="(2 Slots x8, 1 Slot x16)" riser2="(5 Slots x8)" sataNVMe="Not Present" sdController="Present" cpu1PkgId="Non-MCP" cpu2PkgId="Non-MCP" rearBpSkuType="UCSC-RSAS-C240M5" intrusionSensor="Not Equipped" />
+      <computeRackUnit rn="rack-unit-1" adminPower="policy" availableMemory="65536" model="UCSC-C240-M5L" memorySpeed="2666" name="UCS C240 M5L" numOfAdaptors="0" numOfCores="16" numOfCoresEnabled="16" numOfCpus="2" numOfEthHostIfs="0" numOfFcHostIfs="0" numOfThreads="32" operPower="on" originalUuid="0084B327-BB5C-4921-A900-28445C608A5C" presence="equipped" serverId="1" serial="WZP20420GS5" totalMemory="65536" usrLbl="fasdfdsaf" uuid="0084B327-BB5C-4921-A900-28445C608A5C" vendor="Cisco Systems Inc" cimcResetReason="ac-cycle " assetTag="Unknown" adaptorSecureUpdate="Enabled" resetComponents="components" storageResetStatus="NA" vicResetStatus="NA" bmcResetStatus="NA" smartUsbAccess="disabled" smartUsbStatus="Disabled">
+         <x86LiveDebug rn="live-debug" liveDebugState="disabled" liveDebugTimeout="600" />
+         <networkAdapterUnit slot="L" model="Cisco(R) LOM X550-T2" numIntf="2" presence="equipped" rn="network-adapter-L">
+            <networkAdapterEthIf id="1" mac="00:a6:ca:e2:45:fa" rn="eth-1" />
+            <networkAdapterEthIf id="2" mac="00:a6:ca:e2:45:fc" rn="eth-2" />
+         </networkAdapterUnit>
+         <equipmentPsuColdRedundancy rn="psu-cold-redundancy" />
+         <equipmentPsu id="1" pid="UCSC-PSU1-770W" model="PS-2771-1S-LF" operability="powered-off" power="off" presence="equipped" serial="LIT202208Q8" thermal="ok" vendor="Cisco Systems Inc" voltage="ok" input="0" maxOutput="NA" fwVersion="10052021" rn="psu-1">
+            <faultInst ack="yes" cause="fru-problem" code="F0407" created="2017-09-04T21:04:58" descr="PSU1_STATUS: Power Supply 1 Configuration Error - Power supply rating mismatch: Check or replace PSU 1, ensure all PSUs are the same type in the system" affectedDN="sys/rack-unit-1/psu-1" highestSeverity="critical" id="167772424" lastTransition="2017-09-04T21:04:53" lc="flapping" occur="5" origSeverity="cleared" prevSeverity="cleared" rule="fltEquipmentPsuIdentity" severity="critical" tags="server" type="server" rn="fault-F0407" />
+            <faultInst ack="yes" cause="equipment-inoperable" code="F0374" created="2017-09-04T21:04:58" descr="PSU1_STATUS: Power Supply 1 has lost input or input is out of range : Check input to PS or replace PS 1" affectedDN="sys/rack-unit-1/psu-1" highestSeverity="critical" id="167772424" lastTransition="2017-09-04T21:04:53" lc="flapping" occur="5" origSeverity="cleared" prevSeverity="cleared" rule="fltEquipmentPsuInoperable" severity="major" tags="server" type="server" rn="fault-F0374" />
+         </equipmentPsu>
+         <equipmentPsu id="2" pid="UCSC-PSU1-1600W" model="CIS-S-1600ADE000-301" operability="operable" power="on" presence="equipped" serial="PST2052J06V" thermal="ok" vendor="Cisco Systems Inc" voltage="ok" input="176" maxOutput="NA" fwVersion="10152427" rn="psu-2">
+            <faultInst ack="yes" cause="fru-problem" code="F0407" created="2017-09-04T21:04:58" descr="PSU2_STATUS: Power Supply 2 Configuration Error - Power supply rating mismatch: Check or replace PSU 2, ensure all PSUs are the same type in the system" affectedDN="sys/rack-unit-1/psu-2" highestSeverity="critical" id="167772680" lastTransition="2017-09-04T21:04:53" lc="flapping" occur="5" origSeverity="cleared" prevSeverity="cleared" rule="fltEquipmentPsuIdentity" severity="critical" tags="server" type="server" rn="fault-F0407" />
+         </equipmentPsu>
+         <equipmentFanModule id="1" model="" operability="operable" power="on" presence="equipped" serial="" thermal="not-supported" tray="1" vendor="" voltage="not-supported" rn="fan-module-1-1">
+            <equipmentFan id="1" model="" module="1" operability="operable" power="on" presence="equipped" serial="" thermal="not-supported" tray="1" vendor="" voltage="not-supported" rn="fan-1" />
+            <equipmentFan id="2" model="" module="1" operability="operable" power="on" presence="equipped" serial="" thermal="not-supported" tray="1" vendor="" voltage="not-supported" rn="fan-2" />
+         </equipmentFanModule>
+         <equipmentFanModule id="2" model="" operability="operable" power="on" presence="equipped" serial="" thermal="not-supported" tray="1" vendor="" voltage="not-supported" rn="fan-module-1-2">
+            <equipmentFan id="1" model="" module="2" operability="operable" power="on" presence="equipped" serial="" thermal="not-supported" tray="1" vendor="" voltage="not-supported" rn="fan-1" />
+            <equipmentFan id="2" model="" module="2" operability="operable" power="on" presence="equipped" serial="" thermal="not-supported" tray="1" vendor="" voltage="not-supported" rn="fan-2" />
+         </equipmentFanModule>
+         <equipmentFanModule id="3" model="" operability="operable" power="on" presence="equipped" serial="" thermal="not-supported" tray="1" vendor="" voltage="not-supported" rn="fan-module-1-3">
+            <equipmentFan id="1" model="" module="3" operability="operable" power="on" presence="equipped" serial="" thermal="not-supported" tray="1" vendor="" voltage="not-supported" rn="fan-1" />
+            <equipmentFan id="2" model="" module="3" operability="operable" power="on" presence="equipped" serial="" thermal="not-supported" tray="1" vendor="" voltage="not-supported" rn="fan-2" />
+         </equipmentFanModule>
+         <equipmentFanModule id="4" model="" operability="degraded" power="on" presence="equipped" serial="" thermal="not-supported" tray="1" vendor="" voltage="not-supported" rn="fan-module-1-4">
+            <equipmentFan id="1" model="" module="4" operability="degraded" power="on" presence="equipped" serial="" thermal="not-supported" tray="1" vendor="" voltage="not-supported" rn="fan-1" />
+            <equipmentFan id="2" model="" module="4" operability="degraded" power="on" presence="equipped" serial="" thermal="not-supported" tray="1" vendor="" voltage="not-supported" rn="fan-2" />
+         </equipmentFanModule>
+         <equipmentFanModule id="5" model="" operability="operable" power="on" presence="equipped" serial="" thermal="not-supported" tray="1" vendor="" voltage="not-supported" rn="fan-module-1-5">
+            <equipmentFan id="1" model="" module="5" operability="operable" power="on" presence="equipped" serial="" thermal="not-supported" tray="1" vendor="" voltage="not-supported" rn="fan-1" />
+            <equipmentFan id="2" model="" module="5" operability="operable" power="on" presence="equipped" serial="" thermal="not-supported" tray="1" vendor="" voltage="not-supported" rn="fan-2" />
+         </equipmentFanModule>
+         <equipmentFanModule id="6" model="" operability="operable" power="on" presence="equipped" serial="" thermal="not-supported" tray="1" vendor="" voltage="not-supported" rn="fan-module-1-6">
+            <equipmentFan id="1" model="" module="6" operability="operable" power="on" presence="equipped" serial="" thermal="not-supported" tray="1" vendor="" voltage="not-supported" rn="fan-1" />
+            <equipmentFan id="2" model="" module="6" operability="operable" power="on" presence="equipped" serial="" thermal="not-supported" tray="1" vendor="" voltage="not-supported" rn="fan-2" />
+         </equipmentFanModule>
+         <equipmentFanModule id="7" model="" operability="unknown" power="off" presence="missing" serial="" thermal="not-supported" tray="1" vendor="" voltage="not-supported" rn="fan-module-1-7">
+            <equipmentFan id="1" model="" module="7" operability="unknown" power="off" presence="missing" serial="" thermal="not-supported" tray="1" vendor="" voltage="not-supported" rn="fan-1">
+               <faultInst ack="yes" cause="performance-problem" code="F0397" created="2017-09-05T23:47:08" descr="MOD4_FAN1_SPEED: Fan speed for fan-7 is lower non recoverable : Check the air intake to the server " affectedDN="sys/rack-unit-1/fan-module-1-4/fan-1" highestSeverity="critical" id="486541060" lastTransition="2017-09-04T21:04:53" lc="flapping" occur="4" origSeverity="major" prevSeverity="major" rule="fltEquipmentFanPerfThresholdNonRecoverable" severity="critical" tags="server" type="server" rn="fault-F0397" />
+            </equipmentFan>
+            <equipmentFan id="2" model="" module="7" operability="unknown" power="off" presence="missing" serial="" thermal="not-supported" tray="1" vendor="" voltage="not-supported" rn="fan-2" />
+         </equipmentFanModule>
+         <computeBoard rn="board" id="0" model="UCSC-C240-M5L" operPower="on" perf="unknown" power="not-supported" presence="not-supported" serial="WZP20420GS5" vendor="Cisco Systems Inc">
+            <computeRackUnitMbTempStats rn="temp-stats" ambientTemp="22.0" frontTemp="22.0" ioh1Temp="36.0" ioh2Temp="" rearTemp="32.0" timeCollected="2017-09-20T07:23:33" />
+            <computeMbPowerStats rn="power-stats" consumedPower="176" inputCurrent="12.00" inputVoltage="12.000" timeCollected="2017-09-20T07:23:33" />
+            <processorUnit arch="Xeon" cores="8" id="1" coresEnabled="8" model="Intel(R) Xeon(R) Gold 6134 CPU @ 3.20GHz" operState="operable" presence="equipped" socketDesignation="CPU1" speed="3200" stepping="4" threads="16" vendor="Intel(R) Corporation" rn="cpu-1">
+               <processorEnvStats rn="env-stats" id="1" description="P1_TEMP_SENS" temperature="31.0" timeCollected="2017-09-20T07:23:34" />
+            </processorUnit>
+            <processorUnit arch="Xeon" cores="8" id="2" coresEnabled="8" model="Intel(R) Xeon(R) Gold 6134 CPU @ 3.20GHz" operState="operable" presence="equipped" socketDesignation="CPU2" speed="3200" stepping="4" threads="16" vendor="Intel(R) Corporation" rn="cpu-2">
+               <processorEnvStats rn="env-stats" id="2" description="P2_TEMP_SENS" temperature="30.5" timeCollected="2017-09-20T07:23:34" />
+            </processorUnit>
+            <memoryArray rn="memarray-1" currCapacity="65536" id="1" maxDevices="24" populated="2" presence="equipped" overallDIMMStatus="green" dimmBlackList="disabled" redundantMemory="0" memoryRASPossible="MaximumPerformance " memoryConfiguration="MaximumPerformance " failedMemory="0" ignoredMemory="0" numOfIgnoredDimms="0" numOfFailedDimms="0">
+               <memoryUnit array="1" capacity="unspecified" clock="unspecified" formFactor="undiscovered" id="1" location="DIMM_A1" model="" operState="removed" operability="unknown" presence="missing" serial="" type="undiscovered" vendor="" visibility="no" width="unspecified" memoryTypeDetail="NA" bankLocator="NA" rn="mem-1" />
+               <memoryUnit array="1" capacity="unspecified" clock="unspecified" formFactor="undiscovered" id="2" location="DIMM_A2" model="" operState="removed" operability="unknown" presence="missing" serial="" type="undiscovered" vendor="" visibility="no" width="unspecified" memoryTypeDetail="NA" bankLocator="NA" rn="mem-2" />
+               <memoryUnit array="1" capacity="unspecified" clock="unspecified" formFactor="undiscovered" id="3" location="DIMM_B1" model="" operState="removed" operability="unknown" presence="missing" serial="" type="undiscovered" vendor="" visibility="no" width="unspecified" memoryTypeDetail="NA" bankLocator="NA" rn="mem-3" />
+               <memoryUnit array="1" capacity="unspecified" clock="unspecified" formFactor="undiscovered" id="4" location="DIMM_B2" model="" operState="removed" operability="unknown" presence="missing" serial="" type="undiscovered" vendor="" visibility="no" width="unspecified" memoryTypeDetail="NA" bankLocator="NA" rn="mem-4" />
+               <memoryUnit array="1" capacity="32768" clock="2666" formFactor="DIMM" id="5" location="DIMM_C1" model="HMA84GR7AFR4N-VK    " operState="operable" operability="operable" presence="equipped" serial="812E3551" type="DDR4" vendor="0xAD00" visibility="yes" width="64" memoryTypeDetail="Synchronous" bankLocator="NODE 1" rn="mem-5">
+                  <memoryUnitEnvStats rn="dimm-env-stats" id="5" description="DIMM_C1" temperature="27.0" timeCollected="2017-09-20T07:23:36" />
+               </memoryUnit>
+               <memoryUnit array="1" capacity="unspecified" clock="unspecified" formFactor="undiscovered" id="6" location="DIMM_C2" model="" operState="removed" operability="unknown" presence="missing" serial="" type="undiscovered" vendor="" visibility="no" width="unspecified" memoryTypeDetail="NA" bankLocator="NA" rn="mem-6" />
+               <memoryUnit array="1" capacity="unspecified" clock="unspecified" formFactor="undiscovered" id="7" location="DIMM_D1" model="" operState="removed" operability="unknown" presence="missing" serial="" type="undiscovered" vendor="" visibility="no" width="unspecified" memoryTypeDetail="NA" bankLocator="NA" rn="mem-7" />
+               <memoryUnit array="1" capacity="unspecified" clock="unspecified" formFactor="undiscovered" id="8" location="DIMM_D2" model="" operState="removed" operability="unknown" presence="missing" serial="" type="undiscovered" vendor="" visibility="no" width="unspecified" memoryTypeDetail="NA" bankLocator="NA" rn="mem-8" />
+               <memoryUnit array="1" capacity="unspecified" clock="unspecified" formFactor="undiscovered" id="9" location="DIMM_E1" model="" operState="removed" operability="unknown" presence="missing" serial="" type="undiscovered" vendor="" visibility="no" width="unspecified" memoryTypeDetail="NA" bankLocator="NA" rn="mem-9" />
+               <memoryUnit array="1" capacity="unspecified" clock="unspecified" formFactor="undiscovered" id="10" location="DIMM_E2" model="" operState="removed" operability="unknown" presence="missing" serial="" type="undiscovered" vendor="" visibility="no" width="unspecified" memoryTypeDetail="NA" bankLocator="NA" rn="mem-10" />
+               <memoryUnit array="1" capacity="unspecified" clock="unspecified" formFactor="undiscovered" id="11" location="DIMM_F1" model="" operState="removed" operability="unknown" presence="missing" serial="" type="undiscovered" vendor="" visibility="no" width="unspecified" memoryTypeDetail="NA" bankLocator="NA" rn="mem-11" />
+               <memoryUnit array="1" capacity="unspecified" clock="unspecified" formFactor="undiscovered" id="12" location="DIMM_F2" model="" operState="removed" operability="unknown" presence="missing" serial="" type="undiscovered" vendor="" visibility="no" width="unspecified" memoryTypeDetail="NA" bankLocator="NA" rn="mem-12" />
+               <memoryUnit array="1" capacity="unspecified" clock="unspecified" formFactor="undiscovered" id="13" location="DIMM_G1" model="" operState="removed" operability="unknown" presence="missing" serial="" type="undiscovered" vendor="" visibility="no" width="unspecified" memoryTypeDetail="NA" bankLocator="NA" rn="mem-13" />
+               <memoryUnit array="1" capacity="unspecified" clock="unspecified" formFactor="undiscovered" id="14" location="DIMM_G2" model="" operState="removed" operability="unknown" presence="missing" serial="" type="undiscovered" vendor="" visibility="no" width="unspecified" memoryTypeDetail="NA" bankLocator="NA" rn="mem-14" />
+               <memoryUnit array="1" capacity="unspecified" clock="unspecified" formFactor="undiscovered" id="15" location="DIMM_H1" model="" operState="removed" operability="unknown" presence="missing" serial="" type="undiscovered" vendor="" visibility="no" width="unspecified" memoryTypeDetail="NA" bankLocator="NA" rn="mem-15" />
+               <memoryUnit array="1" capacity="unspecified" clock="unspecified" formFactor="undiscovered" id="16" location="DIMM_H2" model="" operState="removed" operability="unknown" presence="missing" serial="" type="undiscovered" vendor="" visibility="no" width="unspecified" memoryTypeDetail="NA" bankLocator="NA" rn="mem-16" />
+               <memoryUnit array="1" capacity="unspecified" clock="unspecified" formFactor="undiscovered" id="17" location="DIMM_J1" model="" operState="removed" operability="unknown" presence="missing" serial="" type="undiscovered" vendor="" visibility="no" width="unspecified" memoryTypeDetail="NA" bankLocator="NA" rn="mem-17" />
+               <memoryUnit array="1" capacity="unspecified" clock="unspecified" formFactor="undiscovered" id="18" location="DIMM_J2" model="" operState="removed" operability="unknown" presence="missing" serial="" type="undiscovered" vendor="" visibility="no" width="unspecified" memoryTypeDetail="NA" bankLocator="NA" rn="mem-18" />
+               <memoryUnit array="1" capacity="unspecified" clock="unspecified" formFactor="undiscovered" id="19" location="DIMM_K1" model="" operState="removed" operability="unknown" presence="missing" serial="" type="undiscovered" vendor="" visibility="no" width="unspecified" memoryTypeDetail="NA" bankLocator="NA" rn="mem-19" />
+               <memoryUnit array="1" capacity="unspecified" clock="unspecified" formFactor="undiscovered" id="20" location="DIMM_K2" model="" operState="removed" operability="unknown" presence="missing" serial="" type="undiscovered" vendor="" visibility="no" width="unspecified" memoryTypeDetail="NA" bankLocator="NA" rn="mem-20" />
+               <memoryUnit array="1" capacity="unspecified" clock="unspecified" formFactor="undiscovered" id="21" location="DIMM_L1" model="" operState="removed" operability="unknown" presence="missing" serial="" type="undiscovered" vendor="" visibility="no" width="unspecified" memoryTypeDetail="NA" bankLocator="NA" rn="mem-21" />
+               <memoryUnit array="1" capacity="unspecified" clock="unspecified" formFactor="undiscovered" id="22" location="DIMM_L2" model="" operState="removed" operability="unknown" presence="missing" serial="" type="undiscovered" vendor="" visibility="no" width="unspecified" memoryTypeDetail="NA" bankLocator="NA" rn="mem-22" />
+               <memoryUnit array="1" capacity="32768" clock="2666" formFactor="DIMM" id="23" location="DIMM_M1" model="HMA84GR7AFR4N-VK    " operState="operable" operability="operable" presence="equipped" serial="812E34AB" type="DDR4" vendor="0xAD00" visibility="yes" width="64" memoryTypeDetail="Synchronous" bankLocator="NODE 4" rn="mem-23">
+                  <memoryUnitEnvStats rn="dimm-env-stats" id="23" description="DIMM_M1" temperature="25.0" timeCollected="2017-09-20T07:23:46" />
+               </memoryUnit>
+               <memoryUnit array="1" capacity="unspecified" clock="unspecified" formFactor="undiscovered" id="24" location="DIMM_M2" model="" operState="removed" operability="unknown" presence="missing" serial="" type="undiscovered" vendor="" visibility="no" width="unspecified" memoryTypeDetail="NA" bankLocator="NA" rn="mem-24" />
+            </memoryArray>
+            <pidCatalog rn="pid" name="Cisco Product Identifiers (PID)" version="N/A">
+               <pidCatalogDimm name="DIMM_C1" description="32GB DDR4-2666-MHz RDIMM/PC4-21300/dual rank/x4/1.2v" pid="UCS-MR-X32G2RS-H" mfgid="0xAD00" manufacturer="Hynix" serialnumber="812E3551" model="HMA84GR7AFR4N-VK" capacity="32768 MB" speed="2666" datawidth="64 bits" operability="Operable" rn="pid-dimm-DIMM_C1" />
+               <pidCatalogDimm name="DIMM_M1" description="32GB DDR4-2666-MHz RDIMM/PC4-21300/dual rank/x4/1.2v" pid="UCS-MR-X32G2RS-H" mfgid="0xAD00" manufacturer="Hynix" serialnumber="812E34AB" model="HMA84GR7AFR4N-VK" capacity="32768 MB" speed="2666" datawidth="64 bits" operability="Operable" rn="pid-dimm-DIMM_M1" />
+               <pidCatalogCpu id="1" socketdesignation="CPU1" description="Intel(R) Xeon(R) Gold 6134 3.20 GHz 130W 8C 24.75MB Cache DDR4 2666MHz 768GB" pid="UCS-CPU-6134" model="Intel(R) Xeon(R) Gold 6134 CPU @ 3.20GHz" signature="Type 0, Family 6, Model 85, Stepping 4" currentspeed="3200" operState="Enabled" rn="pid-cpu-1" />
+               <pidCatalogCpu id="2" socketdesignation="CPU2" description="Intel(R) Xeon(R) Gold 6134 3.20 GHz 130W 8C 24.75MB Cache DDR4 2666MHz 768GB" pid="UCS-CPU-6134" model="Intel(R) Xeon(R) Gold 6134 CPU @ 3.20GHz" signature="Type 0, Family 6, Model 85, Stepping 4" currentspeed="3200" operState="Enabled" rn="pid-cpu-2" />
+               <pidCatalogPCIAdapter slot="MRAID" description="Cisco 12G Modular Raid Controller w/2GB cache (max 16 drives)" pid="UCSC-RAID-M5" vendor="0x1000" device="0x0014" subvendor="0x1137" subdevice="0x020e" rn="pid-pciadapter-MRAID" />
+               <pidCatalogPCIAdapter slot="L" description="Onboard LOM" pid="N/A" vendor="0x8086" device="0x1563" subvendor="0x1137" subdevice="0x01a4" rn="pid-pciadapter-L" />
+               <pidCatalogHdd disk="1" controller="MRAID" description="UNKNOWN" pid="UNKNOWN" vendor="SEAGATE" model="ST3300657SS" serialnumber="6SJ5T9B00000N3068KJS" rn="pid-hdd-1" />
+               <pidCatalogHdd disk="2" controller="MRAID" description="UNKNOWN" pid="UNKNOWN" vendor="SEAGATE" model="ST1000NM0001" serialnumber="Z1N1AP2C000092385B3G" rn="pid-hdd-2" />
+               <pidCatalogHdd disk="4" controller="MRAID" description="UNKNOWN" pid="UNKNOWN" vendor="SEAGATE" model="ST2000NM0001" serialnumber="Z1P3B9Y30000C248HRA0" rn="pid-hdd-4" />
+               <pidCatalogHdd disk="5" controller="MRAID" description="UNKNOWN" pid="UNKNOWN" vendor="ATA" model="ST500NM0011" serialnumber="Z1M18B64" rn="pid-hdd-5" />
+               <pidCatalogHdd disk="8" controller="MRAID" description="2TB 12G SAS 7.2K RPM LFF HDD" pid="UCS-HD2T7KL12N" vendor="HGST" model="HUS726020ALS210" serialnumber="N4G43RPY" rn="pid-hdd-8" />
+               <pidCatalogHdd disk="9" controller="MRAID" description="UNKNOWN" pid="UNKNOWN" vendor="SEAGATE" model="ST2000NM0001" serialnumber="Z1P3B9SG0000C248HQ6G" rn="pid-hdd-9" />
+               <pidCatalogHdd disk="12" controller="MRAID" description="UNKNOWN" pid="UNKNOWN" vendor="SEAGATE" model="ST3600057SS" serialnumber="6SL4EM5R0000B2510D23" rn="pid-hdd-12" />
+               <pidCatalogHdd disk="13" controller="MRAID" description="UNKNOWN" pid="UNKNOWN" vendor="SEAGATE" model="ST1000NM0001" serialnumber="Z1N1B2TY0000C2386G69" rn="pid-hdd-13" />
+               <pidCatalogHdd disk="14" controller="MRAID" description="UNKNOWN" pid="UNKNOWN" vendor="ATA" model="ST500NM0011" serialnumber="Z1M13FNL" rn="pid-hdd-14" />
+               <pidCatalogHdd disk="15" controller="MRAID" description="UNKNOWN" pid="UNKNOWN" vendor="SEAGATE" model="ST33000650SS" serialnumber="Z292CPYX0000923505P7" rn="pid-hdd-15" />
+               <pidCatalogHdd disk="16" controller="MRAID" description="10TB 12G SAS 7.2K RPM LFF HDD (emulation)" pid="UCS-HD10T7KLEM" vendor="HGST" model="HUH721010AL5200" serialnumber="7PG2WMXR" rn="pid-hdd-16" />
+               <uploadPIDCatalog rn="upload-catalog" protocol="none" remoteServer="" remoteFile="" user="" pwd="" pidUploadStatus="N/A" />
+               <activatePIDCatalog rn="activate-catalog" adminState="triggered" pidActivationStatus="N/A" />
+            </pidCatalog>
+            <storageLocalDiskSlotEp id="1" operability="unknown" presence="missing" rn="disk-1" />
+            <storageLocalDiskSlotEp id="2" operability="operable" presence="equipped" rn="disk-2" />
+            <storageLocalDiskSlotEp id="3" operability="operable" presence="equipped" rn="disk-3" />
+            <storageLocalDiskSlotEp id="4" operability="operable" presence="equipped" rn="disk-4" />
+            <storageLocalDiskSlotEp id="5" operability="operable" presence="equipped" rn="disk-5" />
+            <storageLocalDiskSlotEp id="6" operability="operable" presence="equipped" rn="disk-6" />
+            <storageLocalDiskSlotEp id="7" operability="operable" presence="equipped" rn="disk-7" />
+            <storageLocalDiskSlotEp id="8" operability="operable" presence="equipped" rn="disk-8" />
+            <storageLocalDiskSlotEp id="9" operability="operable" presence="equipped" rn="disk-9" />
+            <storageLocalDiskSlotEp id="10" operability="operable" presence="equipped" rn="disk-10" />
+            <storageLocalDiskSlotEp id="11" operability="operable" presence="equipped" rn="disk-11" />
+            <storageLocalDiskSlotEp id="12" operability="operable" presence="equipped" rn="disk-12" />
+            <storageController id="MRAID" model="Cisco 12G Modular Raid Controller with 2GB cache (max 16 drives)" pciSlot="MRAID" presence="equipped" raidSupport="yes" serial="SK632P0479" type="SAS" vendor="LSI Logic" selfEncryptEnabled="no" adminAction="no-op" rn="storage-SAS-MRAID">
+               <storageControllerProps rn="controller-props" pciSlot="MRAID" health="Moderate Fault" controllerStatus="Optimal" batteryStatus="Optimal" bbuPresent="true" raidChipTempCentigrade="67" backendPortCount="16" memorySize="2048 MB" cacheMemorySize="1420 MB" virtualDriveCount="1" degradedVirtualDriveCount="1" offlineVirtualDriveCount="0" physicalDriveCount="11" criticalPhysicalDriveCount="0" failedPhysicalDriveCount="0" memoryCorrectableErrors="0" memoryUncorrectableErrors="0" bootDrive="0" bootDriveIsPhysicalDrive="false" supportsRaid0="true" supportsRaid1="true" supportsRaid5="true" supportsRaid6="true" supportsRaid00="true" supportsRaid10="true" supportsRaid50="true" supportsRaid60="true" supportsRaid1e="false" supportsRaid1erlq0="true" supportsRaid1e0rlq0="true" supportsRaidsrl03="true" dateOfManufacture="2016-08-17" revision="04002" prebootCliVersion="N/A" webBiosVersion="N/A" nvdataVersion="4.1610.00-0150" bootBlockVersion="7.02.00.00-0015" bootVersion="N/A" nvramPresent="true" serialDebuggerPresent="true" flashPresent="true" sasAddress0="5000c5005980f1c9" sasAddress1="5000c500422ed155" sasAddress2="5000c50041737bad" sasAddress3="3cc167e972c016b3" sasAddress4="0000000000000000" sasAddress5="0000000000000000" sasAddress6="0000000000000000" sasAddress7="0000000000000000" serial="SK632P0479" firmwarePackageBuild="50.1.0-0574" ttyLogStatus="Not Downloaded" />
+               <storageControllerHealth rn="controller-health" id="MRAID" health="Good" />
+               <storageRaidBattery rn="raid-battery" batteryType="TMM-C SuperCap" health="Good" batteryStatus="Optimal" batteryPresent="true" chargingState="N/A" temperature="23 degrees C" temperatureHigh="false" designVoltage="9.500 V" voltage="9.765 V" current="0.000 A" learnMode="Auto" learnCycleStatus="Successful" learnCycleRequested="false" nextLearnCycle="2017-09-27 23:42" designCapacity="306 Joules" manufacturer="LSI" dateOfManufacture="2016-06-19" serialNumber="9032" firmwareVersion="05668-00" adminAction="no-op" />
+               <storageVirtualDriveCreatorUsingUnusedPhysicalDrive rn="virtual-drive-create" description="Create a new virtual drive from unused physical drive(s) available in the rack server. Children objects of this object, lists all currently available unused physical drives." minRequiredPhysicalDrives="RAID 0 at least 1 physical drive, RAID 1 at least 2 physical drives, RAID 5 at least 3 physical drives, RAID 6 at least 3 physical drives, RAID 10 at least 4 physical drives, RAID 50 or RAID 60 at least 6 physical drives" virtualDriveName="" raidLevel="" size="" driveGroup="[span1_pd_id1,span1_pd_id2,span1_pd_id3...,span1_pd_idN][span2_pd_id1,span2_pd_id2,span2_pd_id3...,span2_pd_idN]..." writePolicy="" stripSize="" readPolicy="" cachePolicy="" accessPolicy="" diskCachePolicy="" createdVirtualDriveDn="" operStatus="" adminAction="no-op" adminState="triggered">
+                  <storageUnusedLocalDisk id="1" pdStatus="Unconfigured Good" coercedSize="285148 MB" health="Good" mediaType="HDD" vendor="SEAGATE" rn="pd-1" />
+                  <storageUnusedLocalDisk id="2" pdStatus="Unconfigured Good" coercedSize="952720 MB" health="Good" mediaType="HDD" vendor="SEAGATE" rn="pd-2" />
+                  <storageUnusedLocalDisk id="4" pdStatus="Unconfigured Good" coercedSize="1906394 MB" health="Good" mediaType="HDD" vendor="SEAGATE" rn="pd-4" />
+                  <storageUnusedLocalDisk id="5" pdStatus="Unconfigured Good" coercedSize="475883 MB" health="Good" mediaType="HDD" vendor="ATA" rn="pd-5" />
+                  <storageUnusedLocalDisk id="8" pdStatus="Unconfigured Good" coercedSize="1906394 MB" health="Good" mediaType="HDD" vendor="HGST" rn="pd-8" />
+                  <storageUnusedLocalDisk id="9" pdStatus="Unconfigured Good" coercedSize="1906394 MB" health="Good" mediaType="HDD" vendor="SEAGATE" rn="pd-9" />
+                  <storageUnusedLocalDisk id="13" pdStatus="Unconfigured Good" coercedSize="952720 MB" health="Good" mediaType="HDD" vendor="SEAGATE" rn="pd-13" />
+                  <storageUnusedLocalDisk id="14" pdStatus="Unconfigured Good" coercedSize="475883 MB" health="Good" mediaType="HDD" vendor="ATA" rn="pd-14" />
+                  <storageUnusedLocalDisk id="15" pdStatus="Unconfigured Good" coercedSize="2861022 MB" health="Good" mediaType="HDD" vendor="SEAGATE" rn="pd-15" />
+                  <storageUnusedLocalDisk id="16" pdStatus="Unconfigured Good" coercedSize="9536743 MB" health="Good" mediaType="HDD" vendor="HGST" rn="pd-16" />
+               </storageVirtualDriveCreatorUsingUnusedPhysicalDrive>
+               <storageVirtualDriveCreatorUsingVirtualDriveGroup rn="virtual-drive-carve" description="Create a new virtual drive from an existing virtual drive, with available physical drive group space. Children objects of this object, lists all virtual drives with available drive group space." sharedVirtualDriveId="" virtualDriveName="" size="" writePolicy="" stripSize="" readPolicy="" cachePolicy="" accessPolicy="" diskCachePolicy="" createdVirtualDriveDn="" operStatus="" adminState="triggered" />
+               <storageLocalDisk id="1" pdStatus="Unconfigured Good" health="Good" predictiveFailureCount="0" linkSpeed="6.0 Gb/s" interfaceType="SAS" mediaType="HDD" coercedSize="285148 MB" vendor="SEAGATE" productId="ST3300657SS" driveFirmware="0008" driveSerialNumber="6SJ5T9B00000N3068KJS" driveState="Unconfigured Good" online="true" dedicatedHotSpareForVDId="" enclosureAssociation="Direct Attached" enclosureLogicalId="N/A" enclosureSASAddress0="N/A" enclosureSASAddress1="N/A" locatorLEDStatus="off" fdeCapable="no" fdeEnabled="no" secured="no" locked="no" foreignLocked="no" adminAction="no-op" rn="pd-1">
+                  <storageLocalDiskProps rn="general-props" physicalDrive="1" pdStatus="Unconfigured Good" health="Good" enclosureDeviceId="134" deviceId="34" sequenceNumber="1" mediaErrorCount="0" otherErrorCount="1" predictiveFailureCount="0" linkSpeed="6.0 Gb/s" interfaceType="SAS" mediaType="HDD" blockSize="512" blockCount="585937500" bootDrive="false" rawSize="286102 MB" nonCoercedSize="285590 MB" coercedSize="285148 MB" powerState="powersave" sasAddress0="5000c5005980f1c9" sasAddress1="0x0" physicalBlockSize="512" powerCycleCount="Not Available" powerOnHours="Not Available" percentageLifeLeft="Not Available" wearStatusInDays="Not Available" operatingTemperature="Not Available" copybackOperationStatus="Unknown" copybackPercentComplete="0%" percentageReservedCapConsumed="Not Available" timeOfLastRefresh="" />
+                  <storageOperation rn="storage-operation" lropInProgress="false" currentLrop="No operation in progress" progressPercent="0" elapsedSeconds="0" />
+               </storageLocalDisk>
+               <storageLocalDisk id="2" pdStatus="Unconfigured Good" health="Good" predictiveFailureCount="0" linkSpeed="6.0 Gb/s" interfaceType="SAS" mediaType="HDD" coercedSize="952720 MB" vendor="SEAGATE" productId="ST1000NM0001" driveFirmware="0002" driveSerialNumber="Z1N1AP2C000092385B3G" driveState="Unconfigured Good" online="true" dedicatedHotSpareForVDId="" enclosureAssociation="Direct Attached" enclosureLogicalId="N/A" enclosureSASAddress0="N/A" enclosureSASAddress1="N/A" locatorLEDStatus="off" fdeCapable="no" fdeEnabled="no" secured="no" locked="no" foreignLocked="no" adminAction="no-op" rn="pd-2">
+                  <storageLocalDiskProps rn="general-props" physicalDrive="2" pdStatus="Unconfigured Good" health="Good" enclosureDeviceId="134" deviceId="42" sequenceNumber="1" mediaErrorCount="0" otherErrorCount="0" predictiveFailureCount="0" linkSpeed="6.0 Gb/s" interfaceType="SAS" mediaType="HDD" blockSize="512" blockCount="1953525168" bootDrive="false" rawSize="953869 MB" nonCoercedSize="953357 MB" coercedSize="952720 MB" powerState="powersave" sasAddress0="5000c50041737bad" sasAddress1="0x0" physicalBlockSize="512" powerCycleCount="Not Available" powerOnHours="Not Available" percentageLifeLeft="Not Available" wearStatusInDays="Not Available" operatingTemperature="Not Available" copybackOperationStatus="Unknown" copybackPercentComplete="0%" percentageReservedCapConsumed="Not Available" timeOfLastRefresh="" />
+                  <storageOperation rn="storage-operation" lropInProgress="false" currentLrop="No operation in progress" progressPercent="0" elapsedSeconds="0" />
+               </storageLocalDisk>
+               <storageLocalDisk id="4" pdStatus="Unconfigured Good" health="Good" predictiveFailureCount="0" linkSpeed="6.0 Gb/s" interfaceType="SAS" mediaType="HDD" coercedSize="1906394 MB" vendor="SEAGATE" productId="ST2000NM0001" driveFirmware="0002" driveSerialNumber="Z1P3B9Y30000C248HRA0" driveState="Unconfigured Good" online="true" dedicatedHotSpareForVDId="" enclosureAssociation="Direct Attached" enclosureLogicalId="N/A" enclosureSASAddress0="N/A" enclosureSASAddress1="N/A" locatorLEDStatus="off" fdeCapable="no" fdeEnabled="no" secured="no" locked="no" foreignLocked="no" adminAction="no-op" rn="pd-4">
+                  <storageLocalDiskProps rn="general-props" physicalDrive="4" pdStatus="Unconfigured Good" health="Good" enclosureDeviceId="134" deviceId="37" sequenceNumber="1" mediaErrorCount="0" otherErrorCount="0" predictiveFailureCount="0" linkSpeed="6.0 Gb/s" interfaceType="SAS" mediaType="HDD" blockSize="512" blockCount="3907029168" bootDrive="false" rawSize="1907729 MB" nonCoercedSize="1907217 MB" coercedSize="1906394 MB" powerState="powersave" sasAddress0="5000c500422ed2bd" sasAddress1="0x0" physicalBlockSize="512" powerCycleCount="Not Available" powerOnHours="Not Available" percentageLifeLeft="Not Available" wearStatusInDays="Not Available" operatingTemperature="Not Available" copybackOperationStatus="Unknown" copybackPercentComplete="0%" percentageReservedCapConsumed="Not Available" timeOfLastRefresh="" />
+                  <storageOperation rn="storage-operation" lropInProgress="false" currentLrop="No operation in progress" progressPercent="0" elapsedSeconds="0" />
+               </storageLocalDisk>
+               <storageLocalDisk id="5" pdStatus="Unconfigured Good" health="Good" predictiveFailureCount="0" linkSpeed="6.0 Gb/s" interfaceType="SATA" mediaType="HDD" coercedSize="475883 MB" vendor="ATA" productId="ST500NM0011" driveFirmware="CC02" driveSerialNumber="Z1M18B64" driveState="Unconfigured Good" online="true" dedicatedHotSpareForVDId="" enclosureAssociation="Direct Attached" enclosureLogicalId="N/A" enclosureSASAddress0="N/A" enclosureSASAddress1="N/A" locatorLEDStatus="off" fdeCapable="no" fdeEnabled="no" secured="no" locked="no" foreignLocked="no" adminAction="no-op" rn="pd-5">
+                  <storageLocalDiskProps rn="general-props" physicalDrive="5" pdStatus="Unconfigured Good" health="Good" enclosureDeviceId="134" deviceId="45" sequenceNumber="1" mediaErrorCount="0" otherErrorCount="0" predictiveFailureCount="0" linkSpeed="6.0 Gb/s" interfaceType="SATA" mediaType="HDD" blockSize="512" blockCount="976773168" bootDrive="false" rawSize="476940 MB" nonCoercedSize="476428 MB" coercedSize="475883 MB" powerState="powersave" sasAddress0="3cc167e972c016b3" sasAddress1="0x0" physicalBlockSize="512" powerCycleCount="Not Available" powerOnHours="Not Available" percentageLifeLeft="Not Available" wearStatusInDays="Not Available" operatingTemperature="Not Available" copybackOperationStatus="Unknown" copybackPercentComplete="0%" percentageReservedCapConsumed="Not Available" timeOfLastRefresh="" />
+                  <storageOperation rn="storage-operation" lropInProgress="false" currentLrop="No operation in progress" progressPercent="0" elapsedSeconds="0" />
+               </storageLocalDisk>
+               <storageLocalDisk id="8" pdStatus="Unconfigured Good" health="Good" predictiveFailureCount="0" linkSpeed="12.0 Gb/s" interfaceType="SAS" mediaType="HDD" coercedSize="1906394 MB" vendor="HGST" productId="HUS726020ALS210" driveFirmware="A7R4" driveSerialNumber="N4G43RPY" driveState="Unconfigured Good" online="true" dedicatedHotSpareForVDId="" enclosureAssociation="Direct Attached" enclosureLogicalId="N/A" enclosureSASAddress0="N/A" enclosureSASAddress1="N/A" locatorLEDStatus="off" fdeCapable="no" fdeEnabled="no" secured="no" locked="no" foreignLocked="no" adminAction="no-op" rn="pd-8">
+                  <storageLocalDiskProps rn="general-props" physicalDrive="8" pdStatus="Unconfigured Good" health="Good" enclosureDeviceId="134" deviceId="32" sequenceNumber="1" mediaErrorCount="0" otherErrorCount="0" predictiveFailureCount="0" linkSpeed="12.0 Gb/s" interfaceType="SAS" mediaType="HDD" blockSize="512" blockCount="3907029168" bootDrive="false" rawSize="1907729 MB" nonCoercedSize="1907217 MB" coercedSize="1906394 MB" powerState="powersave" sasAddress0="5000cca245077df9" sasAddress1="0x0" physicalBlockSize="512" powerCycleCount="Not Available" powerOnHours="Not Available" percentageLifeLeft="Not Available" wearStatusInDays="Not Available" operatingTemperature="Not Available" copybackOperationStatus="Unknown" copybackPercentComplete="0%" percentageReservedCapConsumed="Not Available" timeOfLastRefresh="" />
+                  <storageOperation rn="storage-operation" lropInProgress="false" currentLrop="No operation in progress" progressPercent="0" elapsedSeconds="0" />
+               </storageLocalDisk>
+               <storageLocalDisk id="9" pdStatus="Unconfigured Good" health="Good" predictiveFailureCount="0" linkSpeed="6.0 Gb/s" interfaceType="SAS" mediaType="HDD" coercedSize="1906394 MB" vendor="SEAGATE" productId="ST2000NM0001" driveFirmware="0002" driveSerialNumber="Z1P3B9SG0000C248HQ6G" driveState="Unconfigured Good" online="true" dedicatedHotSpareForVDId="" enclosureAssociation="Direct Attached" enclosureLogicalId="N/A" enclosureSASAddress0="N/A" enclosureSASAddress1="N/A" locatorLEDStatus="off" fdeCapable="no" fdeEnabled="no" secured="no" locked="no" foreignLocked="no" adminAction="no-op" rn="pd-9">
+                  <storageLocalDiskProps rn="general-props" physicalDrive="9" pdStatus="Unconfigured Good" health="Good" enclosureDeviceId="134" deviceId="36" sequenceNumber="1" mediaErrorCount="0" otherErrorCount="0" predictiveFailureCount="0" linkSpeed="6.0 Gb/s" interfaceType="SAS" mediaType="HDD" blockSize="512" blockCount="3907029168" bootDrive="false" rawSize="1907729 MB" nonCoercedSize="1907217 MB" coercedSize="1906394 MB" powerState="powersave" sasAddress0="5000c500422ed155" sasAddress1="0x0" physicalBlockSize="512" powerCycleCount="Not Available" powerOnHours="Not Available" percentageLifeLeft="Not Available" wearStatusInDays="Not Available" operatingTemperature="Not Available" copybackOperationStatus="Unknown" copybackPercentComplete="0%" percentageReservedCapConsumed="Not Available" timeOfLastRefresh="" />
+                  <storageOperation rn="storage-operation" lropInProgress="false" currentLrop="No operation in progress" progressPercent="0" elapsedSeconds="0" />
+               </storageLocalDisk>
+               <storageLocalDisk id="12" pdStatus="Online" health="Good" predictiveFailureCount="0" linkSpeed="6.0 Gb/s" interfaceType="SAS" mediaType="HDD" coercedSize="571250 MB" vendor="SEAGATE" productId="ST3600057SS" driveFirmware="0008" driveSerialNumber="6SL4EM5R0000B2510D23" driveState="Online" online="true" dedicatedHotSpareForVDId="" enclosureAssociation="Direct Attached" enclosureLogicalId="N/A" enclosureSASAddress0="N/A" enclosureSASAddress1="N/A" locatorLEDStatus="off" fdeCapable="no" fdeEnabled="no" secured="no" locked="no" foreignLocked="no" adminAction="no-op" rn="pd-12">
+                  <storageLocalDiskProps rn="general-props" physicalDrive="12" pdStatus="Online" health="Good" enclosureDeviceId="134" deviceId="35" sequenceNumber="2" mediaErrorCount="0" otherErrorCount="0" predictiveFailureCount="0" linkSpeed="6.0 Gb/s" interfaceType="SAS" mediaType="HDD" blockSize="512" blockCount="1172123568" bootDrive="false" rawSize="572325 MB" nonCoercedSize="571813 MB" coercedSize="571250 MB" powerState="active" sasAddress0="5000c50054c4473d" sasAddress1="0x0" physicalBlockSize="512" powerCycleCount="Not Available" powerOnHours="Not Available" percentageLifeLeft="Not Available" wearStatusInDays="Not Available" operatingTemperature="Not Available" copybackOperationStatus="Unknown" copybackPercentComplete="0%" percentageReservedCapConsumed="Not Available" timeOfLastRefresh="" />
+                  <storageOperation rn="storage-operation" lropInProgress="false" currentLrop="No operation in progress" progressPercent="0" elapsedSeconds="0" />
+               </storageLocalDisk>
+               <storageLocalDisk id="13" pdStatus="Unconfigured Good" health="Good" predictiveFailureCount="0" linkSpeed="6.0 Gb/s" interfaceType="SAS" mediaType="HDD" coercedSize="952720 MB" vendor="SEAGATE" productId="ST1000NM0001" driveFirmware="0002" driveSerialNumber="Z1N1B2TY0000C2386G69" driveState="Unconfigured Good" online="true" dedicatedHotSpareForVDId="" enclosureAssociation="Direct Attached" enclosureLogicalId="N/A" enclosureSASAddress0="N/A" enclosureSASAddress1="N/A" locatorLEDStatus="off" fdeCapable="no" fdeEnabled="no" secured="no" locked="no" foreignLocked="no" adminAction="no-op" rn="pd-13">
+                  <storageLocalDiskProps rn="general-props" physicalDrive="13" pdStatus="Unconfigured Good" health="Good" enclosureDeviceId="134" deviceId="41" sequenceNumber="1" mediaErrorCount="0" otherErrorCount="0" predictiveFailureCount="0" linkSpeed="6.0 Gb/s" interfaceType="SAS" mediaType="HDD" blockSize="512" blockCount="1953525168" bootDrive="false" rawSize="953869 MB" nonCoercedSize="953357 MB" coercedSize="952720 MB" powerState="powersave" sasAddress0="5000c5004174029d" sasAddress1="0x0" physicalBlockSize="512" powerCycleCount="Not Available" powerOnHours="Not Available" percentageLifeLeft="Not Available" wearStatusInDays="Not Available" operatingTemperature="Not Available" copybackOperationStatus="Unknown" copybackPercentComplete="0%" percentageReservedCapConsumed="Not Available" timeOfLastRefresh="" />
+                  <storageOperation rn="storage-operation" lropInProgress="false" currentLrop="No operation in progress" progressPercent="0" elapsedSeconds="0" />
+               </storageLocalDisk>
+               <storageLocalDisk id="14" pdStatus="Unconfigured Good" health="Good" predictiveFailureCount="0" linkSpeed="6.0 Gb/s" interfaceType="SATA" mediaType="HDD" coercedSize="475883 MB" vendor="ATA" productId="ST500NM0011" driveFirmware="CC02" driveSerialNumber="Z1M13FNL" driveState="Unconfigured Good" online="true" dedicatedHotSpareForVDId="" enclosureAssociation="Direct Attached" enclosureLogicalId="N/A" enclosureSASAddress0="N/A" enclosureSASAddress1="N/A" locatorLEDStatus="off" fdeCapable="no" fdeEnabled="no" secured="no" locked="no" foreignLocked="no" adminAction="no-op" rn="pd-14">
+                  <storageLocalDiskProps rn="general-props" physicalDrive="14" pdStatus="Unconfigured Good" health="Good" enclosureDeviceId="134" deviceId="46" sequenceNumber="1" mediaErrorCount="0" otherErrorCount="0" predictiveFailureCount="0" linkSpeed="6.0 Gb/s" interfaceType="SATA" mediaType="HDD" blockSize="512" blockCount="976773168" bootDrive="false" rawSize="476940 MB" nonCoercedSize="476428 MB" coercedSize="475883 MB" powerState="powersave" sasAddress0="3cc167e972c016bb" sasAddress1="0x0" physicalBlockSize="512" powerCycleCount="Not Available" powerOnHours="Not Available" percentageLifeLeft="Not Available" wearStatusInDays="Not Available" operatingTemperature="Not Available" copybackOperationStatus="Unknown" copybackPercentComplete="0%" percentageReservedCapConsumed="Not Available" timeOfLastRefresh="" />
+                  <storageOperation rn="storage-operation" lropInProgress="false" currentLrop="No operation in progress" progressPercent="0" elapsedSeconds="0" />
+               </storageLocalDisk>
+               <storageLocalDisk id="15" pdStatus="Unconfigured Good" health="Good" predictiveFailureCount="0" linkSpeed="6.0 Gb/s" interfaceType="SAS" mediaType="HDD" coercedSize="2861022 MB" vendor="SEAGATE" productId="ST33000650SS" driveFirmware="0003" driveSerialNumber="Z292CPYX0000923505P7" driveState="Unconfigured Good" online="true" dedicatedHotSpareForVDId="" enclosureAssociation="Direct Attached" enclosureLogicalId="N/A" enclosureSASAddress0="N/A" enclosureSASAddress1="N/A" locatorLEDStatus="off" fdeCapable="no" fdeEnabled="no" secured="no" locked="no" foreignLocked="no" adminAction="no-op" rn="pd-15">
+                  <storageLocalDiskProps rn="general-props" physicalDrive="15" pdStatus="Unconfigured Good" health="Good" enclosureDeviceId="134" deviceId="43" sequenceNumber="1" mediaErrorCount="0" otherErrorCount="0" predictiveFailureCount="0" linkSpeed="6.0 Gb/s" interfaceType="SAS" mediaType="HDD" blockSize="512" blockCount="5860533168" bootDrive="false" rawSize="2861588 MB" nonCoercedSize="2861076 MB" coercedSize="2861022 MB" powerState="powersave" sasAddress0="5000c500416d8a29" sasAddress1="0x0" physicalBlockSize="512" powerCycleCount="Not Available" powerOnHours="Not Available" percentageLifeLeft="Not Available" wearStatusInDays="Not Available" operatingTemperature="Not Available" copybackOperationStatus="Unknown" copybackPercentComplete="0%" percentageReservedCapConsumed="Not Available" timeOfLastRefresh="" />
+                  <storageOperation rn="storage-operation" lropInProgress="false" currentLrop="No operation in progress" progressPercent="0" elapsedSeconds="0" />
+               </storageLocalDisk>
+               <storageLocalDisk id="16" pdStatus="Unconfigured Good" health="Good" predictiveFailureCount="0" linkSpeed="12.0 Gb/s" interfaceType="SAS" mediaType="HDD" coercedSize="9536743 MB" vendor="HGST" productId="HUH721010AL5200" driveFirmware="A21D" driveSerialNumber="7PG2WMXR" driveState="Unconfigured Good" online="true" dedicatedHotSpareForVDId="" enclosureAssociation="Direct Attached" enclosureLogicalId="N/A" enclosureSASAddress0="N/A" enclosureSASAddress1="N/A" locatorLEDStatus="off" fdeCapable="no" fdeEnabled="no" secured="no" locked="no" foreignLocked="no" adminAction="no-op" rn="pd-16">
+                  <storageLocalDiskProps rn="general-props" physicalDrive="16" pdStatus="Unconfigured Good" health="Good" enclosureDeviceId="134" deviceId="38" sequenceNumber="1" mediaErrorCount="0" otherErrorCount="0" predictiveFailureCount="0" linkSpeed="12.0 Gb/s" interfaceType="SAS" mediaType="HDD" blockSize="512" blockCount="19532873728" bootDrive="false" rawSize="9537536 MB" nonCoercedSize="9537024 MB" coercedSize="9536743 MB" powerState="powersave" sasAddress0="5000cca251054209" sasAddress1="0x0" physicalBlockSize="4096" powerCycleCount="Not Available" powerOnHours="Not Available" percentageLifeLeft="Not Available" wearStatusInDays="Not Available" operatingTemperature="Not Available" copybackOperationStatus="Unknown" copybackPercentComplete="0%" percentageReservedCapConsumed="Not Available" timeOfLastRefresh="" />
+                  <storageOperation rn="storage-operation" lropInProgress="false" currentLrop="No operation in progress" progressPercent="0" elapsedSeconds="0" />
+               </storageLocalDisk>
+               <storageVirtualDrive id="0" name="OS" raidLevel="RAID 1" size="571250 MB" vdStatus="Degraded" health="Moderate Fault" bootDrive="true" stripSize="64k" drivesPerSpan="2" spanDepth="1" accessPolicy="read-write" cachePolicy="direct-io" readPolicy="no-read-ahead" requestedWriteCachePolicy="write-through" currentWriteCachePolicy="write-through" diskCachePolicy="unchanged" allowBackgroundInit="true" autoSnapshot="false" autoDeleteOldest="true" driveState="Degraded" fdeCapable="no" fdeEnabled="no" adminAction="no-op" hotspareAction="no-op" targetId="0" physicalDrivesList="Physical drives to be used for virtual drive reconstruction. pd_id1,pd_id2,...pd_idN" rn="vd-0">
+                  <storageLocalDiskUsage startingBlock="0" numberOfBlocks="1169920000" virtualDrive="0" physicalDrive="Missing" state="missing" span="0" rn="pd-Missing" />
+                  <storageLocalDiskUsage startingBlock="0" numberOfBlocks="1169920000" virtualDrive="0" physicalDrive="12" state="online" span="0" rn="pd-12" />
+                  <storageOperation rn="storage-operation" lropInProgress="false" currentLrop="No operation in progress" progressPercent="0" elapsedSeconds="0" />
+                  <faultInst ack="yes" cause="equipment-degraded" code="F1008" created="2017-09-05T23:49:48" descr="Storage Virtual Drive 0 Degraded: please check the storage controller, or reseat the storage drive" affectedDN="sys/rack-unit-1/board/storage-SAS-MRAID/vd-0" highestSeverity="critical" id="3523330048" lastTransition="2017-09-05T23:49:48" lc="flapping" occur="1" origSeverity="cleared" prevSeverity="cleared" rule="fltStorageVirtualDriveDegraded" severity="warning" tags="storage" type="server" rn="fault-F1008" />
+               </storageVirtualDrive>
+               <firmwareRunning rn="fw-boot-loader" description="LSI Storage controller currently running boot loader firmware version" deployment="boot-loader" type="storage-controller" version="7.01.05.1_4.17.08.00_0x07010701" />
+               <firmwareRunning rn="fw-system" description="LSI Storage controller currently running firmware version" deployment="system" type="storage-controller" version="5.010.00-0817" />
+               <firmwareBootDefinition rn="fw-boot-def" type="storage-controller">
+                  <firmwareBootUnit rn="bootunit-combined" description="LSI Storage controller startup BIOS firmware version" adminState="triggered" image="running" resetOnActivate="no" type="combined" version="7.01.05.1_4.17.08.00_0x07010701" />
+               </firmwareBootDefinition>
+               <storageControllerSettings rn="controller-settings" pciSlot="MRAID" predictiveFailPollInterval="300 sec" rebuildRate="30 %" patrolReadRate="30 %" consistencyCheckRate="30 %" reconstructionRate="30 %" cacheFlushInterval="4 sec" spinupDriveCount="2" spinupDelay="2 sec" physDriveCoercionMode="1 GB" clusterEnable="false" batteryWarning="true" eccBucketLeakRate="1440 min" exposeEnclosureDevices="true" maintainPdFailHistory="false" enableCopybackOnSmart="true" enableCopybackToSsdOnSmartError="true" ncqStatus="enabled" enableJbod="true" spinDownUnconfigured="true" enableSsdPatrolRead="false" autoEnhancedImport="true" />
+            </storageController>
+            <storageFlexFlashController id="FlexFlash-0" productName="Cisco FlexFlash" fwVersion="1.3.2 build 168" vendor="Cypress" controllerStatus="OK" internalState="Disconnected" cardsManageable="Yes" configuredMode="mirror" partitionName="" autoSync="" cardSlot="" nonUtilPartitionName="" virtualDrive="" adminAction="no-op" rn="storage-flexflash-FlexFlash-0">
+               <storageFlexFlashControllerProps rn="flexflashcontroller-props" productName="Cisco FlexFlash" controllerName="FX3S" fwVersion="1.3.2 build 168" vendor="Cypress" controllerStatus="OK" operatingMode="mirror" configuredMode="mirror" internalState="Disconnected" cardsManageable="Yes" startupFwVersion="1.3.2 build 168" physicalDriveCount="2" virtualDriveCount="1" />
+               <storageFlexFlashOperationalProfile rn="oper-profile" controller="FlexFlash-0" operatingMode="mirror" rdErrCountSlot1Threshold="0" wrErrCountSlot1Threshold="0" rdErrCountSlot2Threshold="NA" wrErrCountSlot2Threshold="NA" adminAction="no-op" />
+               <storageFlexFlashPhysicalDrive physicalDrive="SLOT-1" physicalDriveId="1" controller="FlexFlash-0" slotNumber="SLOT-1" cardMode="mirror-primary" pdStatus="present" health="healthy" syncMode="manual" cardType="FX3S configured" cardStatus="active" capacity="60905 MB" writeEnabled="true" readErrorCount="0" readErrorThreshold="0" writeErrorCount="0" writeErrorThreshold="0" productName="SE64G" productRevision="8.0" serialNumber="0x645a14a1" manufacturerId="3" oemId="SD" manufacturerDate="8/16" blockSize="512 bytes" passwordProtected="false" partitionCount="1" drivesEnabled="Hypervisor" signature="03a1145a640853440381146e64085344" dirtyPartitionMap="0" stalePartitionMap="0" rn="card-1" />
+               <storageFlexFlashPhysicalDrive physicalDrive="SLOT-2" physicalDriveId="2" controller="FlexFlash-0" slotNumber="SLOT-2" cardMode="mirror-secondary" pdStatus="present" health="healthy" syncMode="manual" cardType="FX3S configured" cardStatus="active" capacity="60905 MB" writeEnabled="true" readErrorCount="0" readErrorThreshold="0" writeErrorCount="0" writeErrorThreshold="0" productName="SE64G" productRevision="8.0" serialNumber="0x646e1481" manufacturerId="3" oemId="SD" manufacturerDate="8/16" blockSize="512 bytes" passwordProtected="false" partitionCount="1" drivesEnabled="Hypervisor" signature="03a1145a640853440381146e64085344" dirtyPartitionMap="0" stalePartitionMap="0" rn="card-2" />
+               <storageFlexFlashVirtualDrive virtualDrive="Hypervisor" partitionId="1" driveScope="Raid" size="60901 MB" driveStatus="Healthy" hostAccessible="Not-Connected" driveType="Removable" operationInProgress="NA" lastOperationStatus="none" adminAction="no-op" rn="vd-1" />
+            </storageFlexFlashController>
+            <storageFlexUtilController id="Flexutil" productName="Cisco Flexutil" controllerName="SDHC" controllerStatus="OK" internalState="Connected" physicalDriveCount="1" virtualDriveCount="5" adminAction="no-op" rn="storage-flexutil-Flexutil">
+               <storageFlexUtilHealth rn="health" health="OK" />
+               <storageFlexUtilOperationalProfile rn="oper-profile" ioReadErrorThreshold="125" ioWriteErrorThreshold="125" />
+               <storageFlexUtilPhysicalDrive physicalDrive="microSD" controller="Flexutil" pdStatus="present" serialNumber="0x1cae4" manufacturerId="39" oemId="PH" productName="SD32G" productRevision="3.0" manufacturerDate="12/2016" writeEnabled="true" blockSize="512 bytes" capacity="30624 MB" health="healthy" readErrorCount="0" readErrorThreshold="125" writeErrorCount="0" writeErrorThreshold="125" partitionCount="5" drivesEnabled="SCU Diagnostics HUU Drivers UserPartition" rn="card-microSD" />
+               <storageFlexUtilVirtualDrive partitionId="1" partitionName="SCU" virtualDrive="Cisco Server Configuration Utility" driveScope="Non-RAID" size="1280 MB" driveStatus="Healthy" hostAccessible="Not-Connected" driveType="Removable" lunId="NA" operationInProgress="NA" lastOperationStatus="none" adminAction="no-op" rn="vd-SCU" />
+               <storageFlexUtilVirtualDrive partitionId="2" partitionName="Diagnostics" virtualDrive="UCS Rack Server Diagnostics" driveScope="Non-RAID" size="256 MB" driveStatus="Healthy" hostAccessible="Connected" driveType="Removable" lunId="1" operationInProgress="NA" lastOperationStatus="none" adminAction="no-op" rn="vd-Diagnostics" />
+               <storageFlexUtilVirtualDrive partitionId="3" partitionName="HUU" virtualDrive="Cisco Host Upgrade Utility" driveScope="Non-RAID" size="1536 MB" driveStatus="Healthy" hostAccessible="Not-Connected" driveType="Removable" lunId="NA" operationInProgress="NA" lastOperationStatus="none" adminAction="no-op" rn="vd-HUU" />
+               <storageFlexUtilVirtualDrive partitionId="4" partitionName="Drivers" virtualDrive="Cisco Drivers Update Utility" driveScope="Non-RAID" size="8192 MB" driveStatus="Healthy" hostAccessible="Not-Connected" driveType="Removable" lunId="NA" operationInProgress="NA" lastOperationStatus="none" adminAction="no-op" rn="vd-Drivers" />
+               <storageFlexUtilVirtualDrive partitionId="5" partitionName="UserPartition" virtualDrive="User Partition" driveScope="Non-RAID" size="11159 MB" driveStatus="Healthy" hostAccessible="Connected" driveType="Removable" lunId="2" operationInProgress="NA" lastOperationStatus="none" adminAction="no-op" rn="vd-UserPartition" />
+               <storageFlexUtilVirtualDriveImageMap virtualDrive="SCU" map="None" remoteShare="None" remoteFile="None" mountOptions="None" username="" password="" adminAction="no-op" rn="vdrive-map-SCU" />
+               <storageFlexUtilVirtualDriveImageMap virtualDrive="Diagnostics" map="None" remoteShare="None" remoteFile="None" mountOptions="None" username="" password="" adminAction="no-op" rn="vdrive-map-Diagnostics" />
+               <storageFlexUtilVirtualDriveImageMap virtualDrive="HUU" map="None" remoteShare="None" remoteFile="None" mountOptions="None" username="" password="" adminAction="no-op" rn="vdrive-map-HUU" />
+               <storageFlexUtilVirtualDriveImageMap virtualDrive="Drivers" map="None" remoteShare="None" remoteFile="None" mountOptions="None" username="" password="" adminAction="no-op" rn="vdrive-map-Drivers" />
+            </storageFlexUtilController>
+            <biosVfResumeOnACPowerLoss rn="Resume-on-AC-power-loss" vpResumeOnACPowerLoss="stay-off" delay="0" delayType="fixed" />
+            <fanPolicy rn="fan-policy" configuredFanPolicy="Balanced" appliedFanPolicy="Balanced" configurationStatus="SUCCESS" />
+            <equipmentTpm rn="tpm" presence="equipped" enabledStatus="enabled" activeStatus="activated" ownership="owned" tpmRevision="1" model="UCSX-TPM2-001" vendor="Cisco Systems Inc" serial="FCH2026JCCD" version="1.2" />
+         </computeBoard>
+         <equipmentLocatorLed rn="locator-led" adminState="inactive" color="unknown" id="1" name="" operState="off" />
+         <equipmentIndicatorLed color="amber" id="1" name="LED_PSU_STATUS" operState="on" rn="indicator-led-1" />
+         <equipmentIndicatorLed color="green" id="2" name="LED_TEMP_STATUS" operState="on" rn="indicator-led-2" />
+         <equipmentIndicatorLed color="amber" id="3" name="LED_FAN_STATUS" operState="blinking" rn="indicator-led-3" />
+         <equipmentIndicatorLed color="amber" id="4" name="LED_HLTH_STATUS" operState="blinking" rn="indicator-led-4" />
+         <equipmentIndicatorLed color="blue" id="5" name="LED_FPID" operState="off" rn="indicator-led-5" />
+         <equipmentIndicatorLed color="green" id="0" name="OVERALL_DIMM_STATUS" operState="on" rn="indicator-led-0" />
+         <serverUtilization rn="utilization" overallUtilization="0" cpuUtilization="0" memoryUtilization="0" ioUtilization="0" />
+         <mgmtController rn="mgmt" model="UCSC-C240-M5L" serial="WZP20420GS5" subject="blade" vendor="Cisco Systems Inc">
+            <firmwareRunning rn="fw-boot-loader" description="Cisco IMC currently running boot loader firmware version" deployment="boot-loader" type="blade-controller" version="66.77(67.1500281175)" />
+            <firmwareRunning rn="fw-system" description="Cisco IMC currently running firmware version" deployment="system" type="blade-controller" version="66.77(67.1500281175)" />
+            <firmwareUpdatable rn="fw-updatable" description="Cisco IMC backup firmware version" adminState="triggered" deployment="backup" operState="ready" version="3.1(1d)" protocol="none" remoteServer="" remotePath="" user="" pwd="" progress="Success" type="blade-controller" secureBoot="enabled" source="" usbPath="" />
+            <firmwareBootDefinition rn="fw-boot-def" type="blade-controller">
+               <firmwareBootUnit rn="bootunit-combined" description="Cisco IMC startup firmware version" adminState="triggered" image="running" resetOnActivate="no" type="combined" version="66.77(67.1500281175)" />
+            </firmwareBootDefinition>
+            <mgmtIf rn="if-1" description="Management Interface Network Settings" id="1" extEnabled="yes" extIp="10.105.219.101" extMask="255.255.255.0" extGw="10.105.219.1" ifType="physical" mac="00:A6:CA:E2:45:F5" hostname="C240-WZP20420GS5" dhcpEnable="no" dnsUsingDhcp="no" ddnsEnable="yes" ddnsDomain="" dnsPreferred="171.70.168.183" dnsAlternate="0.0.0.0" nicMode="shared_lom" vicSlot="riser1" nicRedundancy="active-active" vlanEnable="no" vlanId="1" vlanPriority="0" portProfile="" v6extEnabled="no" v6extIp="::" v6extGw="::" v6prefix="64" v6linkLocal="::" v6SlaacIp="::" v6dhcpEnable="no" v6dnsUsingDhcp="no" v6dnsPreferred="::" v6dnsAlternate="::" subject="blade" autoNeg="disabled" adminNetSpeed="NA" adminDuplex="NA" operNetSpeed="NA" operDuplex="NA">
+               <ipBlocking rn="ip-block" description="Management Interface Network Security (IP Blocking)" enable="no" failCount="3" failWindow="90" penaltyTime="300" />
+               <ipFiltering rn="ip-filter" enable="no" filter1=" " filter2=" " filter3=" " filter4=" " adminAction="no-op" />
+               <faultInst ack="yes" cause="link-missing" code="F0717" created="2017-09-05T23:51:52" descr="Management Interface Link Down : LOM_P1 Check the network cable connection" affectedDN="sys/rack-unit-1/mgmt/if-1" highestSeverity="critical" id="525213960" lastTransition="2017-09-05T23:51:52" lc="flapping" occur="1" origSeverity="cleared" prevSeverity="cleared" rule="fltMgmtIfMissing" severity="warning" tags="network" type="server" rn="fault-F0717" />
+            </mgmtIf>
+            <sysdebugMEpLog rn="log-SEL-0" adminState="policy" capacity="available" id="0" type="SEL" />
+            <sysdebugMEpLog rn="log-Syslog-0" adminState="policy" capacity="unknown" id="0" type="Syslog" />
+         </mgmtController>
+         <biosUnit rn="bios" model="UCSC-C240-M5L" vendor="Cisco Systems Inc" adminAction="no-op">
+            <biosSettings rn="bios-settings">
+               <biosVfIntelVTForDirectedIO rn="Intel-VT-for-directed-IO" vpIntelVTDATSSupport="enabled" vpIntelVTDCoherencySupport="disabled" vpIntelVTForDirectedIO="enabled" />
+               <biosVfSelectMemoryRASConfiguration rn="SelectMemory-RAS-configuration" vpSelectMemoryRASConfiguration="maximum-performance" />
+               <biosVfProcessorC6Report rn="Processor-C6-Report" vpProcessorC6Report="disabled" />
+               <biosVfIntelHyperThreadingTech rn="Intel-HyperThreading-Tech" vpIntelHyperThreadingTech="enabled" />
+               <biosVfEnhancedIntelSpeedStepTech rn="Enhanced-Intel-SpeedStep-Tech" vpEnhancedIntelSpeedStepTech="enabled" />
+               <biosVfIntelVirtualizationTechnology rn="Intel-Virtualization-Technology" vpIntelVirtualizationTechnology="enabled" />
+               <biosVfMemoryMappedIOAbove4GB rn="Memory-mapped-IO-above-4GB" vpMemoryMappedIOAbove4GB="enabled" />
+               <biosVfCPUPerformance rn="CPU-Performance" vpCPUPerformance="enterprise" />
+               <biosVfNUMAOptimized rn="NUMA-optimized" vpNUMAOptimized="enabled" />
+               <biosVfConsoleRedirection rn="Console-redirection" vpBaudRate="115200" vpConsoleRedirection="com-0" vpFlowControl="none" vpTerminalType="vt100" />
+               <biosVfIntelTurboBoostTech rn="Intel-Turbo-Boost-Tech" vpIntelTurboBoostTech="enabled" />
+               <biosVfExecuteDisableBit rn="Execute-Disable-Bit" vpExecuteDisableBit="enabled" />
+               <biosVfOSBootWatchdogTimer rn="OS-Boot-Watchdog-Timer-Param" vpOSBootWatchdogTimer="disabled" />
+               <biosVfOSBootWatchdogTimerPolicy rn="OS-Boot-Watchdog-Timer-Policy" vpOSBootWatchdogTimerPolicy="power-off" />
+               <biosVfOSBootWatchdogTimerTimeout rn="OS-Boot-Watchdog-Timer-Time-Out" vpOSBootWatchdogTimerTimeout="10-minutes" />
+               <biosVfHardwarePrefetch rn="Hardware-Prefetch" vpHardwarePrefetch="enabled" />
+               <biosVfAdjacentCacheLinePrefetch rn="Adjacent-Cache-Line-Prefetch" vpAdjacentCacheLinePrefetch="enabled" />
+               <biosVfFRB2Enable rn="FRB2-Enable" vpFRB2Enable="enabled" />
+               <biosVfProcessorC1E rn="Processor-C1E" vpProcessorC1E="disabled" />
+               <biosVfTPMControl rn="TPM-Control" vpTPMControl="enabled" />
+               <biosVfDCUPrefetch rn="DCU-Prefetch" vpStreamerPrefetch="enabled" vpIPPrefetch="enabled" />
+               <biosVfLegacyUSBSupport rn="LegacyUSB-Support" vpLegacyUSBSupport="enabled" />
+               <biosVfLOMPortOptionROM rn="LOMPort-OptionROM" vpLOMPortsAllState="Enabled" vpLOMPort0State="Enabled" vpLOMPort1State="Enabled" />
+               <biosVfPCISlotOptionROMEnable rn="PCI-Slot-OptionROM-Enable" vpSlot1State="Enabled" vpSlot2State="Enabled" vpSlot3State="Enabled" vpSlot4State="Enabled" vpSlot5State="Enabled" vpSlot6State="Enabled" vpSlotMLOMState="Enabled" vpSlotMRAIDState="Enabled" vpSlotMRAIDLinkSpeed="Auto" vpSlotN1State="Enabled" vpSlotN2State="Enabled" vpSlot1LinkSpeed="Auto" vpSlot2LinkSpeed="Auto" vpSlot3LinkSpeed="Disabled" vpSlot4LinkSpeed="Auto" vpSlot5LinkSpeed="Auto" vpSlot6LinkSpeed="Auto" vpSlotMLOMLinkSpeed="Auto" vpSlotFrontNvme1LinkSpeed="Auto" vpSlotFrontNvme2LinkSpeed="Auto" vpSlotRearNvme1LinkSpeed="Auto" vpSlotRearNvme2LinkSpeed="Auto" vpSlotRearNvme1State="Enabled" vpSlotRearNvme2State="Enabled" />
+               <biosVfExtendedAPIC rn="Extended-APIC" vpExtendedAPIC="Disabled" />
+               <biosVfCDNEnable rn="CDN-Enable" vpCDNEnable="Enabled" />
+               <biosVfPowerOnPasswordSupport rn="POP-Support" vpPOPSupport="Disabled" />
+               <biosVfVgaPriority rn="VgaPriority" vpVgaPriority="Onboard" />
+               <biosVfSataModeSelect rn="SataModeSelect" vpSataModeSelect="AHCI" />
+               <biosVfPSata rn="PSata" vpPSata="Disabled" />
+               <biosVfCoreMultiProcessing rn="Core-MultiProcessing" vpCoreMultiProcessing="all" />
+               <biosVfUSBPortsConfig rn="USB-Ports-Config" vpUsbPortRear="enabled" vpUsbPortFront="enabled" vpUsbPortInternal="enabled" vpUsbPortKVM="enabled" vpUsbPortSDCard="enabled" />
+               <biosVfCmciEnable rn="Cmci-Enable" vpCmciEnable="Not available" />
+               <biosVfWorkLoadConfig rn="work-load-config" vpWorkLoadConfig="NUMA" />
+               <biosVfIMCInterleave rn="imc-interleave" vpIMCInterleave="Auto" />
+               <biosVfSubNumaClustering rn="sub-numa-cluster" vpSNC="Disabled" />
+               <biosVfKTIPrefetch rn="kti-prefetch" vpKTIPrefetch="Enabled" />
+               <biosVfXPTPrefetch rn="xpt-prefetch" vpXPTPrefetch="Enabled" />
+               <biosVfPwrPerfTuning rn="Pwr-Perf-Tuning" vpPwrPerfTuning="os" />
+               <biosVfHWPMEnable rn="HWPM-Enable" vpHWPMEnable="HWPM Native Mode" />
+               <biosVfLLCPrefetch rn="LLC-Prefetch" vpLLCPrefetch="Enabled" />
+               <biosVfPackageCStateLimit rn="Package-CState-Limit" vpPackageCStateLimit="C0 C1 State" />
+               <biosVfIPV6PXE rn="IPv6-Pxe" vpIPV6PXE="Disabled" />
+            </biosSettings>
+            <biosPlatformDefaults rn="bios-defaults">
+               <biosVfIntelVTForDirectedIO rn="Intel-VT-for-directed-IO" vpIntelVTDATSSupport="enabled" vpIntelVTDCoherencySupport="disabled" vpIntelVTForDirectedIO="enabled" />
+               <biosVfSelectMemoryRASConfiguration rn="SelectMemory-RAS-configuration" vpSelectMemoryRASConfiguration="maximum-performance" />
+               <biosVfProcessorC6Report rn="Processor-C6-Report" vpProcessorC6Report="disabled" />
+               <biosVfIntelHyperThreadingTech rn="Intel-HyperThreading-Tech" vpIntelHyperThreadingTech="enabled" />
+               <biosVfEnhancedIntelSpeedStepTech rn="Enhanced-Intel-SpeedStep-Tech" vpEnhancedIntelSpeedStepTech="enabled" />
+               <biosVfIntelVirtualizationTechnology rn="Intel-Virtualization-Technology" vpIntelVirtualizationTechnology="enabled" />
+               <biosVfMemoryMappedIOAbove4GB rn="Memory-mapped-IO-above-4GB" vpMemoryMappedIOAbove4GB="enabled" />
+               <biosVfCPUPerformance rn="CPU-Performance" />
+               <biosVfNUMAOptimized rn="NUMA-optimized" vpNUMAOptimized="enabled" />
+               <biosVfConsoleRedirection rn="Console-redirection" vpBaudRate="115200" vpConsoleRedirection="disabled" vpFlowControl="none" vpTerminalType="vt100" />
+               <biosVfIntelTurboBoostTech rn="Intel-Turbo-Boost-Tech" vpIntelTurboBoostTech="enabled" />
+               <biosVfExecuteDisableBit rn="Execute-Disable-Bit" vpExecuteDisableBit="enabled" />
+               <biosVfOSBootWatchdogTimer rn="OS-Boot-Watchdog-Timer-Param" vpOSBootWatchdogTimer="disabled" />
+               <biosVfOSBootWatchdogTimerPolicy rn="OS-Boot-Watchdog-Timer-Policy" vpOSBootWatchdogTimerPolicy="power-off" />
+               <biosVfOSBootWatchdogTimerTimeout rn="OS-Boot-Watchdog-Timer-Time-Out" vpOSBootWatchdogTimerTimeout="10-minutes" />
+               <biosVfHardwarePrefetch rn="Hardware-Prefetch" vpHardwarePrefetch="enabled" />
+               <biosVfAdjacentCacheLinePrefetch rn="Adjacent-Cache-Line-Prefetch" vpAdjacentCacheLinePrefetch="enabled" />
+               <biosVfFRB2Enable rn="FRB2-Enable" vpFRB2Enable="enabled" />
+               <biosVfProcessorC1E rn="Processor-C1E" vpProcessorC1E="disabled" />
+               <biosVfTPMControl rn="TPM-Control" vpTPMControl="enabled" />
+               <biosVfDCUPrefetch rn="DCU-Prefetch" vpStreamerPrefetch="enabled" vpIPPrefetch="enabled" />
+               <biosVfLegacyUSBSupport rn="LegacyUSB-Support" vpLegacyUSBSupport="enabled" />
+               <biosVfLOMPortOptionROM rn="LOMPort-OptionROM" vpLOMPortsAllState="Enabled" vpLOMPort0State="Enabled" vpLOMPort1State="Enabled" />
+               <biosVfPCISlotOptionROMEnable rn="PCI-Slot-OptionROM-Enable" vpSlot1State="Enabled" vpSlot2State="Enabled" vpSlot3State="Enabled" vpSlot4State="Enabled" vpSlot5State="Enabled" vpSlot6State="Enabled" vpSlotMLOMState="Enabled" vpSlotMRAIDState="Enabled" vpSlotMRAIDLinkSpeed="Auto" vpSlotRAIDState="Enabled" vpSlotRAIDLinkSpeed="Auto" vpSlotN1State="Enabled" vpSlotN2State="Enabled" vpSlot1LinkSpeed="Auto" vpSlot2LinkSpeed="Auto" vpSlot3LinkSpeed="Auto" vpSlot4LinkSpeed="Auto" vpSlot5LinkSpeed="Auto" vpSlot6LinkSpeed="Auto" vpSlotMLOMLinkSpeed="Auto" vpSlotFrontNvme1LinkSpeed="Auto" vpSlotFrontNvme2LinkSpeed="Auto" vpSlotRearNvme1LinkSpeed="Auto" vpSlotRearNvme2LinkSpeed="Auto" vpSlotRearNvme1State="Enabled" vpSlotRearNvme2State="Enabled" />
+               <biosVfExtendedAPIC rn="Extended-APIC" vpExtendedAPIC="Disabled" />
+               <biosVfCDNEnable rn="CDN-Enable" vpCDNEnable="Enabled" />
+               <biosVfPowerOnPasswordSupport rn="POP-Support" vpPOPSupport="Disabled" />
+               <biosVfVgaPriority rn="VgaPriority" vpVgaPriority="Onboard" />
+               <biosVfSataModeSelect rn="SataModeSelect" vpSataModeSelect="AHCI" />
+               <biosVfPSata rn="PSata" vpPSata="LSI SW RAID" />
+               <biosVfCoreMultiProcessing rn="Core-MultiProcessing" vpCoreMultiProcessing="all" />
+               <biosVfUSBPortsConfig rn="USB-Ports-Config" vpUsbPortRear="enabled" vpUsbPortFront="enabled" vpUsbPortInternal="enabled" vpUsbPortKVM="enabled" vpUsbPortSDCard="enabled" />
+               <biosVfCmciEnable rn="Cmci-Enable" vpCmciEnable="Enabled" />
+               <biosVfWorkLoadConfig rn="work-load-config" vpWorkLoadConfig="NUMA" />
+               <biosVfIMCInterleave rn="imc-interleave" vpIMCInterleave="1-way Interleave" />
+               <biosVfSubNumaClustering rn="sub-numa-cluster" vpSNC="Enabled" />
+               <biosVfKTIPrefetch rn="kti-prefetch" vpKTIPrefetch="Enabled" />
+               <biosVfXPTPrefetch rn="xpt-prefetch" vpXPTPrefetch="Enabled" />
+               <biosVfPwrPerfTuning rn="Pwr-Perf-Tuning" vpPwrPerfTuning="os" />
+               <biosVfHWPMEnable rn="HWPM-Enable" vpHWPMEnable="HWPM Native Mode" />
+               <biosVfLLCPrefetch rn="LLC-Prefetch" vpLLCPrefetch="Enabled" />
+               <biosVfPackageCStateLimit rn="Package-CState-Limit" vpPackageCStateLimit="C0 C1 State" />
+               <biosVfIPV6PXE rn="IPv6-Pxe" vpIPV6PXE="Disabled" />
+            </biosPlatformDefaults>
+            <firmwareRunning rn="fw-boot-loader" description="BIOS currently running firmware version" deployment="boot-loader" type="blade-bios" version="C240M5.3.1.0.2313.0803170908 " />
+            <firmwareBootDefinition rn="fw-boot-def" type="blade-bios">
+               <firmwareBootUnit rn="bootunit-combined" description="BIOS startup firmware version" adminState="triggered" image="running" resetOnActivate="no" type="combined" version="C240M5.3.1.0.2313.0803170908 " />
+            </firmwareBootDefinition>
+            <firmwareUpdatable rn="fw-updatable" description="BIOS firmware version" adminState="triggered" deployment="backup" operState="ready" version="C240M5.3.1.0.2304.0718172318" protocol="none" remoteServer="" remotePath="" user="" pwd="" progress="None, OK" type="blade-bios" />
+            <biosBOT rn="bdgep">
+               <biosBootMode rn="boot-mode" actualBootMode="Legacy" />
+               <biosBootDevPrecision descr="(Bus 18 Dev 00)PCI RAID Adapter" order="1" name="HDD" type="HDD" rn="bdvp-1" />
+               <biosBootDevPrecision descr="Cisco vKVM-Mapped vHDD1.24" order="2" name="HDD" type="USB" rn="bdvp-2" />
+               <biosBootDevPrecision descr="Cisco CIMC-Mapped vHDD1.24" order="3" name="HDD" type="USB" rn="bdvp-3" />
+               <biosBootDevPrecision descr="Cisco vKVM-Mapped vDVD1.24" order="4" name="CDROM" type="VMEDIA" subtype="KVMVMediaCDD" rn="bdvp-4" />
+               <biosBootDevPrecision descr="Cisco CIMC-Mapped vDVD1.24" order="5" name="CDROM" type="VMEDIA" subtype="CIMCVMediaCDD" rn="bdvp-5" />
+               <biosBootDevPrecision descr="IBA XE Slot 0100 v2372" order="6" name="PXE" type="PXE" rn="bdvp-6" />
+               <biosBootDevPrecision descr="IBA XE Slot 0101 v2372" order="7" name="PXE" type="PXE" rn="bdvp-7" />
+               <biosBootDevPrecision descr="UEFI: Built-in EFI Shell" order="8" name="NonPolicyTarget" rn="bdvp-8" />
+               <biosBootDevPrecision descr="Cisco vKVM-Mapped vFDD1.24" order="9" name="NonPolicyTarget" rn="bdvp-9" />
+               <biosBootDevPrecision descr="Cisco Flexutil DVD 1 1.24" order="10" name="NonPolicyTarget" rn="bdvp-10" />
+               <biosBootDevPrecision descr="Cisco Diagnostics 1.24" order="11" name="NonPolicyTarget" rn="bdvp-11" />
+               <biosBootDevPrecision descr="Cisco UserPartition 1.24" order="12" name="NonPolicyTarget" rn="bdvp-12" />
+            </biosBOT>
+            <biosProfileManagement rn="profile-mgmt" description="Bios Profile Management" adminAction="no-op" rebootOnActivateInfo="No need for host reboot">
+               <uploadBiosProfile rn="upload-bios-profile" protocol="none" remoteServer="" remoteFile="" user="" pwd="" biosProfileUploadStatus="NONE" />
+            </biosProfileManagement>
+         </biosUnit>
+         <lsbootDef rn="boot-policy" name="boot-policy" purpose="operational" rebootOnUpdate="no">
+            <lsbootVirtualMedia access="read-only" order="2" type="virtual-media" rn="vm-read-only" />
+            <lsbootLan rn="lan-read-only" access="read-only" order="3" prot="pxe" type="lan" />
+            <lsbootStorage rn="storage-read-write" access="read-write" order="1" type="storage">
+               <lsbootLocalStorage rn="local-storage" />
+            </lsbootStorage>
+            <lsbootBootSecurity rn="boot-security" secureBoot="disabled" />
+         </lsbootDef>
+         <lsbootDevPrecision rn="boot-precision" name="boot-precision" purpose="operational" rebootOnUpdate="no" reapply="no" configuredBootMode="Legacy" lastConfiguredBootOrderSource="CIMC">
+            <lsbootPxe name="pxe" type="PXE" slot="10" port="100" order="2" state="Disabled" rn="pxe-pxe" />
+            <lsbootPxe name="pxe1" type="PXE" order="3" state="Disabled" rn="pxe-pxe1" />
+            <lsbootHdd name="hdd" type="LOCALHDD" order="1" state="Disabled" rn="hdd-hdd" />
+            <lsbootUsb name="usb0" type="USB" subtype="usb-cd" order="4" state="Disabled" rn="usb-usb0" />
+         </lsbootDevPrecision>
+         <oneTimePrecisionBootDevice rn="one-time-precision-boot" name="boot-override" device="" adminAction="no-op" rebootOnUpdate="no" />
+         <solIf rn="sol-if" adminState="enable" name="SoLInterface" speed="115200" comport="com0" sshPort="2400" />
+         <pciEquipSlot controllerReported="MRAID" id="MRAID" model="Cisco 12G Modular RAID Controller with 2GB cache(Max 16 drives)" smbiosId="MRAID" vendor="0x1000" optionROMStatus="Loaded" version="N/A" rn="equipped-slot-MRAID" />
+         <pciEquipSlot controllerReported="L" id="L" model="Ethernet Controller 10G X550T" smbiosId="L" vendor="0x8086" optionROMStatus="Not Loaded" version="0x80000730-1.810.8" rn="equipped-slot-L" />
+         <powerBudget rn="budget" adminState="disabled" minPower="292" maxPower="642" minCpuPower="69" maxCpuPower="260" minMemoryPower="4" maxMemoryPower="14" powerCharStatus="Completed successfully" adminAction="no-op" powCharEnable="enabled">
+            <standardPowerProfile rn="stdpwrprof" profileType="standard" profileEnabled="no" allowThrottle="no" powerLimit="" suspendPeriod="" corrAction="alert" corrTime="3" hardCap="no" />
+            <advancedPowerProfile rn="advpwrprof" profileType="advanced" profileEnabled="no" allowThrottle="no" powerLimit="" suspendPeriod="" corrAction="alert" corrTime="3" hardCap="no" cpuPowerLimit="" memoryPowerLimit="" platformThermal="" thermalPowLimit="" platSafeThrotLvl="" cpuSafeThrotLvl="" memSafeThrotLvl="" missRdgTimeout="" />
+         </powerBudget>
+         <powerMonitor domain="Platform" current="176" minimum="150" maximum="433" average="185" rn="pwrmonitor-Platform" />
+         <powerMonitor domain="CPU" current="74" minimum="73" maximum="183" average="79" rn="pwrmonitor-CPU" />
+         <powerMonitor domain="Memory" current="3" minimum="2" maximum="7" average="3" rn="pwrmonitor-Memory" />
+         <sysdebugTechSupportExport rn="tech-support" adminState="disabled" hostname="0.0.0.0" protocol="tftp" remoteFile="default.tar.gz" user="" pwd="" fsmStageDescr="none" fsmProgr="0" fsmStatus="nop" source="" usbPath="" />
+         <x86LiveDebug rn="live-debug" liveDebugState="disabled" liveDebugTimeout="600" />
+         <eventManagement rn="event-management" adminState="enabled" adminAction="no-op">
+            <platformEventFilters id="1" event="Temperature Critical Assert Filter" action="power-cycle" rn="pef-1" />
+            <platformEventFilters id="2" event="Voltage Critical Assert Filter" action="power-cycle" rn="pef-2" />
+            <platformEventFilters id="3" event="Current Critical Assert Filter" action="power-cycle" rn="pef-3" />
+            <platformEventFilters id="4" event="Fan Non-Recoverable Assert Filter" action="power-cycle" rn="pef-4" />
+            <platformEventFilters id="5" event="Processor Assert Filter" action="power-cycle" rn="pef-5" />
+            <platformEventFilters id="6" event="Power Supply Critical Assert Filter" action="power-cycle" rn="pef-6" />
+            <platformEventFilters id="7" event="Memory Non-Recoverable Assert Filter" action="power-cycle" rn="pef-7" />
+         </eventManagement>
+         <faultInst ack="yes" cause="psu-redundancy-fail" code="F0743" created="2017-09-04T21:04:58" descr="PS_RDNDNT_MODE: Power Supply redundancy is lost: Reseat or replace Power Supply " affectedDN="sys/rack-unit-1" highestSeverity="critical" id="335544584" lastTransition="2017-09-04T21:04:53" lc="flapping" occur="5" origSeverity="cleared" prevSeverity="cleared" rule="fltPowerChassisMemberChassisPsuRedundanceFailure" severity="major" tags="server" type="server" rn="fault-F0743" />
+      </computeRackUnit>
+      <aaaUserEp rn="user-ext">
+         <aaaUserPolicy rn="policy" userPasswordPolicy="disabled" passwordPolicyRules="Rules to set the password when userPasswordPolicy is enabled. 1) The password must have a minimum of 8 and a maximum of 20 characters. 2) The password must not contain the User's Name. 3) The password must contain characters from three of the following four categories. a) English uppercase characters (A through Z). b) English lowercase characters (a through z). c) Base 10 digits (0 through 9). d) Non-alphabetic characters (!, @, #, $, %, ^, ampersand, *, -, _, +, =)." />
+         <aaaUserPasswordExpiration rn="password-expiration" passwordExpiryDuration="0" passwordHistory="0" passwordNotificationPeriod="15" passwordGracePeriod="0" adminAction="no-op" />
+         <aaaUser id="1" accountStatus="active" name="admin" priv="admin" pwd="" adminAction="no-op" rn="user-1" />
+         <aaaUser id="2" accountStatus="active" name="fasdf" priv="read-only" pwd="" adminAction="no-op" rn="user-2" />
+         <aaaUser id="3" accountStatus="active" name="read" priv="read-only" pwd="" adminAction="no-op" rn="user-3" />
+         <aaaUser id="4" accountStatus="active" name="user" priv="user" pwd="" adminAction="no-op" rn="user-4" />
+         <aaaUser id="5" accountStatus="active" name="test" priv="admin" pwd="" adminAction="no-op" rn="user-5" />
+         <aaaUser id="6" accountStatus="inactive" name="" priv="" pwd="" adminAction="no-op" rn="user-6" />
+         <aaaUser id="7" accountStatus="inactive" name="" priv="" pwd="" adminAction="no-op" rn="user-7" />
+         <aaaUser id="8" accountStatus="inactive" name="" priv="" pwd="" adminAction="no-op" rn="user-8" />
+         <aaaUser id="9" accountStatus="inactive" name="" priv="" pwd="" adminAction="no-op" rn="user-9" />
+         <aaaUser id="10" accountStatus="inactive" name="" priv="" pwd="" adminAction="no-op" rn="user-10" />
+         <aaaUser id="11" accountStatus="inactive" name="" priv="" pwd="" adminAction="no-op" rn="user-11" />
+         <aaaUser id="12" accountStatus="inactive" name="" priv="" pwd="" adminAction="no-op" rn="user-12" />
+         <aaaUser id="13" accountStatus="inactive" name="" priv="" pwd="" adminAction="no-op" rn="user-13" />
+         <aaaUser id="14" accountStatus="inactive" name="" priv="" pwd="" adminAction="no-op" rn="user-14" />
+         <aaaUser id="15" accountStatus="inactive" name="" priv="" pwd="" adminAction="no-op" rn="user-15" />
+         <generateRandomPassword rn="generate-random-pwd" password="$~&amp;gt;XU7RoMU}zL$" />
+         <aaaSession host="10.197.110.131" id="825" ui="web" user="admin" rn="term-825" />
+         <aaaSession host="10.197.110.131" id="824" ui="web" user="admin" rn="term-824" />
+         <aaaSession host="10.127.148.146" id="823" ui="web" user="admin" rn="term-823" />
+      </aaaUserEp>
+      <aaaLdap rn="ldap-ext" adminState="disabled" basedn="" domain="" filter="sAMAccountName" attribute="CiscoAvPair" timeout="60" encryption="enabled" locateDirectoryUsingDNS="no" dnsDomainSource="extracted-domain" dnsSearchDomain="" dnsSearchForest="" ldapServer1="" ldapServerPort1="389" ldapServer2="" ldapServerPort2="389" ldapServer3="" ldapServerPort3="389" ldapServer4="" ldapServerPort4="3268" ldapServer5="" ldapServerPort5="3268" ldapServer6="" ldapServerPort6="3268" bindMethod="login-credentials" bindDn="" password="" groupAuth="disabled" groupAttribute="memberOf" groupNestedSearch="128" userSearchPrecedence="ldap-user-db">
+         <aaaLdapRoleGroup id="1" name="" domain="" role="" adminAction="no-op" rn="rolegroup-1" />
+         <aaaLdapRoleGroup id="2" name="" domain="" role="" adminAction="no-op" rn="rolegroup-2" />
+         <aaaLdapRoleGroup id="3" name="" domain="" role="" adminAction="no-op" rn="rolegroup-3" />
+         <aaaLdapRoleGroup id="4" name="" domain="" role="" adminAction="no-op" rn="rolegroup-4" />
+         <aaaLdapRoleGroup id="5" name="" domain="" role="" adminAction="no-op" rn="rolegroup-5" />
+         <aaaLdapRoleGroup id="6" name="" domain="" role="" adminAction="no-op" rn="rolegroup-6" />
+         <aaaLdapRoleGroup id="7" name="" domain="" role="" adminAction="no-op" rn="rolegroup-7" />
+         <aaaLdapRoleGroup id="8" name="" domain="" role="" adminAction="no-op" rn="rolegroup-8" />
+         <aaaLdapRoleGroup id="9" name="" domain="" role="" adminAction="no-op" rn="rolegroup-9" />
+         <aaaLdapRoleGroup id="10" name="" domain="" role="" adminAction="no-op" rn="rolegroup-10" />
+         <aaaLdapRoleGroup id="11" name="" domain="" role="" adminAction="no-op" rn="rolegroup-11" />
+         <aaaLdapRoleGroup id="12" name="" domain="" role="" adminAction="no-op" rn="rolegroup-12" />
+         <aaaLdapRoleGroup id="13" name="" domain="" role="" adminAction="no-op" rn="rolegroup-13" />
+         <aaaLdapRoleGroup id="14" name="" domain="" role="" adminAction="no-op" rn="rolegroup-14" />
+         <aaaLdapRoleGroup id="15" name="" domain="" role="" adminAction="no-op" rn="rolegroup-15" />
+         <aaaLdapRoleGroup id="16" name="" domain="" role="" adminAction="no-op" rn="rolegroup-16" />
+         <aaaLdapRoleGroup id="17" name="" domain="" role="" adminAction="no-op" rn="rolegroup-17" />
+         <aaaLdapRoleGroup id="18" name="" domain="" role="" adminAction="no-op" rn="rolegroup-18" />
+         <aaaLdapRoleGroup id="19" name="" domain="" role="" adminAction="no-op" rn="rolegroup-19" />
+         <aaaLdapRoleGroup id="20" name="" domain="" role="" adminAction="no-op" rn="rolegroup-20" />
+         <aaaLdapRoleGroup id="21" name="" domain="" role="" adminAction="no-op" rn="rolegroup-21" />
+         <aaaLdapRoleGroup id="22" name="" domain="" role="" adminAction="no-op" rn="rolegroup-22" />
+         <aaaLdapRoleGroup id="23" name="" domain="" role="" adminAction="no-op" rn="rolegroup-23" />
+         <aaaLdapRoleGroup id="24" name="" domain="" role="" adminAction="no-op" rn="rolegroup-24" />
+         <aaaLdapRoleGroup id="25" name="" domain="" role="" adminAction="no-op" rn="rolegroup-25" />
+         <aaaLdapRoleGroup id="26" name="" domain="" role="" adminAction="no-op" rn="rolegroup-26" />
+         <aaaLdapRoleGroup id="27" name="" domain="" role="" adminAction="no-op" rn="rolegroup-27" />
+         <aaaLdapRoleGroup id="28" name="" domain="" role="" adminAction="no-op" rn="rolegroup-28" />
+         <ldapCACertificateManagement rn="ldap-ca-cert-mgmt" description="LDAP CA Certificate Management" bindingCertificate="disabled">
+            <downloadLdapCACertificate rn="ldap-ca-cert-download" protocol="none" remoteServer="" remoteFile="" user="" pwd="" downloadStatus="NONE" downloadProgress="0%" />
+            <exportLdapCACertificate rn="ldap-ca-cert-export" protocol="none" remoteServer="" remoteFile="" user="" pwd="" exportStatus="NONE" exportProgress="0%" />
+            <ldapCACertificate rn="ldap-ca-cert" adminAction="" user="" pwd="" />
+         </ldapCACertificateManagement>
+      </aaaLdap>
+      <commSvcEp rn="svc-ext">
+         <commHttp rn="http-svc" adminState="enabled" descr="HTTP Service" name="http" port="80" redirectState="enabled" sessionTimeout="1800" maximumSessions="4" activeSessions="0" proto="tcp" />
+         <commHttps rn="https-svc" adminState="enabled" descr="Secure HTTP Service" name="https" port="443" sessionTimeout="1800" maximumSessions="4" activeSessions="0" proto="tcp" />
+         <commSsh rn="ssh-svc" adminState="enabled" descr="Secure Shell Server" name="ssh" port="22" sessionTimeout="1800" maximumSessions="4" activeSessions="0" proto="tcp" />
+         <commSnmp rn="snmp-svc" descr="SNMP Service" name="snmp" adminState="enabled" port="161" proto="udp" community="public" trapCommunity="public" com2Sec="full" sysContact="who@where" sysLocation="unknown" engineId="80 00 00 09 04 66 61 73 64 66 61 73 64 66" engineIdKey="fasdfasdf">
+            <commSnmpTrap id="1" adminState="disabled" version="v3" notificationType="traps" port="162" hostname="0.0.0.0" user="unknown" adminAction="no-op" rn="snmp-trap-1" />
+            <commSnmpTrap id="2" adminState="disabled" version="v3" notificationType="traps" port="162" hostname="0.0.0.0" user="unknown" adminAction="no-op" rn="snmp-trap-2" />
+            <commSnmpTrap id="3" adminState="disabled" version="v3" notificationType="traps" port="162" hostname="0.0.0.0" user="unknown" adminAction="no-op" rn="snmp-trap-3" />
+            <commSnmpTrap id="4" adminState="disabled" version="v3" notificationType="traps" port="162" hostname="0.0.0.0" user="unknown" adminAction="no-op" rn="snmp-trap-4" />
+            <commSnmpTrap id="5" adminState="disabled" version="v3" notificationType="traps" port="162" hostname="0.0.0.0" user="unknown" adminAction="no-op" rn="snmp-trap-5" />
+            <commSnmpTrap id="6" adminState="disabled" version="v3" notificationType="traps" port="162" hostname="0.0.0.0" user="unknown" adminAction="no-op" rn="snmp-trap-6" />
+            <commSnmpTrap id="7" adminState="disabled" version="v3" notificationType="traps" port="162" hostname="0.0.0.0" user="unknown" adminAction="no-op" rn="snmp-trap-7" />
+            <commSnmpTrap id="8" adminState="disabled" version="v3" notificationType="traps" port="162" hostname="0.0.0.0" user="unknown" adminAction="no-op" rn="snmp-trap-8" />
+            <commSnmpTrap id="9" adminState="disabled" version="v3" notificationType="traps" port="162" hostname="0.0.0.0" user="unknown" adminAction="no-op" rn="snmp-trap-9" />
+            <commSnmpTrap id="10" adminState="disabled" version="v3" notificationType="traps" port="162" hostname="0.0.0.0" user="unknown" adminAction="no-op" rn="snmp-trap-10" />
+            <commSnmpTrap id="11" adminState="disabled" version="v3" notificationType="traps" port="162" hostname="0.0.0.0" user="unknown" adminAction="no-op" rn="snmp-trap-11" />
+            <commSnmpTrap id="12" adminState="disabled" version="v3" notificationType="traps" port="162" hostname="0.0.0.0" user="unknown" adminAction="no-op" rn="snmp-trap-12" />
+            <commSnmpTrap id="13" adminState="disabled" version="v3" notificationType="traps" port="162" hostname="0.0.0.0" user="unknown" adminAction="no-op" rn="snmp-trap-13" />
+            <commSnmpTrap id="14" adminState="disabled" version="v3" notificationType="traps" port="162" hostname="0.0.0.0" user="unknown" adminAction="no-op" rn="snmp-trap-14" />
+            <commSnmpTrap id="15" adminState="disabled" version="v3" notificationType="traps" port="162" hostname="0.0.0.0" user="unknown" adminAction="no-op" rn="snmp-trap-15" />
+            <commSnmpUser id="1" name="fasf" securityLevel="noauthnopriv" auth="" authPwd="" privacy="" privacyPwd="" adminAction="no-op" rn="snmpv3-user-1" />
+            <commSnmpUser id="2" name="asfdg" securityLevel="noauthnopriv" auth="" authPwd="" privacy="" privacyPwd="" adminAction="no-op" rn="snmpv3-user-2" />
+            <commSnmpUser id="3" name="gsdfg" securityLevel="noauthnopriv" auth="" authPwd="" privacy="" privacyPwd="" adminAction="no-op" rn="snmpv3-user-3" />
+            <commSnmpUser id="4" name="bsfsg" securityLevel="noauthnopriv" auth="" authPwd="" privacy="" privacyPwd="" adminAction="no-op" rn="snmpv3-user-4" />
+            <commSnmpUser id="5" name="fajkflja" securityLevel="noauthnopriv" auth="" authPwd="" privacy="" privacyPwd="" adminAction="no-op" rn="snmpv3-user-5" />
+            <commSnmpUser id="6" name="ghhjjdfa" securityLevel="noauthnopriv" auth="" authPwd="" privacy="" privacyPwd="" adminAction="no-op" rn="snmpv3-user-6" />
+            <commSnmpUser id="7" name="mnnlkklfa" securityLevel="noauthnopriv" auth="" authPwd="" privacy="" privacyPwd="" adminAction="no-op" rn="snmpv3-user-7" />
+            <commSnmpUser id="8" name="nnkjlk" securityLevel="noauthnopriv" auth="" authPwd="" privacy="" privacyPwd="" adminAction="no-op" rn="snmpv3-user-8" />
+            <commSnmpUser id="9" name="njkhj" securityLevel="noauthnopriv" auth="" authPwd="" privacy="" privacyPwd="" adminAction="no-op" rn="snmpv3-user-9" />
+            <commSnmpUser id="10" name="njhuh" securityLevel="noauthnopriv" auth="" authPwd="" privacy="" privacyPwd="" adminAction="no-op" rn="snmpv3-user-10" />
+            <commSnmpUser id="11" name="vjkjhlk" securityLevel="noauthnopriv" auth="" authPwd="" privacy="" privacyPwd="" adminAction="no-op" rn="snmpv3-user-11" />
+            <commSnmpUser id="12" name="jhjhkml" securityLevel="noauthnopriv" auth="" authPwd="" privacy="" privacyPwd="" adminAction="no-op" rn="snmpv3-user-12" />
+            <commSnmpUser id="13" name="hhhijllmlk" securityLevel="noauthnopriv" auth="" authPwd="" privacy="" privacyPwd="" adminAction="no-op" rn="snmpv3-user-13" />
+            <commSnmpUser id="14" name="hhjkhlkj" securityLevel="noauthnopriv" auth="" authPwd="" privacy="" privacyPwd="" adminAction="no-op" rn="snmpv3-user-14" />
+            <commSnmpUser id="15" name="fajshfkjsahf" securityLevel="noauthnopriv" auth="" authPwd="" privacy="" privacyPwd="" adminAction="no-op" rn="snmpv3-user-15" />
+         </commSnmp>
+         <commMailAlert rn="mail-alert-svc" adminState="enabled" port="25" minSeverityLevel="critical" ipAddress="10.104.236.99">
+            <mailRecipient id="1" email="jjkhkjhjk@isc.com" adminAction="no-op" testMailStatus="na" rn="mail-recipient-1" />
+            <mailRecipient id="2" email="" adminAction="no-op" testMailStatus="na" rn="mail-recipient-2" />
+            <mailRecipient id="3" email="" adminAction="no-op" testMailStatus="na" rn="mail-recipient-3" />
+            <mailRecipient id="4" email="" adminAction="no-op" testMailStatus="na" rn="mail-recipient-4" />
+         </commMailAlert>
+         <commSyslog rn="syslog" adminState="enabled" descr="Syslog Service" name="syslog" port="514" proto="tcp" localSeverity="debug" remoteSeverity="warning">
+            <commSyslogClient adminState="disabled" hostname="0.0.0.0" name="primary" port="514" proto="udp" adminAction="no-op" rn="client-primary" />
+            <commSyslogClient adminState="disabled" hostname="0.0.0.0" name="secondary" port="514" proto="udp" adminAction="no-op" rn="client-secondary" />
+         </commSyslog>
+         <commKvm rn="kvm-svc" adminState="enabled" totalSessions="4" activeSessions="0" port="2068" encryptionState="enabled" localVideoState="enabled" />
+         <commVMedia rn="vmedia-svc" adminState="enabled" activeSessions="0" encryptionState="enabled" lowPowerUsbState="disabled" adminAction="no-op" />
+         <commIpmiLan rn="ipmi-lan-svc" adminState="enabled" priv="admin" key="0000000000000000000000000000000000000000" />
+         <commNtpProvider rn="ntp-svc" description="Network Time Protocol" ntpEnable="yes" ntpServer1="10.193.198.254" ntpServer2=" " ntpServer3=" " ntpServer4=" " ntpServerStatus="synchronised to NTP server (RefID: 10.193.198.254) at stratum 4 " />
+         <commRedfish rn="redfish-svc" adminState="enabled" maximumSessions="4" activeSessions="0" />
+      </commSvcEp>
+      <certificateManagement rn="cert-mgmt" description="Certificate Management">
+         <currentCertificate rn="curr-cert" serialNumber="F508BC7919CC6C53" countryCode="US" state="California" locality="San Jose" organization="Cisco Self Signed" organizationalUnit="PID:UCSC-C240-M5L SERIAL:WZP2037000L" commonName="C-series CIMC" issuerCountryCode="US" issuerState="California" issuerLocality="San Jose" issuerOrganization="Cisco Self Signed" issuerOrganizationalUnit="PID:UCSC-C240-M5L SERIAL:WZP2037000L" issuerCommonName="C-series CIMC" validFrom="Jun 12 23:25:00 2017 GMT" validTo="Jun 11 23:25:00 2022 GMT" />
+         <generateCertificateSigningRequest rn="gen-csr-req" commonName="Common Name" organization="Organization" organizationalUnit="Organizational Unit" locality="Locality" state="State" countryCode="Country Code" email="Email Address" signatureAlgorithm="SHA Algorithm" selfSigned="no" protocol="none" remoteServer="" remoteFile="" user="" pwd="" csrStatus="Completed CSR" />
+         <uploadCertificate rn="upload-cert" adminAction="no-op" protocol="none" remoteServer="" remoteFile="" user="" pwd="" certificateContent="Certificate Content" />
+      </certificateManagement>
+      <mgmtImporter rn="import-config" adminState="disabled" fsmStageDescr="" fsmRmtInvErrCode="" fsmRmtInvErrDescr="" fsmDescr="import-config" proto="none" hostname="" remoteFile="" user="" pwd="" passphrase="" source="" usbPath="" />
+      <mgmtBackup rn="export-config" adminState="disabled" fsmStageDescr="" fsmRmtInvErrCode="" fsmRmtInvErrDescr="" fsmDescr="export-config" proto="none" hostname="" remoteFile="" user="" pwd="" passphrase="" source="" usbPath="" />
+      <mgmtInventory rn="inventory" adminState="triggered" proto="none" hostname="" remoteFile="" user="" pwd="" fsmStatus="COMPLETED" progress="100%" />
+      <huuController rn="huu" description="Host Upgrade Utility (HUU)">
+         <huuFirmwareRunning rn="currentFirmware" description="Current Running Firmware Components" lastQueriedTimeStamp="" currentTime="Wed Sep 20 07:24:19 2017 " />
+         <huuFirmwareUpdater rn="firmwareUpdater" adminState="triggered" password="" updateType="" updateComponent="">
+            <huuFirmwareUpdateStatus rn="updateStatus" overallStatus="Update Complete  CIMC Completed, X550-LOM Completed, UCSC-RAID-M5 Completed, " currentTime="Wed Sep 20 07:24:19 2017 " updateStartTime="" updateEndTime="2017-08-31 02:16:42">
+               <huuUpdateComponentStatus id="1" component="CIMC" description="CIMC" slot="NA" runningVersion="3.1(1cS5)" newVersion="3.1(1d)" macAddr="NA" vendorId="NA" deviceId="NA" subVendorId="NA" subDeviceId="NA" cntrlId="0" updateStatus="Completed" errorDescription="NA" verifyStatus="NA" rn="component-1" />
+               <huuUpdateComponentStatus id="2" component="X550-LOM" description="X550-LOM" slot="L" runningVersion="0x80000730-1.810.8" newVersion="0x80000730-1.810.8" macAddr="00A6CAE245FA" vendorId="8086" deviceId="1563" subVendorId="1137" subDeviceId="01A4" cntrlId="0" updateStatus="Completed" errorDescription="NA" verifyStatus="NA" rn="component-2" />
+               <huuUpdateComponentStatus id="3" component="UCSC-RAID-M5" description="UCSC-RAID-M5" slot="MRAI50.1.0-0574" runningVersion="50.1.0-0574" newVersion="50.1.0-0574" macAddr="NA" vendorId="NA" deviceId="NA" subVendorId="NA" subDeviceId="NA" cntrlId="0" updateStatus="Completed" errorDescription="NA" verifyStatus="NA" rn="component-3" />
+            </huuFirmwareUpdateStatus>
+         </huuFirmwareUpdater>
+         <huuFirmwareCatalog rn="firmwareCatalog" description="HUU Supported Firmware Update Components" numOfComponents="38">
+            <huuFirmwareCatalogComponent id="1" componentName="CIMC" description="Cisco IMC" rn="id-1" />
+            <huuFirmwareCatalogComponent id="2" componentName="BIOS" description="BIOS" rn="id-2" />
+            <huuFirmwareCatalogComponent id="3" componentName="SasExpM5" description="SAS-EXPANDER" rn="id-3" />
+            <huuFirmwareCatalogComponent id="4" componentName="SasExpM5" description="SAS-EXPANDER" rn="id-4" />
+            <huuFirmwareCatalogComponent id="5" componentName="I350-mLOM" description="Intel I350 mLOM" rn="id-5" />
+            <huuFirmwareCatalogComponent id="6" componentName="I350-PCI" description="Intel I350 quad port adapter" rn="id-6" />
+            <huuFirmwareCatalogComponent id="7" componentName="X520" description="Intel X520 dual port adapter" rn="id-7" />
+            <huuFirmwareCatalogComponent id="8" componentName="X550T2" description="Intel X550 dual-port 10 GBase-T" rn="id-8" />
+            <huuFirmwareCatalogComponent id="9" componentName="X550-LOM" description="Ethernet Controller 10G X550T" rn="id-9" />
+            <huuFirmwareCatalogComponent id="10" componentName="XL710" description="Intel XL710 adapter" rn="id-10" />
+            <huuFirmwareCatalogComponent id="11" componentName="X710DA2" description="Intel X710-DA2 adapter" rn="id-11" />
+            <huuFirmwareCatalogComponent id="12" componentName="X710DA4" description="Intel X710-DA4 adapter" rn="id-12" />
+            <huuFirmwareCatalogComponent id="13" componentName="UCSC-RAID-M5" description="Cisco 12G Modular Raid Controller with 2GB cache" rn="id-13" />
+            <huuFirmwareCatalogComponent id="14" componentName="UCSC-RAID-M5HD" description="Cisco 12G Modular Raid Controller with 4GB cache" rn="id-14" />
+            <huuFirmwareCatalogComponent id="15" componentName="UCSC-SAS-M5" description="Cisco 12G Modular SAS HBA (max 16 drives)" rn="id-15" />
+            <huuFirmwareCatalogComponent id="16" componentName="UCSC-SAS-M5HD" description="Cisco 12G Modular SAS HBA (max 26 drives)" rn="id-16" />
+            <huuFirmwareCatalogComponent id="17" componentName="QLE2692" description="Qlogic QLE2692 dual-port 32G FC HBA" rn="id-17" />
+            <huuFirmwareCatalogComponent id="18" componentName="QLE2742" description="Qlogic QLE2742 dual-port 32G FC HBA" rn="id-18" />
+            <huuFirmwareCatalogComponent id="19" componentName="ELXLPE32000" description="Emulex LPe32000 Single-port 32G FC HBA" rn="id-19" />
+            <huuFirmwareCatalogComponent id="20" componentName="ELXLPE32002" description="Emulex LPe32002 Dual-port 32G FC HBA" rn="id-20" />
+            <huuFirmwareCatalogComponent id="21" componentName="ELXLPE31002" description="Emulex LPe31002 Dual-Port 16G FC HBA" rn="id-21" />
+            <huuFirmwareCatalogComponent id="22" componentName="UCS VIC 1385" description="Cisco UCS VIC 1385 adapter" rn="id-22" />
+            <huuFirmwareCatalogComponent id="23" componentName="UCS VIC 1387" description="Cisco UCS VIC 1387 MLOM" rn="id-23" />
+            <huuFirmwareCatalogComponent id="24" componentName="P100-12GB" description="Nvidia P100 12GB PH400-202" rn="id-24" />
+            <huuFirmwareCatalogComponent id="25" componentName="P100-16GB" description="Nvidia P100 16GB P2H400-201" rn="id-25" />
+            <huuFirmwareCatalogComponent id="26" componentName="P40-24GB" description="Nvidia P40 PASCAL PASSIVE 250W FF 3.0 24GB" rn="id-26" />
+            <huuFirmwareCatalogComponent id="27" componentName="M10" description="Nvidia M10 P2405-070" rn="id-27" />
+            <huuFirmwareCatalogComponent id="28" componentName="FirePro" description="AMD FirePro S7150x2" rn="id-28" />
+            <huuFirmwareCatalogComponent id="29" componentName="UCSC-NVMEHW-H800" description="HGST SN200 800GB 2.5 in SSD" rn="id-29" />
+            <huuFirmwareCatalogComponent id="30" componentName="UCSC-NVMEHW-H1600" description="HGST SN200 1.6TB 2.5 in SSD" rn="id-30" />
+            <huuFirmwareCatalogComponent id="31" componentName="UCSC-NVMEHW-H3200" description="HGST SN200 3.2TB 2.5 in SSD" rn="id-31" />
+            <huuFirmwareCatalogComponent id="32" componentName="UCSC-NVMEHW-H6400" description="HGST SN200 6.4TB 2.5 in SSD" rn="id-32" />
+            <huuFirmwareCatalogComponent id="33" componentName="UCSC-NVMEHW-H7680" description="HGST SN200 7.7TB 2.5 in SSD" rn="id-33" />
+            <huuFirmwareCatalogComponent id="34" componentName="UCSC-NVME-H16003" description="HGST SN260 HHHL AIC 1.6TB" rn="id-34" />
+            <huuFirmwareCatalogComponent id="35" componentName="UCSC-NVME-H32003" description="HGST SN260 HHHL AIC 3.2TB" rn="id-35" />
+            <huuFirmwareCatalogComponent id="36" componentName="UCSC-NVME-H38401" description="HGST SN260 HHHL AIC 3.8TB" rn="id-36" />
+            <huuFirmwareCatalogComponent id="37" componentName="UCSC-NVME-H64003" description="HGST SN260 HHHL AIC 6.4TB" rn="id-37" />
+            <huuFirmwareCatalogComponent id="38" componentName="UCSC-NVME-H76801" description="HGST SN260 HHHL AIC 7.7TB" rn="id-38" />
+         </huuFirmwareCatalog>
+         <huuFirmwareUpdateCancel rn="firmwareUpdateCancel" adminState="triggered" />
+      </huuController>
+      <iodController rn="iod" description="Non-Interactive Offline Diagnostics (IOD)">
+         <iodSnapshotStart rn="snapshotStart" adminState="triggered" password="" remoteSharePassword="" mountOption="" />
+         <iodSnapshotCancel rn="snapshotCancel" adminState="triggered" />
+         <iodSnapshotStatus rn="snapshotStatus" currentStatus="NI-IOD session not found " currentTime="Thu Jan  1 00:00:00 1970 " startTime="NA" runningTime="NA" snapshotReport="no" remoteShareIp="NA" remoteSharePath="NA" remoteShareFile="NA" />
+      </iodController>
+      <osiController rn="osi" description="Non-Interactive Operating system install (NI-OSI)">
+         <osiStart rn="osiStart" adminState="triggered" password="" answerFilePassword="" configSharePassword="" remoteSharePassword="" />
+         <osiCancel rn="osiCancel" adminState="triggered" />
+         <osiStatus rn="osiStatus" Status="Success" currentStatus="NI-OSI session not found " currentTime="Fri Jan 23 06:01:24 1931 " startTime="NA" runningTime="NA" osiReport="no" remoteShareIp="NA" remoteSharePath="NA" remoteShareFile="NA" />
+      </osiController>
+      <storageSasExpander id="1" name="SASEXP1" currentFwVersion="N/A" description="Storage controller - SAS Expander" rn="sas-expander-1">
+         <mgmtController rn="mgmt" subject="SAS Expander" vendor="Cisco Systems Inc">
+            <firmwareRunning rn="fw-boot-loader" description="SAS Expander currently running boot loader firmware version" deployment="boot-loader" type="sas-expander" version="N/A" />
+            <firmwareRunning rn="fw-system" description="SAS Expander currently running firmware version" deployment="system" type="sas-expander" version="N/A" />
+            <firmwareUpdatable rn="fw-updatable" description="SAS Expander backup firmware version" adminState="triggered" deployment="backup" operState="ready" version="N/A" protocol="none" remoteServer="" remotePath="" user="" pwd="" progress="0" type="sas-expander" />
+            <firmwareBootDefinition rn="fw-boot-def" type="sas-expander">
+               <firmwareBootUnit rn="bootunit-combined" description="SAS Expander startup firmware version" adminState="triggered" image="running" resetOnActivate="no" type="combined" version="N/A" />
+            </firmwareBootDefinition>
+         </mgmtController>
+      </storageSasExpander>
+      <kmipManagement rn="kmip-mgmt" description="Key Management Interoperability Protocol" secureKeyManagement="disabled" serverRootCACertificate="Not Available" clientCertificate="Not Available" clientPrivateKey="Not Available" adminAction="no-op">
+         <downloadRootCACertificate rn="kmip-ca-cert-download" protocol="none" remoteServer="" remoteFile="" user="" pwd="" downloadStatus="NONE" downloadProgress="0%" />
+         <exportRootCACertificate rn="kmip-ca-cert-export" protocol="none" remoteServer="" remoteFile="" user="" pwd="" exportStatus="NONE" exportProgress="0%" />
+         <downloadClientCertificate rn="kmip-client-cert-download" protocol="none" remoteServer="" remoteFile="" user="" pwd="" downloadStatus="NONE" downloadProgress="0%" />
+         <exportClientCertificate rn="kmip-client-cert-export" protocol="none" remoteServer="" remoteFile="" user="" pwd="" exportStatus="NONE" exportProgress="0%" />
+         <downloadClientPrivateKey rn="kmip-private-key-download" protocol="none" remoteServer="" remoteFile="" user="" pwd="" downloadStatus="NONE" downloadProgress="0%" />
+         <exportClientPrivateKey rn="kmip-private-key-export" protocol="none" remoteServer="" remoteFile="" user="" pwd="" exportStatus="NONE" exportProgress="0%" />
+         <kmipServer id="1" ipAddress="" port="5696" timeout="5" adminAction="no-op" testConnctionStatus="Unavailable" rn="kmip-server-1" />
+         <kmipServer id="2" ipAddress="" port="5696" timeout="5" adminAction="no-op" testConnctionStatus="Unavailable" rn="kmip-server-2" />
+         <kmipServerLogin rn="kmip-login" accountStatus="disabled" name="" pwd="" adminAction="no-op" />
+      </kmipManagement>
+      <vicImporterAll rn="vic-all-importconfig" adminState="triggered" descr="vic-all-import-config" proto="none" hostname="" remoteFile="" user="" pwd="" progress="Done" />
+      <vicBackupAll rn="vic-all-exportconfig" adminState="triggered" descr="vic-all-export-config" proto="none" hostname="" remoteFile="" user="" pwd="" progress="Done" />
+   </topSystem>
+</outConfigs>

@@ -1,0 +1,3 @@
+#!/bin/sh
+pkill -f ucs_mgmt_cloud_connector
+/opt/cloudimg/cisco/bin/ucs_mgmt_cloud_connector --log_path="/var/log/dc.log" --dbdir=/opt/db/ &

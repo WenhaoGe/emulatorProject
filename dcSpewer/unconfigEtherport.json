@@ -1,0 +1,86 @@
+{
+  "AccountMoid": "5f2dbc767564612d301d5d07",
+  "AcknowledgedPeerInterface": null,
+  "AdminSpeed": "",
+  "AdminState": "Disabled",
+  "AggregatePortId": 0,
+  "Ancestors": [
+    {
+      "ClassId": "mo.MoRef",
+      "Moid": "5f6d2ef26176752d30aa7ec5",
+      "ObjectType": "port.Group",
+      "link": "https://erige-onprem248.cisco.com/api/v1/port/Groups/5f6d2ef26176752d30aa7ec5"
+    },
+    {
+      "ClassId": "mo.MoRef",
+      "Moid": "5f6d2ef26176752d30aa7ebe",
+      "ObjectType": "equipment.SwitchCard",
+      "link": "https://erige-onprem248.cisco.com/api/v1/equipment/SwitchCards/5f6d2ef26176752d30aa7ebe"
+    },
+    {
+      "ClassId": "mo.MoRef",
+      "Moid": "5f6d2ef26176752d30aa7eb0",
+      "ObjectType": "network.Element",
+      "link": "https://erige-onprem248.cisco.com/api/v1/network/Elements/5f6d2ef26176752d30aa7eb0"
+    }
+  ],
+  "ClassId": "ether.PhysicalPort",
+  "CreateTime": "2020-09-24T23:42:42.786Z",
+  "DeviceMoId": "5f6d2eee6f72612d30ac7830",
+  "Dn": "sys/switch-A/slot-1/switch-ether/port-13",
+  "DomainGroupMoid": "5f2dbc767564612d301d5d08",
+  "InventoryDeviceInfo": null,
+  "LicenseGrace": "",
+  "LicenseState": "",
+  "MacAddress": "00:3A:9C:80:87:94",
+  "ModTime": "2020-09-24T23:42:52.553Z",
+  "Mode": "access",
+  "Moid": "5f6d2ef26176752d30aa7f0e",
+  "ObjectType": "ether.PhysicalPort",
+  "OperSpeed": "auto",
+  "OperState": "down",
+  "OperStateQual": "admin-down",
+  "Owners": [
+    "5f2dbc767564612d301d5d07",
+    "5f6d2eee6f72612d30ac7830"
+  ],
+  "Parent": {
+    "ClassId": "mo.MoRef",
+    "Moid": "5f6d2ef26176752d30aa7ec5",
+    "ObjectType": "port.Group",
+    "link": "https://erige-onprem248.cisco.com/api/v1/port/Groups/5f6d2ef26176752d30aa7ec5"
+  },
+  "PeerDn": "",
+  "PeerInterface": null,
+  "PermissionResources": [
+    {
+      "ClassId": "mo.MoRef",
+      "Moid": "5f2dc2b56972652d3014f3a1",
+      "ObjectType": "organization.Organization",
+      "link": "https://erige-onprem248.cisco.com/api/v1/organization/Organizations/5f2dc2b56972652d3014f3a1"
+    }
+  ],
+  "PortChannelId": 0,
+  "PortGroup": {
+    "ClassId": "mo.MoRef",
+    "Moid": "5f6d2ef26176752d30aa7ec5",
+    "ObjectType": "port.Group",
+    "link": "https://erige-onprem248.cisco.com/api/v1/port/Groups/5f6d2ef26176752d30aa7ec5"
+  },
+  "PortId": 13,
+  "PortSubGroup": null,
+  "PortType": "",
+  "RegisteredDevice": {
+    "ClassId": "mo.MoRef",
+    "Moid": "5f6d2eee6f72612d30ac7830",
+    "ObjectType": "asset.DeviceRegistration",
+    "link": "https://erige-onprem248.cisco.com/api/v1/asset/DeviceRegistrations/5f6d2eee6f72612d30ac7830"
+  },
+  "Rn": "",
+  "Role": "unknown",
+  "SharedScope": "",
+  "SlotId": 1,
+  "SwitchId": "A",
+  "Tags": [],
+  "TransceiverType": "absent"
+}

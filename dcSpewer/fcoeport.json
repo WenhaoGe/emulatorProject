@@ -1,0 +1,100 @@
+configured fcoe port from parvizsho
+
+
+{
+  "ObjectType": "ether.PhysicalPort.List",
+  "Results": [
+    {
+      "Moid": "5f1a34cc3874322d422078f9",
+      "ObjectType": "ether.PhysicalPort",
+      "ClassId": "ether.PhysicalPort",
+      "CreateTime": "2020-07-24T01:10:24.917Z",
+      "ModTime": "2020-09-23T05:17:49.463Z",
+      "Tags": [],
+      "Owners": [
+        "5e4db3fd7564612d302a0512",
+        "5f1a34ee6f72612d3071381e"
+      ],
+      "SharedScope": "",
+      "AccountMoid": "5e4db3fd7564612d302a0512",
+      "DomainGroupMoid": "5e4db3fd7564612d302a0519",
+      "Ancestors": [
+        {
+          "ObjectType": "port.Group",
+          "ClassId": "mo.MoRef",
+          "Moid": "5f1a35006176752d30badad9",
+          "link": "https://qa.starshipcloud.com/api/v1/port/Groups/5f1a35006176752d30badad9"
+        },
+        {
+          "ObjectType": "equipment.SwitchCard",
+          "ClassId": "mo.MoRef",
+          "Moid": "5f1a34ca3874322d422078dc",
+          "link": "https://qa.starshipcloud.com/api/v1/equipment/SwitchCards/5f1a34ca3874322d422078dc"
+        },
+        {
+          "ObjectType": "network.Element",
+          "ClassId": "mo.MoRef",
+          "Moid": "5f1a34fc6176752d30bad9ce",
+          "link": "https://qa.starshipcloud.com/api/v1/network/Elements/5f1a34fc6176752d30bad9ce"
+        }
+      ],
+      "Parent": {
+        "ObjectType": "port.Group",
+        "ClassId": "mo.MoRef",
+        "Moid": "5f1a35006176752d30badad9",
+        "link": "https://qa.starshipcloud.com/api/v1/port/Groups/5f1a35006176752d30badad9"
+      },
+      "PermissionResources": [
+        {
+          "ObjectType": "organization.Organization",
+          "ClassId": "mo.MoRef",
+          "Moid": "5e4db3ff6972652d30b4a479",
+          "link": "https://qa.starshipcloud.com/api/v1/organization/Organizations/5e4db3ff6972652d30b4a479"
+        },
+        {
+          "ObjectType": "organization.Organization",
+          "ClassId": "mo.MoRef",
+          "Moid": "5f19efa56972652d306db06c",
+          "link": "https://qa.starshipcloud.com/api/v1/organization/Organizations/5f19efa56972652d306db06c"
+        }
+      ],
+      "DeviceMoId": "5f1a34ee6f72612d3071381e",
+      "Dn": "sys/switch-B/slot-1/switch-ether/port-51",
+      "Rn": "",
+      "OperState": "up",
+      "OperStateQual": "none",
+      "PortId": 51,
+      "Role": "FcoeUplink",
+      "SlotId": 1,
+      "SwitchId": "B",
+      "MacAddress": "00:DE:FB:7F:D4:08",
+      "Mode": "trunk",
+      "OperSpeed": "40G",
+      "PeerDn": "",
+      "PortChannelId": 0,
+      "PortType": "",
+      "TransceiverType": "absent",
+      "AcknowledgedPeerInterface": null,
+      "PeerInterface": null,
+      "AdminSpeed": "",
+      "AdminState": "Enabled",
+      "AggregatePortId": 0,
+      "LicenseGrace": "",
+      "LicenseState": "",
+      "InventoryDeviceInfo": null,
+      "PortGroup": {
+        "ObjectType": "port.Group",
+        "ClassId": "mo.MoRef",
+        "Moid": "5f1a35006176752d30badad9",
+        "link": "https://qa.starshipcloud.com/api/v1/port/Groups/5f1a35006176752d30badad9"
+      },
+      "PortSubGroup": null,
+      "RegisteredDevice": {
+        "ObjectType": "asset.DeviceRegistration",
+        "ClassId": "mo.MoRef",
+        "Moid": "5f1a34ee6f72612d3071381e",
+        "link": "https://qa.starshipcloud.com/api/v1/asset/DeviceRegistrations/5f1a34ee6f72612d3071381e"
+      }
+    }
+  ]
+}

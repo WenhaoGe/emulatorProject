@@ -1,0 +1,35 @@
+# Describes how actions should be executed.
+#
+# Structure:
+#   <Action>:
+#     <requested_key>:
+#       <Requested_state>:
+#       - <Property that needs to be modified>: <desired state>
+#         delay: <time in seconds before changing the state>
+
+'#ComputerSystem.Reset':
+  ResetType:
+    "On":
+    - PowerState: 'On'
+      delay: 30
+    ForceOff:
+    - PowerState: 'Off'
+      delay: 0
+    ForceRestart:
+    - PowerState: 'Off'
+      delay: 30
+    - PowerState: '0n'
+      delay: 30
+    GracefulShutdown:
+    - PowerState: 'Off'
+      delay: 30
+    GracefulRestart:
+    - PowerState: 'Off'
+      delay: 30
+    - PowerState: '0n'
+      delay: 30
+    PowerCycle:
+    - PowerState: 'Off'
+      delay: 10
+    - PowerState: 'On'
+      delay: 30

@@ -1,0 +1,14 @@
+items.find
+(
+    {
+        "$and" : [
+            {"repo" : "cspg-andromeda-snapshot"},
+            {"@build.name" :
+                {"$eq": "Andromeda :: master :: Jaguar"}
+            },
+            {"name" :
+                {"$match" : "ucsc-m5-cimc-cloud-connector*.bin"}
+            }
+        ]
+    }
+).sort({"$desc" : ["modified"]}).limit(1)

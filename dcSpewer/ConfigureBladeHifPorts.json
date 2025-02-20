@@ -1,0 +1,356 @@
+{
+  "ClassId": "connector.NetworkAgentRequest",
+  "ObjectType": "connector.NetworkAgentRequest",
+  "ActionType": "ConfigureBladeHifPorts",
+  "MessageId": "",
+  "MoList": [
+    {
+      "ClassId": "connector.NetworkAgentMoEnvelope",
+      "ObjectType": "connector.NetworkAgentMoEnvelope",
+      "ActionType": "",
+      "MoData": {
+        "Moid": "5faaf7a36f62692d30b99b77",
+        "ObjectType": "sw.BackplanePort",
+        "ClassId": "sw.BackplanePort",
+        "CreateTime": "2020-11-10T20:27:15.017720922Z",
+        "ModTime": "2020-11-10T20:27:15.041006614Z",
+        "Tags": [],
+        "Owners": [
+          "5f2dbc767564612d301d5d07",
+          "5faaf66c6f72612d309900b2"
+        ],
+        "SharedScope": "",
+        "AccountMoid": "5f2dbc767564612d301d5d07",
+        "DomainGroupMoid": "5f2dbc767564612d301d5d08",
+        "Ancestors": [],
+        "PermissionResources": [
+          {
+            "ObjectType": "organization.Organization",
+            "ClassId": "mo.MoRef",
+            "Moid": "5f2dc2b56972652d3014f3a1",
+            "link": "https://erige-onprem248.cisco.com/api/v1/organization/Organizations/5f2dc2b56972652d3014f3a1"
+          }
+        ],
+        "ConfigState": "configured",
+        "AdminState": "Enabled",
+        "SwitchId": 0,
+        "AllowedVlans": "4043",
+        "Mode": "vntag",
+        "NativeVlan": 1,
+        "PeerEquipmentId": 0,
+        "PeerEquipmentSerial": "",
+        "PeerModuleId": 0,
+        "PeerModuleSerial": "",
+        "PeerUplinkId": 0,
+        "AdminSpeed": "Auto",
+        "AggregatePortId": 0,
+        "Description": "BladeServer",
+        "PcId": 1280,
+        "PortId": 1,
+        "SlotId": 1,
+        "FexId": 1,
+        "NetworkElement": {
+          "ObjectType": "network.Element",
+          "ClassId": "mo.MoRef",
+          "Moid": "5faaf66f6176752d302bad10",
+          "link": "https://erige-onprem248.cisco.com/api/v1/network/Elements/5faaf66f6176752d302bad10"
+        },
+        "PortChannel": null
+      }
+    },
+    {
+      "ClassId": "connector.NetworkAgentMoEnvelope",
+      "ObjectType": "connector.NetworkAgentMoEnvelope",
+      "ActionType": "",
+      "MoData": {
+        "Moid": "5faaf7a36f62692d30b99b78",
+        "ObjectType": "sw.BackplanePort",
+        "ClassId": "sw.BackplanePort",
+        "CreateTime": "2020-11-10T20:27:15.017762263Z",
+        "ModTime": "2020-11-10T20:27:15.041022455Z",
+        "Tags": [],
+        "Owners": [
+          "5f2dbc767564612d301d5d07",
+          "5faaf66c6f72612d309900b2"
+        ],
+        "SharedScope": "",
+        "AccountMoid": "5f2dbc767564612d301d5d07",
+        "DomainGroupMoid": "5f2dbc767564612d301d5d08",
+        "Ancestors": [],
+        "PermissionResources": [
+          {
+            "ObjectType": "organization.Organization",
+            "ClassId": "mo.MoRef",
+            "Moid": "5f2dc2b56972652d3014f3a1",
+            "link": "https://erige-onprem248.cisco.com/api/v1/organization/Organizations/5f2dc2b56972652d3014f3a1"
+          }
+        ],
+        "ConfigState": "configured",
+        "AdminState": "Enabled",
+        "SwitchId": 0,
+        "AllowedVlans": "4043",
+        "Mode": "vntag",
+        "NativeVlan": 1,
+        "PeerEquipmentId": 0,
+        "PeerEquipmentSerial": "",
+        "PeerModuleId": 0,
+        "PeerModuleSerial": "",
+        "PeerUplinkId": 0,
+        "AdminSpeed": "Auto",
+        "AggregatePortId": 0,
+        "Description": "BladeServer",
+        "PcId": 1280,
+        "PortId": 3,
+        "SlotId": 1,
+        "FexId": 1,
+        "NetworkElement": {
+          "ObjectType": "network.Element",
+          "ClassId": "mo.MoRef",
+          "Moid": "5faaf66f6176752d302bad10",
+          "link": "https://erige-onprem248.cisco.com/api/v1/network/Elements/5faaf66f6176752d302bad10"
+        },
+        "PortChannel": null
+      }
+    },
+    {
+      "ClassId": "connector.NetworkAgentMoEnvelope",
+      "ObjectType": "connector.NetworkAgentMoEnvelope",
+      "ActionType": "",
+      "MoData": {
+        "Moid": "5faaf7a36f62692d30b99b79",
+        "ObjectType": "sw.PortChannel",
+        "ClassId": "sw.PortChannel",
+        "CreateTime": "2020-11-10T20:27:15.017814842Z",
+        "ModTime": "2020-11-10T20:27:15.041042111Z",
+        "Tags": [],
+        "Owners": [
+          "5f2dbc767564612d301d5d07",
+          "5faaf66c6f72612d309900b2"
+        ],
+        "SharedScope": "",
+        "AccountMoid": "5f2dbc767564612d301d5d07",
+        "DomainGroupMoid": "5f2dbc767564612d301d5d08",
+        "Ancestors": [
+          {
+            "ObjectType": "sw.Element",
+            "ClassId": "mo.MoRef",
+            "Moid": "5faaf66f6f62692d30b9986f",
+            "link": "https://erige-onprem248.cisco.com/api/v1/sw/Elements/5faaf66f6f62692d30b9986f"
+          }
+        ],
+        "Parent": {
+          "ObjectType": "sw.Element",
+          "ClassId": "mo.MoRef",
+          "Moid": "5faaf66f6f62692d30b9986f",
+          "link": "https://erige-onprem248.cisco.com/api/v1/sw/Elements/5faaf66f6f62692d30b9986f"
+        },
+        "PermissionResources": [
+          {
+            "ObjectType": "organization.Organization",
+            "ClassId": "mo.MoRef",
+            "Moid": "5f2dc2b56972652d3014f3a1",
+            "link": "https://erige-onprem248.cisco.com/api/v1/organization/Organizations/5f2dc2b56972652d3014f3a1"
+          }
+        ],
+        "ConfigState": "configured",
+        "AdminState": "Enabled",
+        "SwitchId": 0,
+        "AllowedVlans": "4043",
+        "Mode": "vntag",
+        "NativeVlan": 1,
+        "PeerEquipmentId": 1,
+        "PeerEquipmentSerial": "",
+        "PeerModuleId": 0,
+        "PeerModuleSerial": "",
+        "PeerUplinkId": 0,
+        "AccessVlan": 0,
+        "AdminSpeed": "Auto",
+        "Description": "HostPC",
+        "FcoeVifId": 0,
+        "Mtu": 1500,
+        "PcId": 1280,
+        "Element": {
+          "ObjectType": "sw.Element",
+          "ClassId": "mo.MoRef",
+          "Moid": "5faaf66f6f62692d30b9986f",
+          "link": "https://erige-onprem248.cisco.com/api/v1/sw/Elements/5faaf66f6f62692d30b9986f"
+        },
+        "Etherports": null
+      }
+    },
+    {
+      "ClassId": "connector.NetworkAgentMoEnvelope",
+      "ObjectType": "connector.NetworkAgentMoEnvelope",
+      "ActionType": "",
+      "MoData": {
+        "Moid": "5faaf7a36f62692d30b99b7e",
+        "ObjectType": "sw.BackplanePort",
+        "ClassId": "sw.BackplanePort",
+        "CreateTime": "2020-11-10T20:27:15.039045811Z",
+        "ModTime": "2020-11-10T20:27:15.041070176Z",
+        "Tags": [],
+        "Owners": [
+          "5f2dbc767564612d301d5d07",
+          "5faaf66c6f72612d309900b2"
+        ],
+        "SharedScope": "",
+        "AccountMoid": "5f2dbc767564612d301d5d07",
+        "DomainGroupMoid": "5f2dbc767564612d301d5d08",
+        "Ancestors": [],
+        "PermissionResources": [
+          {
+            "ObjectType": "organization.Organization",
+            "ClassId": "mo.MoRef",
+            "Moid": "5f2dc2b56972652d3014f3a1",
+            "link": "https://erige-onprem248.cisco.com/api/v1/organization/Organizations/5f2dc2b56972652d3014f3a1"
+          }
+        ],
+        "ConfigState": "configured",
+        "AdminState": "Enabled",
+        "SwitchId": 0,
+        "AllowedVlans": "4043",
+        "Mode": "vntag",
+        "NativeVlan": 1,
+        "PeerEquipmentId": 0,
+        "PeerEquipmentSerial": "",
+        "PeerModuleId": 0,
+        "PeerModuleSerial": "",
+        "PeerUplinkId": 0,
+        "AdminSpeed": "Auto",
+        "AggregatePortId": 0,
+        "Description": "BladeServer",
+        "PcId": 1281,
+        "PortId": 2,
+        "SlotId": 1,
+        "FexId": 1,
+        "NetworkElement": {
+          "ObjectType": "network.Element",
+          "ClassId": "mo.MoRef",
+          "Moid": "5faaf66f6176752d302bad10",
+          "link": "https://erige-onprem248.cisco.com/api/v1/network/Elements/5faaf66f6176752d302bad10"
+        },
+        "PortChannel": null
+      }
+    },
+    {
+      "ClassId": "connector.NetworkAgentMoEnvelope",
+      "ObjectType": "connector.NetworkAgentMoEnvelope",
+      "ActionType": "",
+      "MoData": {
+        "Moid": "5faaf7a36f62692d30b99b7f",
+        "ObjectType": "sw.BackplanePort",
+        "ClassId": "sw.BackplanePort",
+        "CreateTime": "2020-11-10T20:27:15.039086316Z",
+        "ModTime": "2020-11-10T20:27:15.041084971Z",
+        "Tags": [],
+        "Owners": [
+          "5f2dbc767564612d301d5d07",
+          "5faaf66c6f72612d309900b2"
+        ],
+        "SharedScope": "",
+        "AccountMoid": "5f2dbc767564612d301d5d07",
+        "DomainGroupMoid": "5f2dbc767564612d301d5d08",
+        "Ancestors": [],
+        "PermissionResources": [
+          {
+            "ObjectType": "organization.Organization",
+            "ClassId": "mo.MoRef",
+            "Moid": "5f2dc2b56972652d3014f3a1",
+            "link": "https://erige-onprem248.cisco.com/api/v1/organization/Organizations/5f2dc2b56972652d3014f3a1"
+          }
+        ],
+        "ConfigState": "configured",
+        "AdminState": "Enabled",
+        "SwitchId": 0,
+        "AllowedVlans": "4043",
+        "Mode": "vntag",
+        "NativeVlan": 1,
+        "PeerEquipmentId": 0,
+        "PeerEquipmentSerial": "",
+        "PeerModuleId": 0,
+        "PeerModuleSerial": "",
+        "PeerUplinkId": 0,
+        "AdminSpeed": "Auto",
+        "AggregatePortId": 0,
+        "Description": "BladeServer",
+        "PcId": 1281,
+        "PortId": 4,
+        "SlotId": 1,
+        "FexId": 1,
+        "NetworkElement": {
+          "ObjectType": "network.Element",
+          "ClassId": "mo.MoRef",
+          "Moid": "5faaf66f6176752d302bad10",
+          "link": "https://erige-onprem248.cisco.com/api/v1/network/Elements/5faaf66f6176752d302bad10"
+        },
+        "PortChannel": null
+      }
+    },
+    {
+      "ClassId": "connector.NetworkAgentMoEnvelope",
+      "ObjectType": "connector.NetworkAgentMoEnvelope",
+      "ActionType": "",
+      "MoData": {
+        "Moid": "5faaf7a36f62692d30b99b80",
+        "ObjectType": "sw.PortChannel",
+        "ClassId": "sw.PortChannel",
+        "CreateTime": "2020-11-10T20:27:15.039139244Z",
+        "ModTime": "2020-11-10T20:27:15.041104009Z",
+        "Tags": [],
+        "Owners": [
+          "5f2dbc767564612d301d5d07",
+          "5faaf66c6f72612d309900b2"
+        ],
+        "SharedScope": "",
+        "AccountMoid": "5f2dbc767564612d301d5d07",
+        "DomainGroupMoid": "5f2dbc767564612d301d5d08",
+        "Ancestors": [
+          {
+            "ObjectType": "sw.Element",
+            "ClassId": "mo.MoRef",
+            "Moid": "5faaf66f6f62692d30b9986f",
+            "link": "https://erige-onprem248.cisco.com/api/v1/sw/Elements/5faaf66f6f62692d30b9986f"
+          }
+        ],
+        "Parent": {
+          "ObjectType": "sw.Element",
+          "ClassId": "mo.MoRef",
+          "Moid": "5faaf66f6f62692d30b9986f",
+          "link": "https://erige-onprem248.cisco.com/api/v1/sw/Elements/5faaf66f6f62692d30b9986f"
+        },
+        "PermissionResources": [
+          {
+            "ObjectType": "organization.Organization",
+            "ClassId": "mo.MoRef",
+            "Moid": "5f2dc2b56972652d3014f3a1",
+            "link": "https://erige-onprem248.cisco.com/api/v1/organization/Organizations/5f2dc2b56972652d3014f3a1"
+          }
+        ],
+        "ConfigState": "configured",
+        "AdminState": "Enabled",
+        "SwitchId": 0,
+        "AllowedVlans": "4043",
+        "Mode": "vntag",
+        "NativeVlan": 1,
+        "PeerEquipmentId": 1,
+        "PeerEquipmentSerial": "",
+        "PeerModuleId": 0,
+        "PeerModuleSerial": "",
+        "PeerUplinkId": 0,
+        "AccessVlan": 0,
+        "AdminSpeed": "Auto",
+        "Description": "HostPC",
+        "FcoeVifId": 0,
+        "Mtu": 1500,
+        "PcId": 1281,
+        "Element": {
+          "ObjectType": "sw.Element",
+          "ClassId": "mo.MoRef",
+          "Moid": "5faaf66f6f62692d30b9986f",
+          "link": "https://erige-onprem248.cisco.com/api/v1/sw/Elements/5faaf66f6f62692d30b9986f"
+        },
+        "Etherports": null
+      }
+    }
+  ]
+}	{"deviceId": "", "deviceId": "5faaf6336f72612d30990088"}

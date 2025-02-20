@@ -1,0 +1,5 @@
+requests
+gevent==20.5.0
+grequests
+randmac
+pyyaml>=5.3.1

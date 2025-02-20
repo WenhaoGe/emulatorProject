@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html>
+<title>Intersight Emulator Farm</title>
+
+<head>
+    <!--- This page has no style and is written by someone with little to no html knowledge. If you feel like fixing the formatting
+       please go ahead. https://bitbucket-eng-sjc1.cisco.com/bitbucket/projects/AN/repos/apollo-test/browse
+       --->
+
+    <style>
+        li{
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+<p>
+    Welcome to the Intersight Emulator Farm, this service allows users to start and manage emulated device connector instances for
+    the purposes of testing the Intersight service and device connector process at scale.
+</p>
+
+<h1>
+    Supported emulator types.
+</h1>
+
+<ul>
+    <li>UCSFI Device Connector</li>
+    <li>IMCM5 Device Connector</li>
+    <li>HX Device Connector</li>
+    <li>Data Spewer</li>
+</ul>
+
+<h1>
+    Starting a Device connector emulator
+</h1>
+<p>
+    All operations supported by this service are exposed as REST APIs.
+</p>
+<p>
+
+To start a device connector emulator send an HTTP POST request to:
+    http://intersight-emulator-farm.cisco.com:30001/Emulators?namespace=&ltnamespace&gt
+</p>
+
+<p>
+Where "namespace" is a unique string you wish to place your resources under e.g. "scale-test-50"
+</p>
+
+<p>
+
+The body of the request should be a json document with the following properties:<br>
+<ul>
+    <li>
+Name :      A prefix to assign to the emulator name, used to identify individual emulator instances.<br>
+    </li>
+    <li>
+    Platform:   The emulator platform to create. Supported values:<br>
+                    UCSFI      : UCS Fabric Interconnect device connector emulator.<br>
+                    IMCM5      : Standalone M5 server device connector emulator.<br>
+                    HX         : HyperFlex device connector emulator.<br>
+                    SCALE_CONN : Data spewer capable of emulating large number of device connections.<br>
+    </li>
+    <li>
+    Version:  The version of the emulator to create. <br>
+    </li>
+    <li>
+    Cloud:    The cloud DNS to register device to. Value must be the southbound (service) dns.<br>
+    </li>
+    <li>
+    Count:    Number of emulator instances to create.<br>
+    </li>
+    <li>
+    CPU:      CPU limit for the emulator.<br>
+    </li>
+    <li>
+    Memory:   Memory limit for the emulator.<br>
+    </li>
+    <li>
+    Options:  Additional environment variables to add to the emulator. Specific to each platform type (documented below)<br>
+    </li>
+</ul>
+
+    example creation of a UCSFI connector registered to QA cloud.<br>
+    {<br>
+        "Name":"ucsfi-test",<br>
+        "Platform":"UCSFI",<br>
+        "Version":"1.0.9-2740",<br>
+        "Cloud":"qaconnect.starshipcloud.com",<br>
+        "Count": 1,<br>
+        "CPU": "200m",<br>
+        "Memory":"250Mi",<br>
+        "Options" : {<br>
+    <br>
+        }<br>
+    }<br>
+
+</p>
+
+<h3>UCSFI Emulator options</h3>
+<p>There are no additional options at this time</p>
+<h3>IMCM5 Emulator options</h3>
+<p>There are no additional options at this time</p>
+<h3>HX Emulator options</h3>
+<p>There are no additional options at this time</p>
+<h3>SCALE_CONN Emulator options</h3>
+<ol>
+    <li>
+EMU_CONNECTIONS : Number of connections to spawn
+    </li>
+    <li>
+    EMU_PLATFORM : Platform to emulate. All platform types supported by the target cloud are supported, however some
+               platforms may not support the full feature set of Intersight.
+               Current platform support (if platform is not specified here only the base features of register/connect/claim are supported):<br>
+                UCSFI: <ul>
+        <li>Full inventory support when DB_NAME is specified</li>
+        <li>UCSM statistic publish.</li>
+                        </ul>
+    </li>
+    <li>
+
+    EMU_DISCONNECT_RATE : Rate of disconnects in millisconds (default : no disconnects). If specified all spawned connections will be broken
+                      at this interval.
+    </li>
+    <li>
+
+    RECONNECT_RATE : Rate in milliseconds to attempt connection re-connect (default : 10 seconds) if connections are broken for any reason.
+    </li>
+    <li>
+
+
+    HONOR_SERVER_BACKOFF : Flag marks whether to honor server backoff requests (default: true)
+    </li>
+    <li>
+
+    SPAWN_RATE : Rate in milliseconds to spawn new connections. Controls the rate of register when the spewer instance is created.
+             Can be used to spread out connections over a period of time to limit impact on Intersight services.
+    </li>
+    <li>
+
+    JOB_RATE : Rate in milliseconds to run jobs in the job scheduler plugin (default to cloud request)
+    </li>
+    <li>
+
+    DB_NAME : Database to pull inventory from (default no inventory). Currently only supported for UCSFI platform types.<br>
+            UCSFI values:<br>
+        <ul>
+            <li>small-setup : A relatively small UCSM cluster.</li>
+            <li>scale-rack  : A scale UCSM setup containing a 'large' amount of rack servers. (how many you ask? try it out yourself)</li>
+        </ul>
+    </li>
+STREAM_INTERVAL: Controls the rate at which streams in the stream plugin will emit a message. Currently the only use case
+                 is to control the rate at which stats are published to Intersight. Defaults to value in stream open request.
+    </li>
+</ol>
+<h1>Checking emulator status</h1>
+<p>
+    The status of spawned emulators can be retrieved with a GET request on:
+</p>
+<p>
+http://intersight-emulator-farm.cisco.com:30001/Emulators?namespace=&ltnamespace&gt
+</p>
+
+<p>
+
+    Where "namespace" is the unique string used to spawn the emulators.
+</p>
+
+<p>
+
+    An optional query parameter 'claim=yes' can be added to the request to return the claim code and device id that
+    can be used to claim the emulator in the Intersight service.
+</p>
+
+<h1>Removing emulators</h1>
+<p>
+    Emulators can be removed, deleting the container and removing all config/resources of the emualtor with a DELETE request:
+
+</p>
+<p>
+http://intersight-emulator-farm.cisco.com:30001/Emulators/&ltemulator-name&gt?namespace=&ltnamespace&gt
+</p>
+
+<p>
+
+    Where "namespace" is the unique string used to spawn the emulators and 'emulator-name' is the name assigned to the instance,
+    and returned as the key in the list of objects returned in a GET.
+</p>
+
+<p>
+
+    All emulators in a given namespace can be removed at once by sending the DELETE request without specifying a specific
+    instance:
+</p>
+
+<p>
+
+http://intersight-emulator-farm.cisco.com:30001/Emulators?namespace=&ltnamespace&gt
+</p>
+
+<br>
+<br>
+<br>
+
+
+<p>
+    For help or feature requests please contact sehagan@cisco.com.
+</p>
+
+</body>
+</html>

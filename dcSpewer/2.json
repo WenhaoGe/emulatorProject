@@ -1,0 +1,740 @@
+{
+  "ClassId": "connector.NetworkAgentRequest",
+  "ObjectType": "connector.NetworkAgentRequest",
+  "ActionType": "ConfigureFcoeUplinks",
+  "MessageId": "",
+  "MoList": [
+    {
+      "ClassId": "connector.NetworkAgentMoEnvelope",
+      "ObjectType": "connector.NetworkAgentMoEnvelope",
+      "ActionType": "\u0000",
+      "MoData": {
+        "Moid": "5f64ecc36f62692d30b7c3e3",
+        "ObjectType": "sw.PortChannel",
+        "ClassId": "sw.PortChannel",
+        "CreateTime": "2020-09-18T17:22:11.828691901Z",
+        "ModTime": "2020-09-18T17:22:12.026553871Z",
+        "Tags": [],
+        "Owners": [
+          "5f2dbc767564612d301d5d07",
+          "5f624df86f72612d30abcb61"
+        ],
+        "SharedScope": "",
+        "AccountMoid": "5f2dbc767564612d301d5d07",
+        "DomainGroupMoid": "5f2dbc767564612d301d5d08",
+        "Ancestors": [
+          {
+            "ObjectType": "sw.Element",
+            "ClassId": "mo.MoRef",
+            "Moid": "5f624dfa6f62692d30b74ec9",
+            "link": "https://erige-onprem248.cisco.com/api/v1/sw/Elements/5f624dfa6f62692d30b74ec9"
+          }
+        ],
+        "Parent": {
+          "ObjectType": "sw.Element",
+          "ClassId": "mo.MoRef",
+          "Moid": "5f624dfa6f62692d30b74ec9",
+          "link": "https://erige-onprem248.cisco.com/api/v1/sw/Elements/5f624dfa6f62692d30b74ec9"
+        },
+        "PermissionResources": [
+          {
+            "ObjectType": "organization.Organization",
+            "ClassId": "mo.MoRef",
+            "Moid": "5f2dc2b56972652d3014f3a1",
+            "link": "https://erige-onprem248.cisco.com/api/v1/organization/Organizations/5f2dc2b56972652d3014f3a1"
+          }
+        ],
+        "ConfigState": "configured",
+        "AdminState": "Enabled",
+        "SwitchId": 0,
+        "AllowedVlans": "2,4048",
+        "Mode": "trunk",
+        "NativeVlan": 0,
+        "PeerEquipmentId": 0,
+        "PeerEquipmentSerial": "",
+        "PeerModuleId": 0,
+        "PeerModuleSerial": "",
+        "PeerUplinkId": 0,
+        "AccessVlan": 0,
+        "AdminSpeed": "10Gbps",
+        "Description": "FcoeUplink",
+        "FcoeVifId": 682,
+        "Mtu": 1500,
+        "PcId": 11,
+        "Element": {
+          "ObjectType": "sw.Element",
+          "ClassId": "mo.MoRef",
+          "Moid": "5f624dfa6f62692d30b74ec9",
+          "link": "https://erige-onprem248.cisco.com/api/v1/sw/Elements/5f624dfa6f62692d30b74ec9"
+        },
+        "Etherports": null
+      }
+    },
+    {
+      "ClassId": "connector.NetworkAgentMoEnvelope",
+      "ObjectType": "connector.NetworkAgentMoEnvelope",
+      "ActionType": "\u0001",
+      "MoData": {
+        "Moid": "5f63c3996f62692d30b78221",
+        "ObjectType": "sw.PortChannel",
+        "ClassId": "sw.PortChannel",
+        "CreateTime": "2020-09-17T20:14:17.844Z",
+        "ModTime": "2020-09-18T17:22:11.859980505Z",
+        "Tags": [],
+        "Owners": [
+          "5f2dbc767564612d301d5d07",
+          "5f624df86f72612d30abcb61"
+        ],
+        "SharedScope": "",
+        "AccountMoid": "5f2dbc767564612d301d5d07",
+        "DomainGroupMoid": "5f2dbc767564612d301d5d08",
+        "Ancestors": [
+          {
+            "ObjectType": "sw.Element",
+            "ClassId": "mo.MoRef",
+            "Moid": "5f624dfa6f62692d30b74ec9",
+            "link": "https://erige-onprem248.cisco.com/api/v1/sw/Elements/5f624dfa6f62692d30b74ec9"
+          }
+        ],
+        "Parent": {
+          "ObjectType": "sw.Element",
+          "ClassId": "mo.MoRef",
+          "Moid": "5f624dfa6f62692d30b74ec9",
+          "link": "https://erige-onprem248.cisco.com/api/v1/sw/Elements/5f624dfa6f62692d30b74ec9"
+        },
+        "PermissionResources": [
+          {
+            "ObjectType": "organization.Organization",
+            "ClassId": "mo.MoRef",
+            "Moid": "5f2dc2b56972652d3014f3a1",
+            "link": "https://erige-onprem248.cisco.com/api/v1/organization/Organizations/5f2dc2b56972652d3014f3a1"
+          }
+        ],
+        "ConfigState": "unconfigured",
+        "AdminState": "Disabled",
+        "SwitchId": 0,
+        "AllowedVlans": "1-4094",
+        "Mode": "access",
+        "NativeVlan": 1,
+        "PeerEquipmentId": 0,
+        "PeerEquipmentSerial": "",
+        "PeerModuleId": 0,
+        "PeerModuleSerial": "",
+        "PeerUplinkId": 0,
+        "AccessVlan": 0,
+        "AdminSpeed": "Auto",
+        "Description": "",
+        "FcoeVifId": 681,
+        "Mtu": 1500,
+        "PcId": 10,
+        "Element": {
+          "ObjectType": "sw.Element",
+          "ClassId": "mo.MoRef",
+          "Moid": "5f624dfa6f62692d30b74ec9",
+          "link": "https://erige-onprem248.cisco.com/api/v1/sw/Elements/5f624dfa6f62692d30b74ec9"
+        },
+        "Etherports": []
+      }
+    },
+    {
+      "ClassId": "connector.NetworkAgentMoEnvelope",
+      "ObjectType": "connector.NetworkAgentMoEnvelope",
+      "ActionType": "\u0000",
+      "MoData": {
+        "Moid": "5f64ecc36f62692d30b7c3e5",
+        "ObjectType": "sw.EtherPort",
+        "ClassId": "sw.EtherPort",
+        "CreateTime": "2020-09-18T17:22:11.833089915Z",
+        "ModTime": "2020-09-18T17:22:12.026610171Z",
+        "Tags": [],
+        "Owners": [
+          "5f2dbc767564612d301d5d07",
+          "5f624df86f72612d30abcb61"
+        ],
+        "SharedScope": "",
+        "AccountMoid": "5f2dbc767564612d301d5d07",
+        "DomainGroupMoid": "5f2dbc767564612d301d5d08",
+        "Ancestors": [
+          {
+            "ObjectType": "sw.Element",
+            "ClassId": "mo.MoRef",
+            "Moid": "5f624dfa6f62692d30b74ec9",
+            "link": "https://erige-onprem248.cisco.com/api/v1/sw/Elements/5f624dfa6f62692d30b74ec9"
+          }
+        ],
+        "Parent": {
+          "ObjectType": "sw.Element",
+          "ClassId": "mo.MoRef",
+          "Moid": "5f624dfa6f62692d30b74ec9",
+          "link": "https://erige-onprem248.cisco.com/api/v1/sw/Elements/5f624dfa6f62692d30b74ec9"
+        },
+        "PermissionResources": [
+          {
+            "ObjectType": "organization.Organization",
+            "ClassId": "mo.MoRef",
+            "Moid": "5f2dc2b56972652d3014f3a1",
+            "link": "https://erige-onprem248.cisco.com/api/v1/organization/Organizations/5f2dc2b56972652d3014f3a1"
+          }
+        ],
+        "ConfigState": "configured",
+        "AdminState": "Enabled",
+        "SwitchId": 0,
+        "AllowedVlans": "2,4048",
+        "Mode": "trunk",
+        "NativeVlan": 0,
+        "PeerEquipmentId": 0,
+        "PeerEquipmentSerial": "",
+        "PeerModuleId": 0,
+        "PeerModuleSerial": "",
+        "PeerUplinkId": 0,
+        "AdminSpeed": "10Gbps",
+        "AggregatePortId": 0,
+        "Description": "FcoeUplink PC Member",
+        "PcId": 11,
+        "PortId": 10,
+        "SlotId": 1,
+        "FcoeVifId": 682,
+        "Fec": "Auto",
+        "Element": {
+          "ObjectType": "sw.Element",
+          "ClassId": "mo.MoRef",
+          "Moid": "5f624dfa6f62692d30b74ec9",
+          "link": "https://erige-onprem248.cisco.com/api/v1/sw/Elements/5f624dfa6f62692d30b74ec9"
+        },
+        "PortChannel": null
+      }
+    },
+    {
+      "ClassId": "connector.NetworkAgentMoEnvelope",
+      "ObjectType": "connector.NetworkAgentMoEnvelope",
+      "ActionType": "\u0000",
+      "MoData": {
+        "Moid": "5f64ecc36f62692d30b7c3e6",
+        "ObjectType": "sw.EtherPort",
+        "ClassId": "sw.EtherPort",
+        "CreateTime": "2020-09-18T17:22:11.838259057Z",
+        "ModTime": "2020-09-18T17:22:12.026631332Z",
+        "Tags": [],
+        "Owners": [
+          "5f2dbc767564612d301d5d07",
+          "5f624df86f72612d30abcb61"
+        ],
+        "SharedScope": "",
+        "AccountMoid": "5f2dbc767564612d301d5d07",
+        "DomainGroupMoid": "5f2dbc767564612d301d5d08",
+        "Ancestors": [
+          {
+            "ObjectType": "sw.Element",
+            "ClassId": "mo.MoRef",
+            "Moid": "5f624dfa6f62692d30b74ec9",
+            "link": "https://erige-onprem248.cisco.com/api/v1/sw/Elements/5f624dfa6f62692d30b74ec9"
+          }
+        ],
+        "Parent": {
+          "ObjectType": "sw.Element",
+          "ClassId": "mo.MoRef",
+          "Moid": "5f624dfa6f62692d30b74ec9",
+          "link": "https://erige-onprem248.cisco.com/api/v1/sw/Elements/5f624dfa6f62692d30b74ec9"
+        },
+        "PermissionResources": [
+          {
+            "ObjectType": "organization.Organization",
+            "ClassId": "mo.MoRef",
+            "Moid": "5f2dc2b56972652d3014f3a1",
+            "link": "https://erige-onprem248.cisco.com/api/v1/organization/Organizations/5f2dc2b56972652d3014f3a1"
+          }
+        ],
+        "ConfigState": "configured",
+        "AdminState": "Enabled",
+        "SwitchId": 0,
+        "AllowedVlans": "2,4048",
+        "Mode": "trunk",
+        "NativeVlan": 0,
+        "PeerEquipmentId": 0,
+        "PeerEquipmentSerial": "",
+        "PeerModuleId": 0,
+        "PeerModuleSerial": "",
+        "PeerUplinkId": 0,
+        "AdminSpeed": "10Gbps",
+        "AggregatePortId": 0,
+        "Description": "FcoeUplink PC Member",
+        "PcId": 11,
+        "PortId": 11,
+        "SlotId": 1,
+        "FcoeVifId": 682,
+        "Fec": "Auto",
+        "Element": {
+          "ObjectType": "sw.Element",
+          "ClassId": "mo.MoRef",
+          "Moid": "5f624dfa6f62692d30b74ec9",
+          "link": "https://erige-onprem248.cisco.com/api/v1/sw/Elements/5f624dfa6f62692d30b74ec9"
+        },
+        "PortChannel": null
+      }
+    },
+    {
+      "ClassId": "connector.NetworkAgentMoEnvelope",
+      "ObjectType": "connector.NetworkAgentMoEnvelope",
+      "ActionType": "\u0000",
+      "MoData": {
+        "Moid": "5f64ecc36f62692d30b7c3e7",
+        "ObjectType": "sw.EtherPort",
+        "ClassId": "sw.EtherPort",
+        "CreateTime": "2020-09-18T17:22:11.842835623Z",
+        "ModTime": "2020-09-18T17:22:12.026654992Z",
+        "Tags": [],
+        "Owners": [
+          "5f2dbc767564612d301d5d07",
+          "5f624df86f72612d30abcb61"
+        ],
+        "SharedScope": "",
+        "AccountMoid": "5f2dbc767564612d301d5d07",
+        "DomainGroupMoid": "5f2dbc767564612d301d5d08",
+        "Ancestors": [
+          {
+            "ObjectType": "sw.Element",
+            "ClassId": "mo.MoRef",
+            "Moid": "5f624dfa6f62692d30b74ec9",
+            "link": "https://erige-onprem248.cisco.com/api/v1/sw/Elements/5f624dfa6f62692d30b74ec9"
+          }
+        ],
+        "Parent": {
+          "ObjectType": "sw.Element",
+          "ClassId": "mo.MoRef",
+          "Moid": "5f624dfa6f62692d30b74ec9",
+          "link": "https://erige-onprem248.cisco.com/api/v1/sw/Elements/5f624dfa6f62692d30b74ec9"
+        },
+        "PermissionResources": [
+          {
+            "ObjectType": "organization.Organization",
+            "ClassId": "mo.MoRef",
+            "Moid": "5f2dc2b56972652d3014f3a1",
+            "link": "https://erige-onprem248.cisco.com/api/v1/organization/Organizations/5f2dc2b56972652d3014f3a1"
+          }
+        ],
+        "ConfigState": "configured",
+        "AdminState": "Enabled",
+        "SwitchId": 0,
+        "AllowedVlans": "2,4048",
+        "Mode": "trunk",
+        "NativeVlan": 0,
+        "PeerEquipmentId": 0,
+        "PeerEquipmentSerial": "",
+        "PeerModuleId": 0,
+        "PeerModuleSerial": "",
+        "PeerUplinkId": 0,
+        "AdminSpeed": "10Gbps",
+        "AggregatePortId": 0,
+        "Description": "FcoeUplink PC Member",
+        "PcId": 11,
+        "PortId": 12,
+        "SlotId": 1,
+        "FcoeVifId": 682,
+        "Fec": "Auto",
+        "Element": {
+          "ObjectType": "sw.Element",
+          "ClassId": "mo.MoRef",
+          "Moid": "5f624dfa6f62692d30b74ec9",
+          "link": "https://erige-onprem248.cisco.com/api/v1/sw/Elements/5f624dfa6f62692d30b74ec9"
+        },
+        "PortChannel": null
+      }
+    },
+    {
+      "ClassId": "connector.NetworkAgentMoEnvelope",
+      "ObjectType": "connector.NetworkAgentMoEnvelope",
+      "ActionType": "\u0000",
+      "MoData": {
+        "Moid": "5f64ecc36f62692d30b7c3e8",
+        "ObjectType": "sw.EtherPort",
+        "ClassId": "sw.EtherPort",
+        "CreateTime": "2020-09-18T17:22:11.847063241Z",
+        "ModTime": "2020-09-18T17:22:12.026673671Z",
+        "Tags": [],
+        "Owners": [
+          "5f2dbc767564612d301d5d07",
+          "5f624df86f72612d30abcb61"
+        ],
+        "SharedScope": "",
+        "AccountMoid": "5f2dbc767564612d301d5d07",
+        "DomainGroupMoid": "5f2dbc767564612d301d5d08",
+        "Ancestors": [
+          {
+            "ObjectType": "sw.Element",
+            "ClassId": "mo.MoRef",
+            "Moid": "5f624dfa6f62692d30b74ec9",
+            "link": "https://erige-onprem248.cisco.com/api/v1/sw/Elements/5f624dfa6f62692d30b74ec9"
+          }
+        ],
+        "Parent": {
+          "ObjectType": "sw.Element",
+          "ClassId": "mo.MoRef",
+          "Moid": "5f624dfa6f62692d30b74ec9",
+          "link": "https://erige-onprem248.cisco.com/api/v1/sw/Elements/5f624dfa6f62692d30b74ec9"
+        },
+        "PermissionResources": [
+          {
+            "ObjectType": "organization.Organization",
+            "ClassId": "mo.MoRef",
+            "Moid": "5f2dc2b56972652d3014f3a1",
+            "link": "https://erige-onprem248.cisco.com/api/v1/organization/Organizations/5f2dc2b56972652d3014f3a1"
+          }
+        ],
+        "ConfigState": "configured",
+        "AdminState": "Enabled",
+        "SwitchId": 0,
+        "AllowedVlans": "2,4048",
+        "Mode": "trunk",
+        "NativeVlan": 0,
+        "PeerEquipmentId": 0,
+        "PeerEquipmentSerial": "",
+        "PeerModuleId": 0,
+        "PeerModuleSerial": "",
+        "PeerUplinkId": 0,
+        "AdminSpeed": "10Gbps",
+        "AggregatePortId": 0,
+        "Description": "FcoeUplink PC Member",
+        "PcId": 11,
+        "PortId": 13,
+        "SlotId": 1,
+        "FcoeVifId": 682,
+        "Fec": "Auto",
+        "Element": {
+          "ObjectType": "sw.Element",
+          "ClassId": "mo.MoRef",
+          "Moid": "5f624dfa6f62692d30b74ec9",
+          "link": "https://erige-onprem248.cisco.com/api/v1/sw/Elements/5f624dfa6f62692d30b74ec9"
+        },
+        "PortChannel": null
+      }
+    },
+    {
+      "ClassId": "connector.NetworkAgentMoEnvelope",
+      "ObjectType": "connector.NetworkAgentMoEnvelope",
+      "ActionType": "\u0001",
+      "MoData": {
+        "Moid": "5f63c3996f62692d30b78224",
+        "ObjectType": "sw.EtherPort",
+        "ClassId": "sw.EtherPort",
+        "CreateTime": "2020-09-17T20:14:17.847Z",
+        "ModTime": "2020-09-18T17:22:11.886395229Z",
+        "Tags": [],
+        "Owners": [
+          "5f2dbc767564612d301d5d07",
+          "5f624df86f72612d30abcb61"
+        ],
+        "SharedScope": "",
+        "AccountMoid": "5f2dbc767564612d301d5d07",
+        "DomainGroupMoid": "5f2dbc767564612d301d5d08",
+        "Ancestors": [
+          {
+            "ObjectType": "sw.Element",
+            "ClassId": "mo.MoRef",
+            "Moid": "5f624dfa6f62692d30b74ec9",
+            "link": "https://erige-onprem248.cisco.com/api/v1/sw/Elements/5f624dfa6f62692d30b74ec9"
+          }
+        ],
+        "Parent": {
+          "ObjectType": "sw.Element",
+          "ClassId": "mo.MoRef",
+          "Moid": "5f624dfa6f62692d30b74ec9",
+          "link": "https://erige-onprem248.cisco.com/api/v1/sw/Elements/5f624dfa6f62692d30b74ec9"
+        },
+        "PermissionResources": [
+          {
+            "ObjectType": "organization.Organization",
+            "ClassId": "mo.MoRef",
+            "Moid": "5f2dc2b56972652d3014f3a1",
+            "link": "https://erige-onprem248.cisco.com/api/v1/organization/Organizations/5f2dc2b56972652d3014f3a1"
+          }
+        ],
+        "ConfigState": "unconfigured",
+        "AdminState": "Disabled",
+        "SwitchId": 0,
+        "AllowedVlans": "1-4094",
+        "Mode": "access",
+        "NativeVlan": 1,
+        "PeerEquipmentId": 0,
+        "PeerEquipmentSerial": "",
+        "PeerModuleId": 0,
+        "PeerModuleSerial": "",
+        "PeerUplinkId": 0,
+        "AdminSpeed": "Auto",
+        "AggregatePortId": 0,
+        "Description": "FcoeUplink PC Member",
+        "PcId": 0,
+        "PortId": 5,
+        "SlotId": 1,
+        "FcoeVifId": 0,
+        "Fec": "Auto",
+        "Element": {
+          "ObjectType": "sw.Element",
+          "ClassId": "mo.MoRef",
+          "Moid": "5f624dfa6f62692d30b74ec9",
+          "link": "https://erige-onprem248.cisco.com/api/v1/sw/Elements/5f624dfa6f62692d30b74ec9"
+        },
+        "PortChannel": null
+      }
+    },
+    {
+      "ClassId": "connector.NetworkAgentMoEnvelope",
+      "ObjectType": "connector.NetworkAgentMoEnvelope",
+      "ActionType": "\u0001",
+      "MoData": {
+        "Moid": "5f63c3996f62692d30b78225",
+        "ObjectType": "sw.EtherPort",
+        "ClassId": "sw.EtherPort",
+        "CreateTime": "2020-09-17T20:14:17.85Z",
+        "ModTime": "2020-09-18T17:22:11.887136563Z",
+        "Tags": [],
+        "Owners": [
+          "5f2dbc767564612d301d5d07",
+          "5f624df86f72612d30abcb61"
+        ],
+        "SharedScope": "",
+        "AccountMoid": "5f2dbc767564612d301d5d07",
+        "DomainGroupMoid": "5f2dbc767564612d301d5d08",
+        "Ancestors": [
+          {
+            "ObjectType": "sw.Element",
+            "ClassId": "mo.MoRef",
+            "Moid": "5f624dfa6f62692d30b74ec9",
+            "link": "https://erige-onprem248.cisco.com/api/v1/sw/Elements/5f624dfa6f62692d30b74ec9"
+          }
+        ],
+        "Parent": {
+          "ObjectType": "sw.Element",
+          "ClassId": "mo.MoRef",
+          "Moid": "5f624dfa6f62692d30b74ec9",
+          "link": "https://erige-onprem248.cisco.com/api/v1/sw/Elements/5f624dfa6f62692d30b74ec9"
+        },
+        "PermissionResources": [
+          {
+            "ObjectType": "organization.Organization",
+            "ClassId": "mo.MoRef",
+            "Moid": "5f2dc2b56972652d3014f3a1",
+            "link": "https://erige-onprem248.cisco.com/api/v1/organization/Organizations/5f2dc2b56972652d3014f3a1"
+          }
+        ],
+        "ConfigState": "unconfigured",
+        "AdminState": "Disabled",
+        "SwitchId": 0,
+        "AllowedVlans": "1-4094",
+        "Mode": "access",
+        "NativeVlan": 1,
+        "PeerEquipmentId": 0,
+        "PeerEquipmentSerial": "",
+        "PeerModuleId": 0,
+        "PeerModuleSerial": "",
+        "PeerUplinkId": 0,
+        "AdminSpeed": "Auto",
+        "AggregatePortId": 0,
+        "Description": "FcoeUplink PC Member",
+        "PcId": 0,
+        "PortId": 6,
+        "SlotId": 1,
+        "FcoeVifId": 0,
+        "Fec": "Auto",
+        "Element": {
+          "ObjectType": "sw.Element",
+          "ClassId": "mo.MoRef",
+          "Moid": "5f624dfa6f62692d30b74ec9",
+          "link": "https://erige-onprem248.cisco.com/api/v1/sw/Elements/5f624dfa6f62692d30b74ec9"
+        },
+        "PortChannel": null
+      }
+    },
+    {
+      "ClassId": "connector.NetworkAgentMoEnvelope",
+      "ObjectType": "connector.NetworkAgentMoEnvelope",
+      "ActionType": "\u0001",
+      "MoData": {
+        "Moid": "5f63c3996f62692d30b78226",
+        "ObjectType": "sw.EtherPort",
+        "ClassId": "sw.EtherPort",
+        "CreateTime": "2020-09-17T20:14:17.854Z",
+        "ModTime": "2020-09-18T17:22:11.887851014Z",
+        "Tags": [],
+        "Owners": [
+          "5f2dbc767564612d301d5d07",
+          "5f624df86f72612d30abcb61"
+        ],
+        "SharedScope": "",
+        "AccountMoid": "5f2dbc767564612d301d5d07",
+        "DomainGroupMoid": "5f2dbc767564612d301d5d08",
+        "Ancestors": [
+          {
+            "ObjectType": "sw.Element",
+            "ClassId": "mo.MoRef",
+            "Moid": "5f624dfa6f62692d30b74ec9",
+            "link": "https://erige-onprem248.cisco.com/api/v1/sw/Elements/5f624dfa6f62692d30b74ec9"
+          }
+        ],
+        "Parent": {
+          "ObjectType": "sw.Element",
+          "ClassId": "mo.MoRef",
+          "Moid": "5f624dfa6f62692d30b74ec9",
+          "link": "https://erige-onprem248.cisco.com/api/v1/sw/Elements/5f624dfa6f62692d30b74ec9"
+        },
+        "PermissionResources": [
+          {
+            "ObjectType": "organization.Organization",
+            "ClassId": "mo.MoRef",
+            "Moid": "5f2dc2b56972652d3014f3a1",
+            "link": "https://erige-onprem248.cisco.com/api/v1/organization/Organizations/5f2dc2b56972652d3014f3a1"
+          }
+        ],
+        "ConfigState": "unconfigured",
+        "AdminState": "Disabled",
+        "SwitchId": 0,
+        "AllowedVlans": "1-4094",
+        "Mode": "access",
+        "NativeVlan": 1,
+        "PeerEquipmentId": 0,
+        "PeerEquipmentSerial": "",
+        "PeerModuleId": 0,
+        "PeerModuleSerial": "",
+        "PeerUplinkId": 0,
+        "AdminSpeed": "Auto",
+        "AggregatePortId": 0,
+        "Description": "FcoeUplink PC Member",
+        "PcId": 0,
+        "PortId": 7,
+        "SlotId": 1,
+        "FcoeVifId": 0,
+        "Fec": "Auto",
+        "Element": {
+          "ObjectType": "sw.Element",
+          "ClassId": "mo.MoRef",
+          "Moid": "5f624dfa6f62692d30b74ec9",
+          "link": "https://erige-onprem248.cisco.com/api/v1/sw/Elements/5f624dfa6f62692d30b74ec9"
+        },
+        "PortChannel": null
+      }
+    },
+    {
+      "ClassId": "connector.NetworkAgentMoEnvelope",
+      "ObjectType": "connector.NetworkAgentMoEnvelope",
+      "ActionType": "\u0001",
+      "MoData": {
+        "Moid": "5f63c3996f62692d30b78227",
+        "ObjectType": "sw.EtherPort",
+        "ClassId": "sw.EtherPort",
+        "CreateTime": "2020-09-17T20:14:17.857Z",
+        "ModTime": "2020-09-18T17:22:11.888459278Z",
+        "Tags": [],
+        "Owners": [
+          "5f2dbc767564612d301d5d07",
+          "5f624df86f72612d30abcb61"
+        ],
+        "SharedScope": "",
+        "AccountMoid": "5f2dbc767564612d301d5d07",
+        "DomainGroupMoid": "5f2dbc767564612d301d5d08",
+        "Ancestors": [
+          {
+            "ObjectType": "sw.Element",
+            "ClassId": "mo.MoRef",
+            "Moid": "5f624dfa6f62692d30b74ec9",
+            "link": "https://erige-onprem248.cisco.com/api/v1/sw/Elements/5f624dfa6f62692d30b74ec9"
+          }
+        ],
+        "Parent": {
+          "ObjectType": "sw.Element",
+          "ClassId": "mo.MoRef",
+          "Moid": "5f624dfa6f62692d30b74ec9",
+          "link": "https://erige-onprem248.cisco.com/api/v1/sw/Elements/5f624dfa6f62692d30b74ec9"
+        },
+        "PermissionResources": [
+          {
+            "ObjectType": "organization.Organization",
+            "ClassId": "mo.MoRef",
+            "Moid": "5f2dc2b56972652d3014f3a1",
+            "link": "https://erige-onprem248.cisco.com/api/v1/organization/Organizations/5f2dc2b56972652d3014f3a1"
+          }
+        ],
+        "ConfigState": "unconfigured",
+        "AdminState": "Disabled",
+        "SwitchId": 0,
+        "AllowedVlans": "1-4094",
+        "Mode": "access",
+        "NativeVlan": 1,
+        "PeerEquipmentId": 0,
+        "PeerEquipmentSerial": "",
+        "PeerModuleId": 0,
+        "PeerModuleSerial": "",
+        "PeerUplinkId": 0,
+        "AdminSpeed": "Auto",
+        "AggregatePortId": 0,
+        "Description": "FcoeUplink PC Member",
+        "PcId": 0,
+        "PortId": 8,
+        "SlotId": 1,
+        "FcoeVifId": 0,
+        "Fec": "Auto",
+        "Element": {
+          "ObjectType": "sw.Element",
+          "ClassId": "mo.MoRef",
+          "Moid": "5f624dfa6f62692d30b74ec9",
+          "link": "https://erige-onprem248.cisco.com/api/v1/sw/Elements/5f624dfa6f62692d30b74ec9"
+        },
+        "PortChannel": null
+      }
+    },
+    {
+      "ClassId": "connector.NetworkAgentMoEnvelope",
+      "ObjectType": "connector.NetworkAgentMoEnvelope",
+      "ActionType": "\u0001",
+      "MoData": {
+        "Moid": "5f63c3996f62692d30b78223",
+        "ObjectType": "sw.Vfc",
+        "ClassId": "sw.Vfc",
+        "CreateTime": "2020-09-17T20:14:17.845Z",
+        "ModTime": "2020-09-18T17:22:11.921439261Z",
+        "Tags": [],
+        "Owners": [
+          "5f2dbc767564612d301d5d07",
+          "5f624df86f72612d30abcb61"
+        ],
+        "SharedScope": "",
+        "AccountMoid": "5f2dbc767564612d301d5d07",
+        "DomainGroupMoid": "5f2dbc767564612d301d5d08",
+        "Ancestors": [
+          {
+            "ObjectType": "sw.Element",
+            "ClassId": "mo.MoRef",
+            "Moid": "5f624dfa6f62692d30b74ec9",
+            "link": "https://erige-onprem248.cisco.com/api/v1/sw/Elements/5f624dfa6f62692d30b74ec9"
+          }
+        ],
+        "Parent": {
+          "ObjectType": "sw.Element",
+          "ClassId": "mo.MoRef",
+          "Moid": "5f624dfa6f62692d30b74ec9",
+          "link": "https://erige-onprem248.cisco.com/api/v1/sw/Elements/5f624dfa6f62692d30b74ec9"
+        },
+        "PermissionResources": [
+          {
+            "ObjectType": "organization.Organization",
+            "ClassId": "mo.MoRef",
+            "Moid": "5f2dc2b56972652d3014f3a1",
+            "link": "https://erige-onprem248.cisco.com/api/v1/organization/Organizations/5f2dc2b56972652d3014f3a1"
+          }
+        ],
+        "ConfigState": "unconfigured",
+        "AdminState": "Enabled",
+        "SwitchId": 0,
+        "BoundIf": "",
+        "Mode": "trunk",
+        "Name": "",
+        "TrunkVsans": "",
+        "VfcId": 681,
+        "Element": {
+          "ObjectType": "sw.Element",
+          "ClassId": "mo.MoRef",
+          "Moid": "5f624dfa6f62692d30b74ec9",
+          "link": "https://erige-onprem248.cisco.com/api/v1/sw/Elements/5f624dfa6f62692d30b74ec9"
+        }
+      }
+    }
+  ]
+}	{"deviceId": "5f624db66f72612d30abcb33"}

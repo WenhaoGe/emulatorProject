@@ -1,0 +1,142 @@
+
+  "ObjectType": "ether.PortChannel.List",
+  "Results": [
+    {
+      "Moid": "5f7f8ed06430372d425f058a",
+      "ObjectType": "ether.PortChannel",
+      "ClassId": "ether.PortChannel",
+      "CreateTime": "2020-10-08T22:12:48.721Z",
+      "ModTime": "2020-10-08T22:12:48.721Z",
+      "Tags": [],
+      "Owners": [
+        "5f2dbc767564612d301d5d07",
+        "5f7f87f36f72612d30ce2907"
+      ],
+      "SharedScope": "",
+      "AccountMoid": "5f2dbc767564612d301d5d07",
+      "DomainGroupMoid": "5f2dbc767564612d301d5d08",
+      "Ancestors": [
+        {
+          "ObjectType": "equipment.SwitchCard",
+          "ClassId": "mo.MoRef",
+          "Moid": "5f7f87e46430372d42a77e21",
+          "link": "https://erige-onprem248.cisco.com/api/v1/equipment/SwitchCards/5f7f87e46430372d42a77e21"
+        },
+        {
+          "ObjectType": "network.Element",
+          "ClassId": "mo.MoRef",
+          "Moid": "5f7f87f66176752d3035ba6c",
+          "link": "https://erige-onprem248.cisco.com/api/v1/network/Elements/5f7f87f66176752d3035ba6c"
+        }
+      ],
+      "Parent": {
+        "ObjectType": "equipment.SwitchCard",
+        "ClassId": "mo.MoRef",
+        "Moid": "5f7f87e46430372d42a77e21",
+        "link": "https://erige-onprem248.cisco.com/api/v1/equipment/SwitchCards/5f7f87e46430372d42a77e21"
+      },
+      "PermissionResources": [
+        {
+          "ObjectType": "organization.Organization",
+          "ClassId": "mo.MoRef",
+          "Moid": "5f2dc2b56972652d3014f3a1",
+          "link": "https://erige-onprem248.cisco.com/api/v1/organization/Organizations/5f2dc2b56972652d3014f3a1"
+        }
+      ],
+      "DeviceMoId": "5f7f87f36f72612d30ce2907",
+      "Dn": "sys/switch-B/border-eth/pc-2",
+      "Rn": "",
+      "AccessVlan": "vlan-1",
+      "AdminState": "Enabled",
+      "AllowedVlans": "2,4048",
+      "Mode": "trunk",
+      "NativeVlan": "vlan-1",
+      "OperSpeed": "auto",
+      "OperState": "down",
+      "OperStateQual": "port-channel-members-down",
+      "PortChannelId": 2,
+      "Role": "FcoeUplink",
+      "SwitchId": "B",
+      "EquipmentSwitchCard": {
+        "ObjectType": "equipment.SwitchCard",
+        "ClassId": "mo.MoRef",
+        "Moid": "5f7f87e46430372d42a77e21",
+        "link": "https://erige-onprem248.cisco.com/api/v1/equipment/SwitchCards/5f7f87e46430372d42a77e21"
+      },
+      "RegisteredDevice": {
+        "ObjectType": "asset.DeviceRegistration",
+        "ClassId": "mo.MoRef",
+        "Moid": "5f7f87f36f72612d30ce2907",
+        "link": "https://erige-onprem248.cisco.com/api/v1/asset/DeviceRegistrations/5f7f87f36f72612d30ce2907"
+      }
+    },
+    {
+      "Moid": "5f7f8ed86430372d413b0521",
+      "ObjectType": "ether.PortChannel",
+      "ClassId": "ether.PortChannel",
+      "CreateTime": "2020-10-08T22:12:50.667Z",
+      "ModTime": "2020-10-08T22:12:50.667Z",
+      "Tags": [],
+      "Owners": [
+        "5f2dbc767564612d301d5d07",
+        "5f7f87f36f72612d30ce2907"
+      ],
+      "SharedScope": "",
+      "AccountMoid": "5f2dbc767564612d301d5d07",
+      "DomainGroupMoid": "5f2dbc767564612d301d5d08",
+      "Ancestors": [
+        {
+          "ObjectType": "equipment.SwitchCard",
+          "ClassId": "mo.MoRef",
+          "Moid": "5f7f87f76176752d3035ba88",
+          "link": "https://erige-onprem248.cisco.com/api/v1/equipment/SwitchCards/5f7f87f76176752d3035ba88"
+        },
+        {
+          "ObjectType": "network.Element",
+          "ClassId": "mo.MoRef",
+          "Moid": "5f7f87f66176752d3035ba82",
+          "link": "https://erige-onprem248.cisco.com/api/v1/network/Elements/5f7f87f66176752d3035ba82"
+        }
+      ],
+      "Parent": {
+        "ObjectType": "equipment.SwitchCard",
+        "ClassId": "mo.MoRef",
+        "Moid": "5f7f87f76176752d3035ba88",
+        "link": "https://erige-onprem248.cisco.com/api/v1/equipment/SwitchCards/5f7f87f76176752d3035ba88"
+      },
+      "PermissionResources": [
+        {
+          "ObjectType": "organization.Organization",
+          "ClassId": "mo.MoRef",
+          "Moid": "5f2dc2b56972652d3014f3a1",
+          "link": "https://erige-onprem248.cisco.com/api/v1/organization/Organizations/5f2dc2b56972652d3014f3a1"
+        }
+      ],
+      "DeviceMoId": "5f7f87f36f72612d30ce2907",
+      "Dn": "sys/switch-A/border-eth/pc-2",
+      "Rn": "",
+      "AccessVlan": "vlan-1",
+      "AdminState": "Enabled",
+      "AllowedVlans": "2,4048",
+      "Mode": "trunk",
+      "NativeVlan": "vlan-1",
+      "OperSpeed": "auto",
+      "OperState": "down",
+      "OperStateQual": "port-channel-members-down",
+      "PortChannelId": 2,
+      "Role": "FcoeUplink",
+      "SwitchId": "A",
+      "EquipmentSwitchCard": {
+        "ObjectType": "equipment.SwitchCard",
+        "ClassId": "mo.MoRef",
+        "Moid": "5f7f87f76176752d3035ba88",
+        "link": "https://erige-onprem248.cisco.com/api/v1/equipment/SwitchCards/5f7f87f76176752d3035ba88"
+      },
+      "RegisteredDevice": {
+        "ObjectType": "asset.DeviceRegistration",
+        "ClassId": "mo.MoRef",
+        "Moid": "5f7f87f36f72612d30ce2907",
+        "link": "https://erige-onprem248.cisco.com/api/v1/asset/DeviceRegistrations/5f7f87f36f72612d30ce2907"
+      }
+    }
+  ]

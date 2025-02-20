@@ -1,0 +1,62 @@
+{
+  "ClassId": "connector.NetworkAgentRequest",
+  "ObjectType": "connector.NetworkAgentRequest",
+  "ActionType": "ConfigureCmsPort",
+  "MessageId": "",
+  "MoList": [
+    {
+      "ClassId": "connector.NetworkAgentMoEnvelope",
+      "ObjectType": "connector.NetworkAgentMoEnvelope",
+      "ActionType": "",
+      "MoData": {
+        "Moid": "5faaf7016f62692d30b99a08",
+        "ObjectType": "sw.BackplanePort",
+        "ClassId": "sw.BackplanePort",
+        "CreateTime": "2020-11-10T20:24:33.017964043Z",
+        "ModTime": "2020-11-10T20:24:33.05463685Z",
+        "Tags": [],
+        "Owners": [
+          "5f2dbc767564612d301d5d07",
+          "5faaf66c6f72612d309900b2"
+        ],
+        "SharedScope": "",
+        "AccountMoid": "5f2dbc767564612d301d5d07",
+        "DomainGroupMoid": "5f2dbc767564612d301d5d08",
+        "Ancestors": [],
+        "PermissionResources": [
+          {
+            "ObjectType": "organization.Organization",
+            "ClassId": "mo.MoRef",
+            "Moid": "5f2dc2b56972652d3014f3a1",
+            "link": "https://erige-onprem248.cisco.com/api/v1/organization/Organizations/5f2dc2b56972652d3014f3a1"
+          }
+        ],
+        "ConfigState": "configured",
+        "AdminState": "Enabled",
+        "SwitchId": 2,
+        "AllowedVlans": "4044",
+        "Mode": "trunk",
+        "NativeVlan": 4044,
+        "PeerEquipmentId": 0,
+        "PeerEquipmentSerial": "",
+        "PeerModuleId": 0,
+        "PeerModuleSerial": "",
+        "PeerUplinkId": 0,
+        "AdminSpeed": "Auto",
+        "AggregatePortId": 0,
+        "Description": "",
+        "PcId": 0,
+        "PortId": 33,
+        "SlotId": 0,
+        "FexId": 1,
+        "NetworkElement": {
+          "ObjectType": "network.Element",
+          "ClassId": "mo.MoRef",
+          "Moid": "5faaf6776176752d302badab",
+          "link": "https://erige-onprem248.cisco.com/api/v1/network/Elements/5faaf6776176752d302badab"
+        },
+        "PortChannel": null
+      }
+    }
+  ]
+}	{"deviceId": "", "deviceId": "5faaf6336f72612d30990088"}

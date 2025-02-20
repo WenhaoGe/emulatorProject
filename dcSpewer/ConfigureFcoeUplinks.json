@@ -1,0 +1,346 @@
+{
+  "ClassId": "connector.NetworkAgentRequest",
+  "ObjectType": "connector.NetworkAgentRequest",
+  "ActionType": "ConfigureFcoeUplinks",
+  "MessageId": "",
+  "MoList": [
+    {
+      "ClassId": "connector.NetworkAgentMoEnvelope",
+      "ObjectType": "connector.NetworkAgentMoEnvelope",
+      "ActionType": "\u0000",
+      "MoData": {
+        "Moid": "5f6e432a6f62692d31ba63b9",
+        "ObjectType": "sw.PortChannel",
+        "ClassId": "sw.PortChannel",
+        "CreateTime": "2020-09-25T19:21:14.260222147Z",
+        "ModTime": "2020-09-25T19:21:14.460929941Z",
+        "Tags": [],
+        "Owners": [
+          "5ecda19e7564612d338aaad7",
+          "5f6e386d6f72612d3192d723"
+        ],
+        "SharedScope": "",
+        "AccountMoid": "5ecda19e7564612d338aaad7",
+        "DomainGroupMoid": "5ecda19e7564612d338aaadf",
+        "Ancestors": [
+          {
+            "ObjectType": "sw.Element",
+            "ClassId": "mo.MoRef",
+            "Moid": "5f6e38716f62692d31b90da4",
+            "link": "https://staging.starshipcloud.com/api/v1/sw/Elements/5f6e38716f62692d31b90da4"
+          }
+        ],
+        "Parent": {
+          "ObjectType": "sw.Element",
+          "ClassId": "mo.MoRef",
+          "Moid": "5f6e38716f62692d31b90da4",
+          "link": "https://staging.starshipcloud.com/api/v1/sw/Elements/5f6e38716f62692d31b90da4"
+        },
+        "PermissionResources": [
+          {
+            "ObjectType": "organization.Organization",
+            "ClassId": "mo.MoRef",
+            "Moid": "5ecda1a16972652d31fd1a83",
+            "link": "https://staging.starshipcloud.com/api/v1/organization/Organizations/5ecda1a16972652d31fd1a83"
+          }
+        ],
+        "ConfigState": "configured",
+        "AdminState": "Enabled",
+        "SwitchId": 0,
+        "AllowedVlans": "2",
+        "Mode": "trunk",
+        "NativeVlan": 0,
+        "PeerEquipmentId": 0,
+        "PeerEquipmentSerial": "",
+        "PeerModuleId": 0,
+        "PeerModuleSerial": "",
+        "PeerUplinkId": 0,
+        "AccessVlan": 0,
+        "AdminSpeed": "10Gbps",
+        "Description": "FcoeUplink",
+        "FcoeVifId": 681,
+        "Mtu": 1500,
+        "PcId": 1,
+        "Element": {
+          "ObjectType": "sw.Element",
+          "ClassId": "mo.MoRef",
+          "Moid": "5f6e38716f62692d31b90da4",
+          "link": "https://staging.starshipcloud.com/api/v1/sw/Elements/5f6e38716f62692d31b90da4"
+        },
+        "Etherports": null
+      }
+    },
+    {
+      "ClassId": "connector.NetworkAgentMoEnvelope",
+      "ObjectType": "connector.NetworkAgentMoEnvelope",
+      "ActionType": "\u0000",
+      "MoData": {
+        "Moid": "5f6e432a6f62692d31ba63bc",
+        "ObjectType": "sw.EtherPort",
+        "ClassId": "sw.EtherPort",
+        "CreateTime": "2020-09-25T19:21:14.26700989Z",
+        "ModTime": "2020-09-25T19:21:14.460974137Z",
+        "Tags": [],
+        "Owners": [
+          "5ecda19e7564612d338aaad7",
+          "5f6e386d6f72612d3192d723"
+        ],
+        "SharedScope": "",
+        "AccountMoid": "5ecda19e7564612d338aaad7",
+        "DomainGroupMoid": "5ecda19e7564612d338aaadf",
+        "Ancestors": [
+          {
+            "ObjectType": "sw.Element",
+            "ClassId": "mo.MoRef",
+            "Moid": "5f6e38716f62692d31b90da4",
+            "link": "https://staging.starshipcloud.com/api/v1/sw/Elements/5f6e38716f62692d31b90da4"
+          }
+        ],
+        "Parent": {
+          "ObjectType": "sw.Element",
+          "ClassId": "mo.MoRef",
+          "Moid": "5f6e38716f62692d31b90da4",
+          "link": "https://staging.starshipcloud.com/api/v1/sw/Elements/5f6e38716f62692d31b90da4"
+        },
+        "PermissionResources": [
+          {
+            "ObjectType": "organization.Organization",
+            "ClassId": "mo.MoRef",
+            "Moid": "5ecda1a16972652d31fd1a83",
+            "link": "https://staging.starshipcloud.com/api/v1/organization/Organizations/5ecda1a16972652d31fd1a83"
+          }
+        ],
+        "ConfigState": "configured",
+        "AdminState": "Enabled",
+        "SwitchId": 0,
+        "AllowedVlans": "2",
+        "Mode": "trunk",
+        "NativeVlan": 0,
+        "PeerEquipmentId": 0,
+        "PeerEquipmentSerial": "",
+        "PeerModuleId": 0,
+        "PeerModuleSerial": "",
+        "PeerUplinkId": 0,
+        "AdminSpeed": "10Gbps",
+        "AggregatePortId": 0,
+        "Description": "FcoeUplink PC Member",
+        "PcId": 1,
+        "PortId": 1,
+        "SlotId": 1,
+        "FcoeVifId": 681,
+        "Fec": "Auto",
+        "Element": {
+          "ObjectType": "sw.Element",
+          "ClassId": "mo.MoRef",
+          "Moid": "5f6e38716f62692d31b90da4",
+          "link": "https://staging.starshipcloud.com/api/v1/sw/Elements/5f6e38716f62692d31b90da4"
+        },
+        "PortChannel": null
+      }
+    },
+    {
+      "ClassId": "connector.NetworkAgentMoEnvelope",
+      "ObjectType": "connector.NetworkAgentMoEnvelope",
+      "ActionType": "\u0000",
+      "MoData": {
+        "Moid": "5f6e432a6f62692d31ba63be",
+        "ObjectType": "sw.EtherPort",
+        "ClassId": "sw.EtherPort",
+        "CreateTime": "2020-09-25T19:21:14.276658875Z",
+        "ModTime": "2020-09-25T19:21:14.460990439Z",
+        "Tags": [],
+        "Owners": [
+          "5ecda19e7564612d338aaad7",
+          "5f6e386d6f72612d3192d723"
+        ],
+        "SharedScope": "",
+        "AccountMoid": "5ecda19e7564612d338aaad7",
+        "DomainGroupMoid": "5ecda19e7564612d338aaadf",
+        "Ancestors": [
+          {
+            "ObjectType": "sw.Element",
+            "ClassId": "mo.MoRef",
+            "Moid": "5f6e38716f62692d31b90da4",
+            "link": "https://staging.starshipcloud.com/api/v1/sw/Elements/5f6e38716f62692d31b90da4"
+          }
+        ],
+        "Parent": {
+          "ObjectType": "sw.Element",
+          "ClassId": "mo.MoRef",
+          "Moid": "5f6e38716f62692d31b90da4",
+          "link": "https://staging.starshipcloud.com/api/v1/sw/Elements/5f6e38716f62692d31b90da4"
+        },
+        "PermissionResources": [
+          {
+            "ObjectType": "organization.Organization",
+            "ClassId": "mo.MoRef",
+            "Moid": "5ecda1a16972652d31fd1a83",
+            "link": "https://staging.starshipcloud.com/api/v1/organization/Organizations/5ecda1a16972652d31fd1a83"
+          }
+        ],
+        "ConfigState": "configured",
+        "AdminState": "Enabled",
+        "SwitchId": 0,
+        "AllowedVlans": "2",
+        "Mode": "trunk",
+        "NativeVlan": 0,
+        "PeerEquipmentId": 0,
+        "PeerEquipmentSerial": "",
+        "PeerModuleId": 0,
+        "PeerModuleSerial": "",
+        "PeerUplinkId": 0,
+        "AdminSpeed": "10Gbps",
+        "AggregatePortId": 0,
+        "Description": "FcoeUplink PC Member",
+        "PcId": 1,
+        "PortId": 2,
+        "SlotId": 1,
+        "FcoeVifId": 681,
+        "Fec": "Auto",
+        "Element": {
+          "ObjectType": "sw.Element",
+          "ClassId": "mo.MoRef",
+          "Moid": "5f6e38716f62692d31b90da4",
+          "link": "https://staging.starshipcloud.com/api/v1/sw/Elements/5f6e38716f62692d31b90da4"
+        },
+        "PortChannel": null
+      }
+    },
+    {
+      "ClassId": "connector.NetworkAgentMoEnvelope",
+      "ObjectType": "connector.NetworkAgentMoEnvelope",
+      "ActionType": "\u0000",
+      "MoData": {
+        "Moid": "5f6e432a6f62692d31ba63c2",
+        "ObjectType": "sw.EtherPort",
+        "ClassId": "sw.EtherPort",
+        "CreateTime": "2020-09-25T19:21:14.286285046Z",
+        "ModTime": "2020-09-25T19:21:14.461005591Z",
+        "Tags": [],
+        "Owners": [
+          "5ecda19e7564612d338aaad7",
+          "5f6e386d6f72612d3192d723"
+        ],
+        "SharedScope": "",
+        "AccountMoid": "5ecda19e7564612d338aaad7",
+        "DomainGroupMoid": "5ecda19e7564612d338aaadf",
+        "Ancestors": [
+          {
+            "ObjectType": "sw.Element",
+            "ClassId": "mo.MoRef",
+            "Moid": "5f6e38716f62692d31b90da4",
+            "link": "https://staging.starshipcloud.com/api/v1/sw/Elements/5f6e38716f62692d31b90da4"
+          }
+        ],
+        "Parent": {
+          "ObjectType": "sw.Element",
+          "ClassId": "mo.MoRef",
+          "Moid": "5f6e38716f62692d31b90da4",
+          "link": "https://staging.starshipcloud.com/api/v1/sw/Elements/5f6e38716f62692d31b90da4"
+        },
+        "PermissionResources": [
+          {
+            "ObjectType": "organization.Organization",
+            "ClassId": "mo.MoRef",
+            "Moid": "5ecda1a16972652d31fd1a83",
+            "link": "https://staging.starshipcloud.com/api/v1/organization/Organizations/5ecda1a16972652d31fd1a83"
+          }
+        ],
+        "ConfigState": "configured",
+        "AdminState": "Enabled",
+        "SwitchId": 0,
+        "AllowedVlans": "2",
+        "Mode": "trunk",
+        "NativeVlan": 0,
+        "PeerEquipmentId": 0,
+        "PeerEquipmentSerial": "",
+        "PeerModuleId": 0,
+        "PeerModuleSerial": "",
+        "PeerUplinkId": 0,
+        "AdminSpeed": "10Gbps",
+        "AggregatePortId": 0,
+        "Description": "FcoeUplink PC Member",
+        "PcId": 1,
+        "PortId": 3,
+        "SlotId": 1,
+        "FcoeVifId": 681,
+        "Fec": "Auto",
+        "Element": {
+          "ObjectType": "sw.Element",
+          "ClassId": "mo.MoRef",
+          "Moid": "5f6e38716f62692d31b90da4",
+          "link": "https://staging.starshipcloud.com/api/v1/sw/Elements/5f6e38716f62692d31b90da4"
+        },
+        "PortChannel": null
+      }
+    },
+    {
+      "ClassId": "connector.NetworkAgentMoEnvelope",
+      "ObjectType": "connector.NetworkAgentMoEnvelope",
+      "ActionType": "\u0000",
+      "MoData": {
+        "Moid": "5f6e432a6f62692d31ba63c5",
+        "ObjectType": "sw.EtherPort",
+        "ClassId": "sw.EtherPort",
+        "CreateTime": "2020-09-25T19:21:14.295834139Z",
+        "ModTime": "2020-09-25T19:21:14.461019774Z",
+        "Tags": [],
+        "Owners": [
+          "5ecda19e7564612d338aaad7",
+          "5f6e386d6f72612d3192d723"
+        ],
+        "SharedScope": "",
+        "AccountMoid": "5ecda19e7564612d338aaad7",
+        "DomainGroupMoid": "5ecda19e7564612d338aaadf",
+        "Ancestors": [
+          {
+            "ObjectType": "sw.Element",
+            "ClassId": "mo.MoRef",
+            "Moid": "5f6e38716f62692d31b90da4",
+            "link": "https://staging.starshipcloud.com/api/v1/sw/Elements/5f6e38716f62692d31b90da4"
+          }
+        ],
+        "Parent": {
+          "ObjectType": "sw.Element",
+          "ClassId": "mo.MoRef",
+          "Moid": "5f6e38716f62692d31b90da4",
+          "link": "https://staging.starshipcloud.com/api/v1/sw/Elements/5f6e38716f62692d31b90da4"
+        },
+        "PermissionResources": [
+          {
+            "ObjectType": "organization.Organization",
+            "ClassId": "mo.MoRef",
+            "Moid": "5ecda1a16972652d31fd1a83",
+            "link": "https://staging.starshipcloud.com/api/v1/organization/Organizations/5ecda1a16972652d31fd1a83"
+          }
+        ],
+        "ConfigState": "configured",
+        "AdminState": "Enabled",
+        "SwitchId": 0,
+        "AllowedVlans": "2",
+        "Mode": "trunk",
+        "NativeVlan": 0,
+        "PeerEquipmentId": 0,
+        "PeerEquipmentSerial": "",
+        "PeerModuleId": 0,
+        "PeerModuleSerial": "",
+        "PeerUplinkId": 0,
+        "AdminSpeed": "10Gbps",
+        "AggregatePortId": 0,
+        "Description": "FcoeUplink PC Member",
+        "PcId": 1,
+        "PortId": 4,
+        "SlotId": 1,
+        "FcoeVifId": 681,
+        "Fec": "Auto",
+        "Element": {
+          "ObjectType": "sw.Element",
+          "ClassId": "mo.MoRef",
+          "Moid": "5f6e38716f62692d31b90da4",
+          "link": "https://staging.starshipcloud.com/api/v1/sw/Elements/5f6e38716f62692d31b90da4"
+        },
+        "PortChannel": null
+      }
+    }
+  ]
+}	{"deviceId": "", "deviceId": "5f6e383a6f72612d3192d683"}
